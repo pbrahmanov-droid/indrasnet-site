@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Luman Links — Beta Testing | INDRASNET</title>
+<meta content="Скачать и протестировать Luman Links — первый доступный самостоятельный продукт семейства Luman." name="description"/>
+<link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20116%20117%22%3E%3Cpath%20fill%3D%22%232f354f%22%20d%3D%22M57.9%2C100.0%20L49.3%2C107.8%20L49.0%2C109.3%20L55.3%2C112.8%20L58.4%2C113.5%20L66.3%2C109.8%20L66.8%2C108.4%20L60.3%2C101.7Z%20M43.7%2C91.7%20L35.7%2C91.9%20L34.1%2C92.7%20L35.2%2C96.4%20L38.9%2C103.6%20L42.9%2C102.7%20L48.3%2C100.6%20L50.4%2C99.2%20L50.3%2C98.4%20L46.3%2C93.8Z%20M71.6%2C91.8%20L65.6%2C97.9%20L65.3%2C99.4%20L72.8%2C102.7%20L76.6%2C103.6%20L77.7%2C102.3%20L81.3%2C94.0%20L81.4%2C92.7%20L80.4%2C92.0Z%20M16.0%2C87.8%20L15.5%2C88.5%20L17.9%2C95.8%20L19.1%2C97.7%20L24.2%2C99.9%20L28.3%2C100.8%20L28.9%2C99.6%20L28.6%2C88.3%20L27.4%2C87.6Z%20M99.6%2C87.8%20L88.5%2C87.5%20L87.1%2C88.3%20L86.8%2C99.9%20L87.4%2C100.8%20L88.5%2C100.9%20L95.0%2C98.5%20L97.1%2C97.0%20L100.0%2C89.3Z%20M51.7%2C89.0%20L51.5%2C90.3%20L57.9%2C96.2%20L62.6%2C92.0%20L64.2%2C89.8%20L63.5%2C88.8%20L58.4%2C86.6Z%20M65.6%2C77.8%20L62.3%2C81.4%20L62.1%2C82.5%20L63.0%2C83.4%20L68.6%2C84.8%20L69.7%2C84.0%20L71.8%2C78.7%20L70.4%2C77.8Z%20M43.6%2C78.6%20L46.7%2C84.7%20L48.9%2C84.6%20L53.4%2C82.5%20L53.3%2C81.5%20L50.3%2C77.7%20L44.8%2C77.9Z%20M31.4%2C76.0%20L30.8%2C76.9%20L31.2%2C84.8%20L32.1%2C85.3%20L39.3%2C85.4%20L40.1%2C85.0%20L40.3%2C83.6%20L38.3%2C78.2%20L33.0%2C76.0Z%20M84.2%2C75.8%20L77.1%2C78.3%20L75.2%2C83.8%20L75.6%2C85.2%20L84.5%2C85.0%20L84.9%2C77.3Z%20M99.3%2C65.5%20L97.8%2C65.8%20L91.3%2C71.7%20L91.4%2C81.1%20L91.8%2C81.8%20L93.1%2C81.9%20L103.3%2C76.9%20L103.1%2C74.8Z%20M16.4%2C65.4%20L15.6%2C66.3%20L12.8%2C73.6%20L12.1%2C76.8%20L13.5%2C78.0%20L23.2%2C82.1%20L24.2%2C80.6%20L24.2%2C71.8%20L20.9%2C68.4%20L17.6%2C65.7Z%20M81.9%2C62.6%20L80.4%2C63.0%20L77.2%2C65.9%20L76.9%2C68.5%20L77.6%2C72.4%20L80.9%2C71.3%20L84.1%2C69.4%20L84.1%2C67.7%20L82.6%2C63.2Z%20M33.6%2C62.6%20L31.7%2C66.8%20L31.6%2C69.5%20L32.8%2C70.5%20L37.9%2C72.2%20L38.6%2C71.1%20L38.4%2C66.1%20L35.1%2C63.0Z%20M89.0%2C51.5%20L87.7%2C53.3%20L85.6%2C58.4%20L88.1%2C64.1%20L89.6%2C64.8%20L95.1%2C59.7%20L95.7%2C57.8%20L89.9%2C51.6Z%20M25.9%2C51.5%20L20.2%2C57.3%20L19.8%2C58.5%20L20.9%2C60.3%20L25.9%2C64.8%20L26.8%2C64.9%20L28.2%2C62.9%20L30.0%2C58.1%20L27.5%2C52.6%20L26.7%2C51.6Z%20M107.8%2C49.4%20L100.0%2C57.4%20L99.8%2C58.4%20L100.5%2C59.9%20L106.9%2C66.8%20L108.5%2C67.4%20L110.4%2C64.3%20L112.2%2C59.7%20L112.5%2C57.4%20L109.4%2C50.1Z%20M7.1%2C49.3%20L6.3%2C49.9%20L3.0%2C58.3%20L6.3%2C66.6%20L7.8%2C67.2%20L15.3%2C59.6%20L15.7%2C57.9%20L8.4%2C49.8Z%20M77.9%2C44.4%20L77.1%2C45.5%20L77.0%2C50.4%20L79.6%2C52.9%20L82.1%2C53.9%20L82.9%2C53.0%20L84.2%2C49.0%20L84.2%2C47.3%20L80.1%2C44.9Z%20M37.7%2C44.4%20L35.8%2C44.6%20L31.3%2C47.5%20L32.7%2C52.9%20L33.8%2C54.0%20L35.1%2C53.6%20L38.5%2C50.7%20L38.5%2C45.8Z%20M91.9%2C34.9%20L91.2%2C35.8%20L91.1%2C44.7%20L97.6%2C50.8%20L98.4%2C51.0%20L100.0%2C49.0%20L103.2%2C39.9%20L101.9%2C38.6%20L93.8%2C35.1Z%20M23.4%2C34.7%20L13.6%2C38.6%20L12.5%2C39.6%20L12.5%2C40.8%20L15.5%2C48.6%20L17.0%2C50.8%20L18.3%2C50.5%20L23.3%2C46.1%20L24.4%2C44.5%20L24.3%2C35.9Z%20M46.6%2C32.1%20L43.8%2C38.2%20L45.7%2C38.9%20L50.5%2C38.6%20L52.9%2C35.6%20L53.1%2C33.8%20L48.4%2C32.0Z%20M62.6%2C33.7%20L62.6%2C35.4%20L65.6%2C38.7%20L70.7%2C38.8%20L71.8%2C38.1%20L69.6%2C32.8%20L68.6%2C31.9%20L67.2%2C31.9Z%20M75.4%2C31.5%20L75.1%2C33.1%20L77.2%2C38.3%20L81.9%2C40.6%20L84.3%2C41.0%20L84.9%2C40.0%20L84.6%2C31.9%20L83.6%2C31.3Z%20M39.9%2C31.5%20L32.2%2C31.3%20L31.1%2C31.8%20L30.8%2C40.0%20L31.3%2C40.8%20L33.8%2C40.6%20L38.0%2C38.7%20L40.4%2C32.8Z%20M57.6%2C20.5%20L51.7%2C25.9%20L51.3%2C27.3%20L56.0%2C30.1%20L58.0%2C30.7%20L63.5%2C28.1%20L64.3%2C26.7%20L58.7%2C20.7Z%20M87.4%2C16.3%20L87.0%2C17.1%20L87.4%2C28.8%20L88.4%2C29.2%20L99.4%2C29.0%20L99.9%2C27.3%20L97.0%2C19.8%20L95.7%2C18.8%20L88.8%2C16.2Z%20M28.1%2C16.3%20L27.4%2C16.1%20L19.6%2C18.8%20L18.7%2C19.6%20L15.6%2C27.5%20L16.1%2C28.9%20L27.4%2C29.1%20L28.3%2C28.5%20L28.6%2C17.0Z%20M39.1%2C13.2%20L37.9%2C14.5%20L34.1%2C24.1%20L35.3%2C24.9%20L44.2%2C25.0%20L50.4%2C18.3%20L50.5%2C17.5%20L41.3%2C13.4Z%20M65.2%2C17.6%20L65.9%2C19.2%20L71.3%2C24.9%20L73.7%2C25.3%20L80.9%2C24.8%20L81.5%2C24.3%20L77.6%2C14.2%20L76.5%2C13.1%20L75.6%2C13.0%20L67.7%2C16.0Z%20M57.8%2C3.2%20L49.3%2C6.9%20L48.7%2C7.9%20L49.2%2C9.0%20L56.9%2C16.4%20L58.4%2C16.9%20L66.7%2C8.8%20L66.9%2C7.7%20L65.9%2C6.7Z%22/%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+/* ===== ОБЩИЙ СТИЛЬ САЙТА — одинаков на всех страницах indrasnet.eu ===== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --bg:#f3f5f4;
+  --bg-2:#eef2f4;
+  --panel:rgba(255,255,255,.78);
+  --panel-solid:#fbfcfc;
+  --ink:#182026;
+  --muted:#667078;
+  --line:rgba(24,32,38,.13);
+  --line-strong:rgba(24,32,38,.28);
+  --accent:#26343f;
+  --accent-soft:#e5ebee;
+  --blue:#dfe9ef;
+  --warm:#eee9df;
+  --success:#345846;
+  --max:1160px;
+  --radius:26px;
+  --shadow:0 18px 60px rgba(27,40,48,.07);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 12% 4%, rgba(216,229,236,.95), transparent 34rem),
+    radial-gradient(circle at 88% 16%, rgba(239,233,220,.9), transparent 30rem),
+    linear-gradient(180deg,var(--bg) 0%,#f7f7f4 48%,var(--bg-2) 100%);
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.shell{width:min(calc(100% - 36px),var(--max));margin:0 auto}
+.muted{color:var(--muted)}
+.eyebrow{
+  font-size:12px;
+  line-height:1;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:700;
+}
+.site-header{
+  position:sticky;top:0;z-index:40;
+  border-bottom:1px solid rgba(24,32,38,.08);
+  background:rgba(244,246,246,.78);
+  backdrop-filter:blur(18px);
+}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.095em}
+.logo-mark{
+  position:relative;width:26px;height:26px;display:inline-block;transform:rotate(45deg)
+}
+.logo-mark::before,.logo-mark::after{
+  content:"";position:absolute;border:1.5px solid var(--ink);inset:3px
+}
+.logo-mark::after{inset:8px;border-color:#72818b}
+.nav-links{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:40px;padding:0 16px;border-radius:999px;
+  background:var(--ink);color:white;font-weight:700
+}
+.hero{padding:88px 0 56px}
+.hero-center{text-align:center}
+.hero h1{
+  font-size:clamp(48px,8vw,94px);line-height:.92;
+  letter-spacing:.08em;margin:0 0 30px;font-weight:800
+}
+.hero .definition{
+  font-size:clamp(24px,3.5vw,40px);line-height:1.15;font-weight:600;
+  margin:0 auto 16px;max-width:900px
+}
+.hero .sub{
+  font-size:clamp(17px,2vw,21px);line-height:1.55;color:var(--muted);
+  max-width:800px;margin:0 auto
+}
+.stage-wrap{padding:34px 0 24px}
+.stage-row{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:stretch;gap:16px
+}
+.stage-arrow{align-self:center;font-size:30px;color:#8a949b}
+.stage-card{
+  appearance:none;width:100%;text-align:left;cursor:pointer;color:inherit;
+  padding:28px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--panel);box-shadow:var(--shadow);transition:.2s ease;
+  backdrop-filter:blur(8px)
+}
+.stage-card:hover,.stage-card:focus-visible{transform:translateY(-3px);border-color:var(--line-strong);outline:none}
+.stage-card.active{background:#fff;border-color:var(--ink)}
+.stage-card .num{font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.stage-card h2{font-size:30px;margin:18px 0 10px}
+.stage-card p{margin:0;color:var(--muted);line-height:1.5}
+.detail-area{padding:12px 0 34px;scroll-margin-top:92px}
+.detail-panel{
+  border:1px solid var(--line);border-radius:32px;background:rgba(255,255,255,.8);
+  box-shadow:var(--shadow);padding:40px
+}
+.detail-panel[hidden]{display:none}
+.detail-title{font-size:clamp(30px,4vw,48px);margin:9px 0 12px;line-height:1.08}
+.detail-lead{max-width:820px;color:var(--muted);font-size:17px;line-height:1.6;margin:0 0 32px}
+.flow{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.flow-step{
+  flex:1 1 150px;min-width:140px;padding:18px;border-radius:18px;
+  background:var(--panel-solid);border:1px solid var(--line)
+}
+.flow-step strong{display:block;margin-bottom:7px;font-size:15px}
+.flow-step span{display:block;color:var(--muted);font-size:13px;line-height:1.45}
+.flow-arrow{align-self:center;color:#9099a0}
+.note-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.note{
+  border-top:1px solid var(--line);padding-top:16px
+}
+.note h3{font-size:16px;margin:0 0 7px}
+.note p{font-size:14px;color:var(--muted);line-height:1.5;margin:0}
+.ee-card{
+  margin-top:26px;padding:22px;border-radius:20px;border:1px solid var(--line);
+  background:linear-gradient(135deg,rgba(224,235,241,.7),rgba(255,255,255,.75));
+  display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center
+}
+.ee-card h3{margin:5px 0 8px;font-size:20px}
+.ee-card p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.text-link{font-weight:800;white-space:nowrap}
+.products{padding:68px 0 30px}
+.section-head{max-width:760px;margin-bottom:30px}
+.section-head h2{font-size:clamp(30px,4vw,48px);margin:9px 0 10px}
+.section-head p{color:var(--muted);line-height:1.6;margin:0}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product-card{
+  position:relative;min-height:245px;border:1px solid var(--line);border-radius:24px;
+  background:var(--panel);padding:26px;box-shadow:var(--shadow)
+}
+.product-card.active{border-color:rgba(52,88,70,.45);background:rgba(252,255,253,.9)}
+.status{
+  display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;
+  font-size:12px;font-weight:800;background:var(--accent-soft);color:var(--muted)
+}
+.status.live{background:#e2eee7;color:var(--success)}
+.product-card h3{font-size:24px;margin:20px 0 10px}
+.product-card p{color:var(--muted);line-height:1.55;margin:0 0 24px}
+.product-card .card-link{font-weight:800}
+.bridge{padding:60px 0 82px}
+.bridge-card{
+  border-top:1px solid var(--line-strong);padding-top:34px;
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start
+}
+.bridge-card h2{font-size:clamp(28px,3.4vw,42px);margin:8px 0 10px}
+.bridge-card p{color:var(--muted);line-height:1.6;margin:0}
+.bridge-sides{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bridge-side{padding:20px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.62)}
+.bridge-side b{display:block;margin-bottom:8px}
+.bridge-side span{font-size:13px;line-height:1.45;color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.beta-hero{padding:72px 0 38px}
+.beta-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+.beta-hero h1{font-size:clamp(44px,7vw,82px);line-height:.96;margin:10px 0 14px;letter-spacing:-.04em}
+.beta-hero .lead{font-size:19px;line-height:1.6;color:var(--muted);max-width:740px}
+.download-btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:58px;
+  margin-top:16px;padding:0 24px;border-radius:17px;background:var(--ink);color:#fff;font-weight:800
+}
+.download-btn.disabled{opacity:.72;cursor:not-allowed}
+.build-meta{margin-top:12px;color:var(--muted);font-size:13px}
+.qr-card{
+  min-height:265px;border:1px solid var(--line);border-radius:26px;background:var(--panel);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  padding:26px;box-shadow:var(--shadow)
+}
+.qr-placeholder{
+  width:150px;height:150px;border:1px dashed var(--line-strong);border-radius:14px;
+  display:grid;place-items:center;font-size:13px;color:var(--muted);background:#fff;margin-bottom:14px
+}
+.beta-section{padding:26px 0}
+.card{
+  border:1px solid var(--line);border-radius:26px;background:var(--panel);
+  box-shadow:var(--shadow);padding:32px
+}
+.card h2{font-size:30px;margin:8px 0 10px}
+.card .lead{color:var(--muted);line-height:1.6;margin:0 0 24px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{border-top:1px solid var(--line);padding-top:15px}
+.mini h3{margin:0 0 7px;font-size:16px}
+.mini p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{border:1px solid var(--line);border-radius:18px;background:#fff;padding:18px}
+.step .n{font-size:11px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.step b{display:block;margin:14px 0 7px}
+.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+.value-card{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.value-card h2{font-size:clamp(28px,4vw,45px);line-height:1.12}
+.value-mark{border:1px solid var(--line);border-radius:20px;background:#fff;padding:24px}
+.value-mark strong{display:block;font-size:18px}
+.value-mark p{font-size:14px;color:var(--muted);line-height:1.5;margin:8px 0 0}
+.disclosure-row{display:flex;justify-content:space-between;gap:24px;align-items:center}
+.disclosure-btn{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);background:transparent;
+  color:var(--ink);border-radius:14px;min-height:44px;padding:0 16px;font-weight:800;cursor:pointer
+}
+.disclosure-panel{margin-top:0;max-height:0;overflow:hidden;opacity:0;transition:.35s ease}
+.disclosure-panel.open{margin-top:24px;max-height:1200px;opacity:1}
+.question-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;border-top:1px solid var(--line);padding-top:22px}
+.question{border:1px solid var(--line);border-radius:16px;background:#fff;padding:17px}
+.question b{display:block;margin-bottom:6px}
+.question span{font-size:13px;color:var(--muted);line-height:1.45}
+.product-family{padding:28px 0 70px}
+
+@media(max-width:900px){
+  .nav-links a:not(.nav-cta){display:none}
+  .stage-row,.bridge-card,.beta-grid,.value-card{grid-template-columns:1fr}
+  .stage-arrow{transform:rotate(90deg);text-align:center}
+  .product-grid,.three{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .bridge-sides{grid-template-columns:1fr}
+  .ee-card{grid-template-columns:1fr}
+  .flow{flex-direction:column}
+  .flow-arrow{transform:rotate(90deg)}
+  .question-grid{grid-template-columns:1fr}
+  .qr-card{display:none}
+}
+@media(max-width:600px){
+  .shell{width:min(calc(100% - 24px),var(--max))}
+  .hero{padding-top:62px}
+  .detail-panel,.card{padding:24px 20px}
+  .note-grid{grid-template-columns:1fr}
+  .disclosure-row{display:block}
+  .disclosure-btn{margin-top:16px}
+}
+
+/* ===== Дополнения для беты (v0.3): правило, сборка, установка, версии ===== */
+:root{
+  color-scheme:only light;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --rule-bg:#1d2a33;
+  --rule-ink:#f2f5f4;
+  --rule-muted:#a9b6bd;
+  --rule-line:rgba(242,245,244,.16);
+  --alert:#8a3b2e;
+  --alert-soft:#f4e6e1;
+  --draft:#9a6a12;
+  --draft-soft:#f7eed9;
+  --android-blue:#3b5bdb;
+}
+body{background-color:var(--bg)}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+/* черновик: подстановки релиза */
+.draft-bar{background:var(--draft-soft);color:var(--draft);font-size:13px;line-height:1.45;border-bottom:1px solid rgba(154,106,18,.25)}
+.draft-bar .shell{padding-block:10px}
+.draft-bar b{font-weight:800}
+.ph{background:var(--draft-soft);color:var(--draft);border-radius:6px;padding:0 5px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+body:not(.is-draft) .draft-bar{display:none}
+body:not(.is-draft) .ph{background:none;color:inherit;padding:0}
+
+/* шапка: ссылки по странице */
+.nav-links .nav-cta{color:#fff}
+
+/* герой: сборка */
+.download-btn{gap:14px;transition:transform .15s ease}
+.download-btn:hover{transform:translateY(-2px)}
+.download-btn .dl-size{font-weight:600;opacity:.7;font-size:14px}
+.build-card{margin-top:18px;border:1px solid var(--line);border-radius:18px;background:var(--panel);max-width:620px;overflow:hidden}
+.build-row{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:11px 16px;border-top:1px solid var(--line);align-items:baseline;font-size:14px}
+.build-row:first-child{border-top:0}
+.build-row dt{color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.build-row dd{margin:0;min-width:0}
+.mono{font-family:var(--mono);font-size:13px}
+.hash-wrap{display:flex;gap:10px;align-items:flex-start}
+.hash{font-family:var(--mono);font-size:12.5px;line-height:1.5;word-break:break-all;min-width:0;flex:1}
+.copy-btn{flex:none;border:1px solid var(--line-strong);background:#fff;color:var(--ink);border-radius:10px;font-weight:700;font-size:12px;padding:5px 10px;cursor:pointer}
+.copy-btn:hover{border-color:var(--ink)}
+.https-note{display:flex;gap:8px;align-items:center;margin-top:12px;color:var(--muted);font-size:13px}
+.lock{width:11px;height:9px;border:1.6px solid currentColor;border-radius:2px;position:relative;display:inline-block;margin-top:4px}
+.lock::before{content:"";position:absolute;left:1.5px;top:-6px;width:5px;height:5px;border:1.6px solid currentColor;border-bottom:0;border-radius:4px 4px 0 0}
+.qr-box{width:168px;height:168px;background:#fff;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;margin-bottom:14px;padding:10px}
+.qr-box img,.qr-box canvas{width:146px!important;height:146px!important;image-rendering:pixelated}
+
+/* главное правило */
+.rule{padding:20px 0 26px}
+.rule-card{background:var(--rule-bg);color:var(--rule-ink);border-radius:30px;padding:clamp(28px,5vw,56px);box-shadow:0 30px 80px rgba(20,30,38,.22);position:relative;overflow:hidden}
+.rule-card::after{z-index:-1;content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border:1.5px solid var(--rule-line);transform:rotate(45deg)}
+.rule-card::before{z-index:-1;content:"";position:absolute;right:-30px;top:-30px;width:180px;height:180px;border:1.5px solid var(--rule-line);transform:rotate(45deg)}
+.rule-card .eyebrow{color:var(--rule-muted)}
+.rule-title{font-size:clamp(34px,6vw,68px);line-height:1;letter-spacing:-.035em;margin:16px 0 0;font-weight:800;max-width:15ch;position:relative;z-index:1}
+.rule-title span{color:var(--rule-muted)}
+.rule-body{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;position:relative;z-index:1}
+.rule-body > div{border-top:1px solid var(--rule-line);padding-top:16px;min-width:0}
+.rule-body h3{margin:0 0 8px;font-size:17px}
+.rule-body p{margin:0;color:var(--rule-muted);line-height:1.55;font-size:14.5px}
+.rule-body strong{color:var(--rule-ink)}
+.save-chip{display:inline-block;border:1px solid var(--rule-ink);border-radius:999px;padding:1px 10px;font-weight:700;color:var(--rule-ink);white-space:nowrap}
+
+/* установка: шаги остаются, ниже — что вы увидите */
+.steps .step.key{border-color:var(--ink)}
+.see-head{margin:38px 0 6px;font-size:22px}
+.see-lead{color:var(--muted);margin:0 0 22px;line-height:1.55;max-width:72ch}
+.see-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.see{border:1px solid var(--line);border-radius:22px;background:var(--panel-solid);padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.see-tag{font-size:11px;letter-spacing:.14em;color:var(--muted);font-weight:700;text-transform:uppercase}
+.see h3{margin:0;font-size:18px}
+.see p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+.see .do{color:var(--ink);font-weight:700}
+.phone{align-self:center;width:200px;max-width:100%;aspect-ratio:9/12;border:7px solid #20292f;border-radius:30px;background:#e9eceb;position:relative;display:flex;align-items:flex-end;padding:10px;overflow:hidden}
+.phone::before{content:"";position:absolute;top:7px;left:50%;width:46px;height:5px;margin-left:-23px;border-radius:9px;background:#20292f}
+.dlg{background:#fff;border-radius:16px;padding:14px;width:100%;box-shadow:0 8px 24px rgba(0,0,0,.12);font-family:system-ui,"Roboto",sans-serif;color:#1f1f1f}
+.dlg .ic{width:22px;height:22px;border-radius:50%;background:#e3e8f8;margin-bottom:8px;display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--android-blue)}
+.dlg b{display:block;font-size:12.5px;margin-bottom:5px;line-height:1.3}
+.dlg small{display:block;font-size:10.5px;line-height:1.4;color:#555}
+.dlg .btns{display:flex;justify-content:flex-end;gap:12px;margin-top:10px;font-size:10.5px;font-weight:700;color:var(--android-blue)}
+.dlg .btns .hit{outline:2px solid var(--alert);outline-offset:3px;border-radius:4px}
+.dlg .toggle-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;margin-top:6px;padding:8px;border-radius:10px;outline:2px solid var(--alert);outline-offset:1px}
+.tg{width:28px;height:16px;border-radius:9px;background:var(--android-blue);position:relative;flex:none}
+.tg::after{content:"";position:absolute;right:2px;top:2px;width:12px;height:12px;border-radius:50%;background:#fff}
+.phone-cap{font-size:11px;color:var(--muted);text-align:center;margin-top:-8px}
+.why{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,rgba(224,235,241,.7),rgba(255,255,255,.75));padding:22px}
+.why-mark{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--muted);padding-top:3px}
+.why h3{margin:0 0 8px;font-size:18px}
+.why p{margin:0 0 8px;color:var(--muted);line-height:1.55;font-size:14.5px;max-width:75ch}
+.why p:last-child{margin-bottom:0}
+
+/* обновление */
+.update-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.update-flow .step{background:var(--panel-solid)}
+.update-flow .step.warn{border-color:rgba(138,59,46,.45);background:var(--alert-soft)}
+.update-flow .step.warn b{color:var(--alert)}
+
+/* проверка SHA */
+details.verify{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+details.verify summary{cursor:pointer;font-weight:800;list-style:none;display:flex;gap:8px;align-items:center}
+details.verify summary::-webkit-details-marker{display:none}
+details.verify summary::after{content:"↓";color:var(--muted)}
+details.verify[open] summary::after{content:"↑"}
+.verify-body{color:var(--muted);font-size:14px;line-height:1.55;margin-top:12px;max-width:75ch}
+.verify-body pre{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;color:var(--ink);margin:8px 0 12px}
+
+/* версии */
+.versions{display:flex;flex-direction:column}
+.ver{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+.ver:first-child{border-top:0;padding-top:4px}
+.ver-id b{display:block;font-size:22px;letter-spacing:-.01em}
+.ver-id .mono{color:var(--muted);display:block;margin-top:4px}
+.ver-id .status{margin-top:10px}
+.ver ul{margin:0;padding-left:18px;line-height:1.6;color:var(--ink)}
+.ver ul li{margin-bottom:4px}
+.ver ul li::marker{color:var(--muted)}
+
+/* обратная связь: Telegram */
+.tg-card{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line);padding-top:22px}
+.tg-card h3{margin:0 0 8px;font-size:18px}
+.tg-card p{margin:0 0 14px;color:var(--muted);line-height:1.55;font-size:14px}
+.tg-link{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:14px;background:var(--ink);color:#fff;font-weight:800}
+.template{border:1px dashed var(--line-strong);border-radius:16px;background:#fff;padding:16px 18px;font-size:14px;line-height:1.7}
+.template span{color:var(--muted)}
+
+@media(max-width:900px){
+  .rule-body,.see-grid,.update-flow,.tg-card{grid-template-columns:1fr}
+  .ver{grid-template-columns:1fr;gap:10px}
+  .why{grid-template-columns:1fr;gap:6px}
+  .nav-links a.nav-cta{display:inline-flex}
+}
+@media(max-width:600px){
+  .build-row{grid-template-columns:1fr;gap:4px}
+  .rule-card{border-radius:24px}
+  .download-btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== Общий каркас сайта: шапка, подвал, тёмная полоса (одинаково на всех страницах) ===== */
+.nav-links a[aria-current="page"]{color:var(--ink);font-weight:700}
+.logo{white-space:nowrap}
+.rule-card,.band-card{isolation:isolate}
+.band{padding:8px 0 40px}
+.band-card{background:var(--rule-bg);color:var(--rule-ink);border-radius:30px;padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(20,30,38,.22)}
+.band-card::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border:1.5px solid var(--rule-line);transform:rotate(45deg);z-index:-1}
+.band-card::before{content:"";position:absolute;right:-30px;top:-30px;width:180px;height:180px;border:1.5px solid var(--rule-line);transform:rotate(45deg);z-index:-1}
+.band-card .eyebrow{color:var(--rule-muted)}
+.band-card h2{font-size:clamp(28px,4vw,46px);line-height:1.05;letter-spacing:-.03em;margin:12px 0 10px}
+.band-card p{margin:0;color:var(--rule-muted);line-height:1.55;max-width:60ch}
+.band-btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:16px;background:var(--rule-ink);color:var(--rule-bg);font-weight:800;white-space:nowrap}
+.band-btn:hover{transform:translateY(-2px)}
+.stage-hint{text-align:center;color:var(--muted);font-size:13px;margin:16px 0 0}
+.site-footer{padding:34px 0 40px}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:start}
+.footer-brand{display:flex;flex-direction:column;gap:10px}
+.footer-brand .logo{color:var(--ink);font-size:14px}
+.footer-brand .logo-mark{width:20px;height:20px}
+.footer-nav{display:flex;gap:10px 22px;flex-wrap:wrap;justify-content:flex-end}
+.footer-nav a:hover{color:var(--ink)}
+.footer-bottom{grid-column:1/-1;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px}
+@media(max-width:900px){
+  .band-card,.footer-grid{grid-template-columns:1fr}
+  .footer-nav{justify-content:flex-start}
+  .band-btn{width:100%}
+}
+.stage-card{display:flex;flex-direction:column;justify-content:flex-start}
+
+/* ===== Логотип INDRASNET (знак-розетка + надпись) ===== */
+:root{--brand:#2f354f}
+.logo{gap:12px;color:var(--brand);font-weight:600;letter-spacing:.2em}
+.logo-svg{width:34px;height:34px;flex:none;color:var(--brand)}
+.footer-brand .logo-svg{width:26px;height:26px}
+.footer-brand .logo{color:var(--brand)}
+
+/* ===== Логотип: знак сверху, подпись под ним ===== */
+.nav{min-height:84px}
+.logo{flex-direction:column;align-items:center;gap:5px;letter-spacing:.32em;font-size:10.5px;font-weight:600;line-height:1}
+.logo span{margin-right:-.32em}
+.logo-svg{width:34px;height:34px}
+.footer-brand{align-items:flex-start}
+.footer-brand .logo{font-size:9.5px}
+.footer-brand .logo-svg{width:28px;height:28px}
+
+/* ===== Иконки продуктов ===== */
+.product-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.product-icon{display:block;width:64px;height:64px;border-radius:16px;border:1px solid var(--line);background:#fff;flex:none}
+.product-card h3{margin-top:18px}
+
+/* ===== Бета: знак приложения рядом с названием ===== */
+.app-title{display:flex;align-items:center;gap:clamp(14px,2.4vw,26px);margin:12px 0 14px}
+.app-title h1{margin:0;letter-spacing:-.035em}
+.app-icon{width:clamp(64px,9vw,104px);height:clamp(64px,9vw,104px);border-radius:24%;flex:none;box-shadow:0 12px 30px rgba(20,30,38,.18)}
+
+  
+/* Mobile download page is intentionally light-only.
+   Opera's optional forced-dark feature may still override author colors. */
+html, body { color-scheme: only light; }
+</style>
+<style id="mobile-download-cleanup">
+/* Mobile-first download page: installation first, project presentation removed. */
+.more-link-wrap{max-width:1120px;margin:18px auto 0;padding:0 24px;text-align:center}
+.more-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72);color:var(--ink);font-weight:750;text-decoration:none;box-shadow:0 8px 24px rgba(20,32,52,.08)}
+.beta-details[hidden]{display:none!important}
+.beta-details-toggle{cursor:pointer}
+@media (max-width:760px){
+  .qr-card{display:none!important}
+  .beta-grid{grid-template-columns:1fr!important}
+  .beta-hero{padding-top:26px!important;padding-bottom:22px!important}
+  .beta-hero .lead{display:none!important}
+  .beta-hero .build-card{display:none!important}
+  .beta-hero .https-note{margin-top:14px!important}
+  .download-btn{width:100%;justify-content:center;min-height:58px;font-size:17px}
+  .more-link-wrap{margin-top:10px;padding:0 18px 22px}
+  .more-link{width:100%}
+  .site-header .nav-links{display:none!important}
+}
+</style></head>
+<body>
+<div class="draft-bar" role="note">
+<div class="shell"><b>Черновик макета.</b> Данные сборки на этой странице — примеры: номер версии, имя файла, ссылка, SHA-256, дата и список изменений. Они подставляются при каждом релизе в одном месте, в блоке <span class="mono">RELEASES</span> в конце файла. Примеры отмечены этим цветом.</div>
+</div>
+<header class="site-header">
+<div class="shell nav">
+<a aria-label="INDRASNET — на главную" class="logo" href="index.html"><svg aria-hidden="true" class="logo-svg" focusable="false" viewbox="0 0 116 117"><path d="M57.9,100.0 L49.3,107.8 L49.0,109.3 L55.3,112.8 L58.4,113.5 L66.3,109.8 L66.8,108.4 L60.3,101.7Z M43.7,91.7 L35.7,91.9 L34.1,92.7 L35.2,96.4 L38.9,103.6 L42.9,102.7 L48.3,100.6 L50.4,99.2 L50.3,98.4 L46.3,93.8Z M71.6,91.8 L65.6,97.9 L65.3,99.4 L72.8,102.7 L76.6,103.6 L77.7,102.3 L81.3,94.0 L81.4,92.7 L80.4,92.0Z M16.0,87.8 L15.5,88.5 L17.9,95.8 L19.1,97.7 L24.2,99.9 L28.3,100.8 L28.9,99.6 L28.6,88.3 L27.4,87.6Z M99.6,87.8 L88.5,87.5 L87.1,88.3 L86.8,99.9 L87.4,100.8 L88.5,100.9 L95.0,98.5 L97.1,97.0 L100.0,89.3Z M51.7,89.0 L51.5,90.3 L57.9,96.2 L62.6,92.0 L64.2,89.8 L63.5,88.8 L58.4,86.6Z M65.6,77.8 L62.3,81.4 L62.1,82.5 L63.0,83.4 L68.6,84.8 L69.7,84.0 L71.8,78.7 L70.4,77.8Z M43.6,78.6 L46.7,84.7 L48.9,84.6 L53.4,82.5 L53.3,81.5 L50.3,77.7 L44.8,77.9Z M31.4,76.0 L30.8,76.9 L31.2,84.8 L32.1,85.3 L39.3,85.4 L40.1,85.0 L40.3,83.6 L38.3,78.2 L33.0,76.0Z M84.2,75.8 L77.1,78.3 L75.2,83.8 L75.6,85.2 L84.5,85.0 L84.9,77.3Z M99.3,65.5 L97.8,65.8 L91.3,71.7 L91.4,81.1 L91.8,81.8 L93.1,81.9 L103.3,76.9 L103.1,74.8Z M16.4,65.4 L15.6,66.3 L12.8,73.6 L12.1,76.8 L13.5,78.0 L23.2,82.1 L24.2,80.6 L24.2,71.8 L20.9,68.4 L17.6,65.7Z M81.9,62.6 L80.4,63.0 L77.2,65.9 L76.9,68.5 L77.6,72.4 L80.9,71.3 L84.1,69.4 L84.1,67.7 L82.6,63.2Z M33.6,62.6 L31.7,66.8 L31.6,69.5 L32.8,70.5 L37.9,72.2 L38.6,71.1 L38.4,66.1 L35.1,63.0Z M89.0,51.5 L87.7,53.3 L85.6,58.4 L88.1,64.1 L89.6,64.8 L95.1,59.7 L95.7,57.8 L89.9,51.6Z M25.9,51.5 L20.2,57.3 L19.8,58.5 L20.9,60.3 L25.9,64.8 L26.8,64.9 L28.2,62.9 L30.0,58.1 L27.5,52.6 L26.7,51.6Z M107.8,49.4 L100.0,57.4 L99.8,58.4 L100.5,59.9 L106.9,66.8 L108.5,67.4 L110.4,64.3 L112.2,59.7 L112.5,57.4 L109.4,50.1Z M7.1,49.3 L6.3,49.9 L3.0,58.3 L6.3,66.6 L7.8,67.2 L15.3,59.6 L15.7,57.9 L8.4,49.8Z M77.9,44.4 L77.1,45.5 L77.0,50.4 L79.6,52.9 L82.1,53.9 L82.9,53.0 L84.2,49.0 L84.2,47.3 L80.1,44.9Z M37.7,44.4 L35.8,44.6 L31.3,47.5 L32.7,52.9 L33.8,54.0 L35.1,53.6 L38.5,50.7 L38.5,45.8Z M91.9,34.9 L91.2,35.8 L91.1,44.7 L97.6,50.8 L98.4,51.0 L100.0,49.0 L103.2,39.9 L101.9,38.6 L93.8,35.1Z M23.4,34.7 L13.6,38.6 L12.5,39.6 L12.5,40.8 L15.5,48.6 L17.0,50.8 L18.3,50.5 L23.3,46.1 L24.4,44.5 L24.3,35.9Z M46.6,32.1 L43.8,38.2 L45.7,38.9 L50.5,38.6 L52.9,35.6 L53.1,33.8 L48.4,32.0Z M62.6,33.7 L62.6,35.4 L65.6,38.7 L70.7,38.8 L71.8,38.1 L69.6,32.8 L68.6,31.9 L67.2,31.9Z M75.4,31.5 L75.1,33.1 L77.2,38.3 L81.9,40.6 L84.3,41.0 L84.9,40.0 L84.6,31.9 L83.6,31.3Z M39.9,31.5 L32.2,31.3 L31.1,31.8 L30.8,40.0 L31.3,40.8 L33.8,40.6 L38.0,38.7 L40.4,32.8Z M57.6,20.5 L51.7,25.9 L51.3,27.3 L56.0,30.1 L58.0,30.7 L63.5,28.1 L64.3,26.7 L58.7,20.7Z M87.4,16.3 L87.0,17.1 L87.4,28.8 L88.4,29.2 L99.4,29.0 L99.9,27.3 L97.0,19.8 L95.7,18.8 L88.8,16.2Z M28.1,16.3 L27.4,16.1 L19.6,18.8 L18.7,19.6 L15.6,27.5 L16.1,28.9 L27.4,29.1 L28.3,28.5 L28.6,17.0Z M39.1,13.2 L37.9,14.5 L34.1,24.1 L35.3,24.9 L44.2,25.0 L50.4,18.3 L50.5,17.5 L41.3,13.4Z M65.2,17.6 L65.9,19.2 L71.3,24.9 L73.7,25.3 L80.9,24.8 L81.5,24.3 L77.6,14.2 L76.5,13.1 L75.6,13.0 L67.7,16.0Z M57.8,3.2 L49.3,6.9 L48.7,7.9 L49.2,9.0 L56.9,16.4 L58.4,16.9 L66.7,8.8 L66.9,7.7 L65.9,6.7Z" fill="currentColor"></path></svg><span>INDRASNET</span></a>
+<nav aria-label="Основная навигация" class="nav-links">
+<a href="index.html#system">Система</a>
+<a href="index.html#products">Продукты</a>
+<a aria-current="page" href="luman-links-beta.html">Luman Links</a>
+<a href="https://indrasnet.ee" rel="noopener" target="_blank">Research / Grants ↗</a>
+<a class="nav-cta" href="#download">Скачать APK</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="beta-hero" id="download">
+<div class="shell beta-grid">
+<div>
+<div class="eyebrow">Бета-тестирование</div>
+<div class="app-title"><img alt="Значок приложения Luman Links" class="app-icon" height="104" src="data:image/png;base64,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" width="104"/><h1>Luman Links</h1></div>
+<p class="lead">Пространство для сохранения и работы с внешними информационными сигналами — ссылками, видео, статьями и другими материалами, к которым вы хотите вернуться и что-то с ними сделать.</p>
+<a class="download-btn" href="#" id="dlBtn" rel="noopener">СКАЧАТЬ APK <span class="dl-size" data-r="size"></span></a>
+<dl class="build-card">
+<div class="build-row"><dt>Версия</dt><dd><span class="ph" data-r="versionLabel"></span></dd></div>
+<div class="build-row"><dt>Файл</dt><dd class="mono"><span class="ph" data-r="file"></span></dd></div>
+<div class="build-row"><dt>Дата</dt><dd><span class="ph" data-r="dateLabel"></span></dd></div>
+<div class="build-row"><dt>SHA-256</dt><dd>
+<div class="hash-wrap"><span class="hash ph" data-r="sha256" id="hash"></span><button class="copy-btn" id="copyHash" type="button">Копировать</button></div>
+</dd></div>
+</dl>
+<div class="https-note"><span aria-hidden="true" class="lock">
+</div>
+<aside class="qr-card">
+<div aria-label="QR-код этой страницы" class="qr-box" id="qr"></div>
+<div class="muted">Наведите камеру телефона, чтобы открыть эту страницу на телефоне и скачать там.</div>
+</aside>
+</div>
+</section><div class="more-link-wrap"><a aria-expanded="false" class="more-link beta-details-toggle" href="#beta-details" id="betaDetailsToggle">Установка, версии и обратная связь</a></div><div class="beta-details" hidden="" id="beta-details"><section class="rule" id="rule">
+<div class="shell rule-card">
+<div class="eyebrow">Главное правило бета-теста</div>
+<h2 class="rule-title">Обновляйте поверх. <span>Никогда не удаляйте приложение.</span></h2>
+<div class="rule-body">
+<div>
+<h3>Данные живут только в телефоне</h3>
+<p>Luman Links ничего не хранит в облаке. Всё, что вы сохранили, лежит только в этом приложении. <strong>Если удалить приложение, всё сохранённое исчезнет вместе с ним.</strong></p>
+</div>
+<div>
+<h3>Новая версия ставится сверху</h3>
+<p>Скачайте новый APK с этой страницы и откройте его. Android спросит: «Обновить приложение?» — нажмите <strong>«Обновить»</strong>. Ваши данные останутся на месте. Удалять старую версию не нужно.</p>
+</div>
+<div>
+<h3>Делайте копию регулярно</h3>
+<p>Время от времени нажимайте в приложении <span class="save-chip">Сохранить копию</span>. Копия — ваша страховка: из неё можно восстановить всё сохранённое.</p>
+</div>
+</div>
+</div>
+</section><section class="beta-section" id="install">
+<div class="shell card">
+<div class="eyebrow">Установка</div>
+<h2>Как установить</h2>
+<p class="lead">На этапе бета-тестирования приложение распространяется напрямую как APK (установочный пакет Android), без Google Play.</p>
+<div class="steps">
+<div class="step"><span class="n">01</span><b>Скачать APK</b><p>Нажмите кнопку загрузки вверху страницы.</p></div>
+<div class="step"><span class="n">02</span><b>Открыть файл</b><p>Найдите загруженный APK на телефоне и откройте его.</p></div>
+<div class="step key"><span class="n">03</span><b>Разрешить установку</b><p>Если Android попросит разрешение на установку из этого источника — разрешите.</p></div>
+<div class="step key"><span class="n">04</span><b>Установить</b><p>Подтвердите установку приложения. Если появится Play Защита — см. ниже.</p></div>
+<div class="step"><span class="n">05</span><b>Запустить</b><p>Откройте Luman Links и пользуйтесь им в обычных сценариях.</p></div>
+</div>
+<h3 class="see-head">Что вы увидите по дороге</h3>
+<p class="see-lead">Android может несколько раз переспросить, уверены ли вы. Так он ведёт себя с любым приложением не из Google Play. Точные слова зависят от модели телефона и версии Android, но смысл везде один.</p>
+<div class="see-grid">
+<article class="see">
+<div class="see-tag">При скачивании</div>
+<div aria-hidden="true" class="phone">
+<div class="dlg">
+<div class="ic">!</div>
+<b>Файл может быть опасен</b>
+<small>Скачать файл luman-links….apk всё равно?</small>
+<div class="btns"><span>Отмена</span><span class="hit">Скачать</span></div>
+</div>
+</div>
+<div class="phone-cap">схема · заменим скриншотом</div>
+<h3>Браузер предупреждает о файле</h3>
+<p>Браузер так помечает любой APK. <span class="do">Нажмите «Скачать».</span></p>
+</article>
+<article class="see">
+<div class="see-tag">Шаг 03 · один раз</div>
+<div aria-hidden="true" class="phone">
+<div class="dlg">
+<b>Установка неизвестных приложений</b>
+<small>Chrome</small>
+<div class="toggle-row">Разрешить установку из этого источника <span class="tg"></span></div>
+</div>
+</div>
+<div class="phone-cap">схема · заменим скриншотом</div>
+<h3>Разрешение для браузера</h3>
+<p>Android откроет настройки. <span class="do">Включите переключатель «Разрешить из этого источника»</span> и вернитесь назад. Разрешение даётся браузеру один раз; при следующих обновлениях его уже не спросят.</p>
+</article>
+<article class="see">
+<div class="see-tag">Шаг 04 · Play Защита</div>
+<div aria-hidden="true" class="phone">
+<div class="dlg">
+<div class="ic">✓</div>
+<b>Приложение не проверено</b>
+<small>Play Защите неизвестен разработчик этого приложения.</small>
+<div class="btns"><span>ОК</span><span class="hit">Подробнее</span></div>
+</div>
+</div>
+<div class="phone-cap">схема · заменим скриншотом</div>
+<h3>Предупреждение Play Защиты</h3>
+<p><span class="do">Нажмите «Подробнее», затем «Всё равно установить».</span> Если телефон предложит отправить приложение на проверку, можно согласиться или отказаться: на установку это не влияет.</p>
+</article>
+</div>
+<div class="why">
+<div class="why-mark">Почему это нормально</div>
+<div>
+<h3>«Не проверено» значит «не из Google Play», а не «опасно»</h3>
+<p>Google Play Защита (Play Protect) проверяет приложения, которые проходят через магазин Google. Luman Links на время беты раздаётся напрямую, поэтому у Google нет о нём сведений, и система честно говорит об этом.</p>
+<p>Убедиться, что у вас именно наш файл, можно двумя способами. Скачивайте только с этой страницы. Если хотите, сверьте контрольную сумму SHA-256 (как это сделать — ниже). Все версии подписаны одним и тем же ключом, поэтому обновление встанет поверх только в том случае, если оно действительно от нас.</p>
+</div>
+</div>
+<h3 class="see-head">Когда выйдет новая версия</h3>
+<p class="see-lead">Автоматических обновлений нет. О новой версии мы напишем в Telegram-группе беты, а файл появится на этой странице.</p>
+<div class="update-flow">
+<div class="step"><span class="n">01</span><b>Скачайте новый APK</b><p>С этой страницы, кнопкой вверху. Номер версии есть в имени файла.</p></div>
+<div class="step"><span class="n">02</span><b>Откройте и нажмите «Обновить»</b><p>Приложение обновится, всё сохранённое останется.</p></div>
+<div class="step warn"><span class="n">!</span><b>Не удаляйте старую версию</b><p>Удаление стирает все данные. Новая версия ставится прямо поверх старой.</p></div>
+</div>
+<details class="verify" id="verify">
+<summary>Как сверить SHA-256 (по желанию)</summary>
+<div class="verify-body">
+<p>SHA-256 — это «отпечаток» файла: длинная строка, которая меняется, если в файле изменится хоть один байт. Если отпечаток вашего файла совпадает с опубликованным вверху страницы, файл тот же, что выложили мы.</p>
+<p>На компьютере с Windows, в папке со скачанным файлом:</p>
+<pre><code id="cmdWin">certutil -hashfile luman-links.apk SHA256</code></pre>
+<p>На macOS или Linux:</p>
+<pre><code id="cmdNix">shasum -a 256 luman-links.apk</code></pre>
+<p>На телефоне подойдёт любое приложение-калькулятор хеш-сумм из Google Play. Сравните результат со строкой SHA-256 у кнопки скачивания.</p>
+</div>
+</details>
+</div>
+</section><section class="beta-section" id="versions">
+<div class="shell card">
+<div class="eyebrow">Список изменений</div>
+<h2>Версии</h2>
+<p class="lead">Каждая сборка, выложенная на этой странице, — с номером и тем, что в ней поменялось. Сверху — актуальная.</p>
+<div class="versions" id="versionList"></div>
+</div>
+</section><section class="beta-section" id="feedback">
+<div class="shell card">
+<div class="disclosure-row">
+<div>
+<div class="eyebrow">После того как попробуете</div>
+<h2>Расскажите, оказался ли Luman Links полезен</h2>
+<p class="lead" style="margin-bottom:0">Подробные вопросы не мешают установке — они скрыты и нужны уже после реального использования.</p>
+</div>
+<button aria-controls="feedbackPanel" aria-expanded="false" class="disclosure-btn" id="feedbackToggle">Вопросы для обратной связи <span data-chevron="">↓</span></button>
+</div>
+<div class="disclosure-panel" id="feedbackPanel">
+<div class="question-grid">
+<div class="question"><b>Был ли Luman Links вам полезен?</b><span>Возникли ли ситуации, где он оказался удобнее привычных закладок, сохранённых сообщений или заметок?</span></div>
+<div class="question"><b>Для чего вы его использовали?</b><span>Какие материалы вы сохраняли и что хотели сделать с ними позже?</span></div>
+<div class="question"><b>Хватило ли возможностей?</b><span>Какие функции помогли, а чего явно не хватило для реальной работы?</span></div>
+<div class="question"><b>Понятно ли было, что делать?</b><span>Где интерфейс оказался очевидным, а где пришлось останавливаться и разбираться?</span></div>
+<div class="question"><b>Хотелось ли вернуться?</b><span>Появился ли сценарий, в котором вы готовы использовать Luman Links регулярно?</span></div>
+<div class="question"><b>Что помешало?</b><span>Непонятность, лишние действия, отсутствие нужной функции, техническая ошибка или что-то ещё?</span></div>
+</div>
+</div>
+<div class="tg-card">
+<div>
+<h3>Telegram-группа беты</h3>
+<p>Там выходят новости о версиях и туда же пишутся отзывы. Если что-то сломалось, опишите это по шаблону справа — так мы быстрее найдём причину.</p>
+<a class="tg-link" href="#" id="tgLink" rel="noopener" target="_blank">Открыть группу в Telegram</a>
+</div>
+<div class="template">
+<div><b>Что делал:</b> <span>нажал «Сохранить» на карточке…</span></div>
+<div><b>Что ожидал:</b> <span>карточка останется вверху…</span></div>
+<div><b>Что случилось:</b> <span>карточка исчезла…</span></div>
+<div><b>Телефон:</b> <span>модель и версия Android</span></div>
+<div><b>Скриншот:</b> <span>если можно — приложите</span></div>
+</div>
+</div>
+</div>
+</section></div>
+
+
+
+
+
+
+
+
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div class="footer-brand">
+<a class="logo" href="index.html"><svg aria-hidden="true" class="logo-svg" focusable="false" viewbox="0 0 116 117"><path d="M57.9,100.0 L49.3,107.8 L49.0,109.3 L55.3,112.8 L58.4,113.5 L66.3,109.8 L66.8,108.4 L60.3,101.7Z M43.7,91.7 L35.7,91.9 L34.1,92.7 L35.2,96.4 L38.9,103.6 L42.9,102.7 L48.3,100.6 L50.4,99.2 L50.3,98.4 L46.3,93.8Z M71.6,91.8 L65.6,97.9 L65.3,99.4 L72.8,102.7 L76.6,103.6 L77.7,102.3 L81.3,94.0 L81.4,92.7 L80.4,92.0Z M16.0,87.8 L15.5,88.5 L17.9,95.8 L19.1,97.7 L24.2,99.9 L28.3,100.8 L28.9,99.6 L28.6,88.3 L27.4,87.6Z M99.6,87.8 L88.5,87.5 L87.1,88.3 L86.8,99.9 L87.4,100.8 L88.5,100.9 L95.0,98.5 L97.1,97.0 L100.0,89.3Z M51.7,89.0 L51.5,90.3 L57.9,96.2 L62.6,92.0 L64.2,89.8 L63.5,88.8 L58.4,86.6Z M65.6,77.8 L62.3,81.4 L62.1,82.5 L63.0,83.4 L68.6,84.8 L69.7,84.0 L71.8,78.7 L70.4,77.8Z M43.6,78.6 L46.7,84.7 L48.9,84.6 L53.4,82.5 L53.3,81.5 L50.3,77.7 L44.8,77.9Z M31.4,76.0 L30.8,76.9 L31.2,84.8 L32.1,85.3 L39.3,85.4 L40.1,85.0 L40.3,83.6 L38.3,78.2 L33.0,76.0Z M84.2,75.8 L77.1,78.3 L75.2,83.8 L75.6,85.2 L84.5,85.0 L84.9,77.3Z M99.3,65.5 L97.8,65.8 L91.3,71.7 L91.4,81.1 L91.8,81.8 L93.1,81.9 L103.3,76.9 L103.1,74.8Z M16.4,65.4 L15.6,66.3 L12.8,73.6 L12.1,76.8 L13.5,78.0 L23.2,82.1 L24.2,80.6 L24.2,71.8 L20.9,68.4 L17.6,65.7Z M81.9,62.6 L80.4,63.0 L77.2,65.9 L76.9,68.5 L77.6,72.4 L80.9,71.3 L84.1,69.4 L84.1,67.7 L82.6,63.2Z M33.6,62.6 L31.7,66.8 L31.6,69.5 L32.8,70.5 L37.9,72.2 L38.6,71.1 L38.4,66.1 L35.1,63.0Z M89.0,51.5 L87.7,53.3 L85.6,58.4 L88.1,64.1 L89.6,64.8 L95.1,59.7 L95.7,57.8 L89.9,51.6Z M25.9,51.5 L20.2,57.3 L19.8,58.5 L20.9,60.3 L25.9,64.8 L26.8,64.9 L28.2,62.9 L30.0,58.1 L27.5,52.6 L26.7,51.6Z M107.8,49.4 L100.0,57.4 L99.8,58.4 L100.5,59.9 L106.9,66.8 L108.5,67.4 L110.4,64.3 L112.2,59.7 L112.5,57.4 L109.4,50.1Z M7.1,49.3 L6.3,49.9 L3.0,58.3 L6.3,66.6 L7.8,67.2 L15.3,59.6 L15.7,57.9 L8.4,49.8Z M77.9,44.4 L77.1,45.5 L77.0,50.4 L79.6,52.9 L82.1,53.9 L82.9,53.0 L84.2,49.0 L84.2,47.3 L80.1,44.9Z M37.7,44.4 L35.8,44.6 L31.3,47.5 L32.7,52.9 L33.8,54.0 L35.1,53.6 L38.5,50.7 L38.5,45.8Z M91.9,34.9 L91.2,35.8 L91.1,44.7 L97.6,50.8 L98.4,51.0 L100.0,49.0 L103.2,39.9 L101.9,38.6 L93.8,35.1Z M23.4,34.7 L13.6,38.6 L12.5,39.6 L12.5,40.8 L15.5,48.6 L17.0,50.8 L18.3,50.5 L23.3,46.1 L24.4,44.5 L24.3,35.9Z M46.6,32.1 L43.8,38.2 L45.7,38.9 L50.5,38.6 L52.9,35.6 L53.1,33.8 L48.4,32.0Z M62.6,33.7 L62.6,35.4 L65.6,38.7 L70.7,38.8 L71.8,38.1 L69.6,32.8 L68.6,31.9 L67.2,31.9Z M75.4,31.5 L75.1,33.1 L77.2,38.3 L81.9,40.6 L84.3,41.0 L84.9,40.0 L84.6,31.9 L83.6,31.3Z M39.9,31.5 L32.2,31.3 L31.1,31.8 L30.8,40.0 L31.3,40.8 L33.8,40.6 L38.0,38.7 L40.4,32.8Z M57.6,20.5 L51.7,25.9 L51.3,27.3 L56.0,30.1 L58.0,30.7 L63.5,28.1 L64.3,26.7 L58.7,20.7Z M87.4,16.3 L87.0,17.1 L87.4,28.8 L88.4,29.2 L99.4,29.0 L99.9,27.3 L97.0,19.8 L95.7,18.8 L88.8,16.2Z M28.1,16.3 L27.4,16.1 L19.6,18.8 L18.7,19.6 L15.6,27.5 L16.1,28.9 L27.4,29.1 L28.3,28.5 L28.6,17.0Z M39.1,13.2 L37.9,14.5 L34.1,24.1 L35.3,24.9 L44.2,25.0 L50.4,18.3 L50.5,17.5 L41.3,13.4Z M65.2,17.6 L65.9,19.2 L71.3,24.9 L73.7,25.3 L80.9,24.8 L81.5,24.3 L77.6,14.2 L76.5,13.1 L75.6,13.0 L67.7,16.0Z M57.8,3.2 L49.3,6.9 L48.7,7.9 L49.2,9.0 L56.9,16.4 L58.4,16.9 L66.7,8.8 L66.9,7.7 L65.9,6.7Z" fill="currentColor"></path></svg><span>INDRASNET</span></a>
+<span>Децентрализованная система эволюции идей</span>
+</div>
+<nav aria-label="Ссылки в подвале" class="footer-nav">
+<a href="index.html#system">Система</a>
+<a href="index.html#products">Продукты</a>
+<a href="luman-links-beta.html">Luman Links Beta</a>
+<a href="https://indrasnet.ee" rel="noopener" target="_blank">indrasnet.ee ↗</a>
+</nav>
+<div class="footer-bottom"><span>indrasnet.eu</span><span>Luman Links · Beta Testing · <span data-r="versionLabel"></span></span></div>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ================================================================
+   ДАННЫЕ СБОРКИ берутся автоматически из выпусков (Releases) GitHub.
+   Выпуск Luman Links: тег вида ll-v0.9.0-b2, в выпуске один файл .apk,
+   в описании выпуска — список изменений строками «- ...».
+   Страницу при выпуске НЕ править.
+   RELEASES_REPO — где лежат выпуски (меняется только при переносе репозитория).
+   TELEGRAM_URL — ссылка-приглашение в группу беты ("#" — кнопка неактивна).
+   FALLBACK — запасные данные на случай, если GitHub не ответил (можно оставить пустым).
+   ================================================================ */
+const RELEASES_REPO = "pbrahmanov-droid/indrasnet-site";
+const TAG_PREFIX = "ll-";
+const TELEGRAM_URL = "#";
+const FALLBACK = [];
+
+(function(){
+  const months = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+  const fmtDate = d => { const [y,m,dd] = d.slice(0,10).split("-").map(Number); return dd + " " + months[m-1] + " " + y; };
+  const vLabel = r => "v" + r.versionName + " · сборка " + r.versionCode;
+  const releasesPage = "https://github.com/" + RELEASES_REPO + "/releases";
+  const btn = document.getElementById("dlBtn");
+  const list = document.getElementById("versionList");
+  const copyBtn = document.getElementById("copyHash");
+  let curSha = "";
+
+  function setFields(f){ document.querySelectorAll("[data-r]").forEach(el => { if (f[el.dataset.r] != null) el.textContent = f[el.dataset.r]; }); }
+
+  function parseRelease(rel){
+    const m = /^ll-v(\d+\.\d+\.\d+)-b(\d+)$/.exec(rel.tag_name || "");
+    const apk = (rel.assets || []).find(a => /\.apk$/i.test(a.name));
+    if (!m || !apk || rel.draft || rel.prerelease) return null;
+    const changes = String(rel.body || "").split(/\r?\n/).map(s => s.replace(/^\s*[-*•]\s*/, "").trim()).filter(Boolean);
+    return {
+      versionName: m[1], versionCode: Number(m[2]), date: rel.published_at || rel.created_at,
+      file: apk.name, url: apk.browser_download_url, sizeMB: apk.size / 1048576,
+      sha256: (apk.digest || "").replace(/^sha256:/, ""), changes, page: rel.html_url
+    };
+  }
+
+  function render(rels){
+    const cur = rels[0];
+    curSha = cur.sha256;
+    setFields({
+      versionLabel: vLabel(cur), file: cur.file, dateLabel: fmtDate(cur.date),
+      sha256: cur.sha256 || "см. страницу выпуска на GitHub",
+      size: "· " + cur.sizeMB.toFixed(1).replace(".", ",") + " МБ"
+    });
+    btn.href = cur.url; btn.removeAttribute("aria-disabled"); btn.classList.remove("disabled");
+    copyBtn.hidden = !cur.sha256;
+    document.getElementById("cmdWin").textContent = "certutil -hashfile " + cur.file + " SHA256";
+    document.getElementById("cmdNix").textContent = "shasum -a 256 " + cur.file;
+    list.textContent = "";
+    rels.forEach((r, i) => {
+      const row = document.createElement("div"); row.className = "ver";
+      const id = document.createElement("div"); id.className = "ver-id";
+      const b = document.createElement("b"); b.textContent = "v" + r.versionName;
+      const s = document.createElement("span"); s.className = "mono"; s.textContent = "сборка " + r.versionCode + " · " + fmtDate(r.date);
+      id.append(b, s);
+      if (i === 0) { const st = document.createElement("span"); st.className = "status live"; st.textContent = "Актуальная"; id.append(st); }
+      const ul = document.createElement("ul");
+      (r.changes.length ? r.changes : ["Список изменений не указан."]).forEach(c => { const li = document.createElement("li"); li.textContent = c; ul.appendChild(li); });
+      row.append(id, ul); list.appendChild(row);
+    });
+  }
+
+  function renderEmpty(reason){
+    // reason: "none" — выпусков ещё нет; "error" — GitHub не ответил
+    const soon = reason === "none";
+    setFields({
+      versionLabel: soon ? "готовится" : "—", file: "—", dateLabel: "—",
+      sha256: soon ? "появится вместе с первой сборкой" : "см. страницу выпусков на GitHub",
+      size: soon ? "· скоро" : ""
+    });
+    copyBtn.hidden = true;
+    if (soon) { btn.href = "#"; btn.setAttribute("aria-disabled", "true"); btn.classList.add("disabled"); btn.addEventListener("click", e => { if (btn.classList.contains("disabled")) e.preventDefault(); }); }
+    else { btn.href = releasesPage; }
+    list.textContent = "";
+    const p = document.createElement("p"); p.className = "muted";
+    p.textContent = soon ? "Первая сборка появится здесь в ближайшее время." : "Не удалось получить список версий. Все сборки доступны на странице выпусков GitHub.";
+    list.appendChild(p);
+  }
+
+  copyBtn.addEventListener("click", () => {
+    const done = () => { copyBtn.textContent = "Скопировано"; setTimeout(() => copyBtn.textContent = "Копировать", 1800); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById("hash")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent = "Выделено"; };
+    try { navigator.clipboard.writeText(curSha).then(done, fallback); } catch (e) { fallback(); }
+  });
+
+  const tg = document.getElementById("tgLink");
+  if (TELEGRAM_URL === "#") tg.addEventListener("click", e => e.preventDefault()); else tg.href = TELEGRAM_URL;
+
+  const qrEl = document.getElementById("qr");
+  const pageUrl = location.href.split("#")[0];
+  if (qrEl && window.QRCode && /^https?:/.test(pageUrl)) new QRCode(qrEl, { text: pageUrl, width: 146, height: 146, colorDark: "#182026", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M });
+
+  btn.href = releasesPage;  // пока ждём ответ GitHub — ведёт на страницу выпусков
+  fetch("https://api.github.com/repos/" + RELEASES_REPO + "/releases?per_page=30", { headers: { "Accept": "application/vnd.github+json" } })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(all => {
+      const rels = all.filter(r => (r.tag_name || "").startsWith(TAG_PREFIX)).map(parseRelease).filter(Boolean);
+      rels.length ? render(rels) : (FALLBACK.length ? render(FALLBACK) : renderEmpty("none"));
+    })
+    .catch(() => { FALLBACK.length ? render(FALLBACK) : renderEmpty("error"); });
+})();
+
+/* общий скрипт сайта (из макета) */
+const stages = ["idea","sandbox","project"];
+function showStage(stage, opts={}) {
+  if (!stages.includes(stage)) return;
+  const scroll = opts.scroll ?? true;
+  const updateHash = opts.updateHash ?? true;
+  document.querySelectorAll("[data-stage]").forEach(btn => {
+    const active = btn.dataset.stage === stage;
+    btn.classList.toggle("active", active);
+    btn.setAttribute("aria-expanded", active ? "true" : "false");
+  });
+  document.querySelectorAll("[data-panel]").forEach(panel => { panel.hidden = panel.dataset.panel !== stage; });
+  if (updateHash && location.hash !== "#" + stage) history.pushState(null, "", "#" + stage);
+  if (scroll) document.getElementById("details")?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.querySelectorAll("[data-stage]").forEach(btn => btn.addEventListener("click", () => showStage(btn.dataset.stage)));
+function syncHash() { const h = location.hash.replace("#",""); if (stages.includes(h)) showStage(h,{scroll:false,updateHash:false}); }
+window.addEventListener("hashchange", syncHash);
+syncHash();
+
+const disclosure = document.getElementById("feedbackToggle");
+const feedbackPanel = document.getElementById("feedbackPanel");
+if (disclosure && feedbackPanel) {
+  disclosure.addEventListener("click", () => {
+    const open = feedbackPanel.classList.toggle("open");
+    disclosure.setAttribute("aria-expanded", open ? "true" : "false");
+    disclosure.querySelector("[data-chevron]").textContent = open ? "↑" : "↓";
+  });
+}
+
+
+// Mobile download page: reveal operational beta details on demand.
+const betaDetailsToggle = document.getElementById("betaDetailsToggle");
+const betaDetails = document.getElementById("beta-details");
+if (betaDetailsToggle && betaDetails) {
+  betaDetailsToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    const opening = betaDetails.hasAttribute("hidden");
+    if (opening) {
+      betaDetails.removeAttribute("hidden");
+      betaDetailsToggle.textContent = "Скрыть подробности";
+      betaDetailsToggle.setAttribute("aria-expanded", "true");
+      betaDetails.scrollIntoView({behavior:"smooth", block:"start"});
+    } else {
+      betaDetails.setAttribute("hidden", "");
+      betaDetailsToggle.textContent = "Установка, версии и обратная связь";
+      betaDetailsToggle.setAttribute("aria-expanded", "false");
+      document.getElementById("download")?.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+  });
+}
+</script>
+</body>
+</html>
