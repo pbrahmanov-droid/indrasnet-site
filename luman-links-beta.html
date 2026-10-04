@@ -461,7 +461,14 @@ html, body { color-scheme: only light; }
   .more-link{width:100%}
   .site-header .nav-links{display:none!important}
 }
-</style></head>
+</style>
+<style id="install-shots">
+.see-grid.shots{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.shot{display:block;width:100%;aspect-ratio:3/4;object-fit:contain;background:#141414;border-radius:16px;border:1px solid var(--line)}
+.verify-body pre code{word-break:break-all;white-space:pre-wrap}
+@media (max-width:760px){.shot{aspect-ratio:auto;max-height:420px}}
+</style>
+</head>
 <body>
 <div class="draft-bar" role="note">
 <div class="shell"><b>Черновик макета.</b> Данные сборки на этой странице — примеры: номер версии, имя файла, ссылка, SHA-256, дата и список изменений. Они подставляются при каждом релизе в одном месте, в блоке <span class="mono">RELEASES</span> в конце файла. Примеры отмечены этим цветом.</div>
@@ -494,7 +501,7 @@ html, body { color-scheme: only light; }
 <div class="hash-wrap"><span class="hash ph" data-r="sha256" id="hash"></span><button class="copy-btn" id="copyHash" type="button">Копировать</button></div>
 </dd></div>
 </dl>
-<div class="https-note"><span aria-hidden="true" class="lock">
+<div class="https-note"><span aria-hidden="true" class="lock"></span>Файл скачивается по защищённому соединению (HTTPS) со страницы выпусков на GitHub. Android · тестовая версия.</div>
 </div>
 <aside class="qr-card">
 <div aria-label="QR-код этой страницы" class="qr-box" id="qr"></div>
@@ -533,49 +540,13 @@ html, body { color-scheme: only light; }
 <div class="step"><span class="n">05</span><b>Запустить</b><p>Откройте Luman Links и пользуйтесь им в обычных сценариях.</p></div>
 </div>
 <h3 class="see-head">Что вы увидите по дороге</h3>
-<p class="see-lead">Android может несколько раз переспросить, уверены ли вы. Так он ведёт себя с любым приложением не из Google Play. Точные слова зависят от модели телефона и версии Android, но смысл везде один.</p>
-<div class="see-grid">
-<article class="see">
-<div class="see-tag">При скачивании</div>
-<div aria-hidden="true" class="phone">
-<div class="dlg">
-<div class="ic">!</div>
-<b>Файл может быть опасен</b>
-<small>Скачать файл luman-links….apk всё равно?</small>
-<div class="btns"><span>Отмена</span><span class="hit">Скачать</span></div>
-</div>
-</div>
-<div class="phone-cap">схема · заменим скриншотом</div>
-<h3>Браузер предупреждает о файле</h3>
-<p>Браузер так помечает любой APK. <span class="do">Нажмите «Скачать».</span></p>
-</article>
-<article class="see">
-<div class="see-tag">Шаг 03 · один раз</div>
-<div aria-hidden="true" class="phone">
-<div class="dlg">
-<b>Установка неизвестных приложений</b>
-<small>Chrome</small>
-<div class="toggle-row">Разрешить установку из этого источника <span class="tg"></span></div>
-</div>
-</div>
-<div class="phone-cap">схема · заменим скриншотом</div>
-<h3>Разрешение для браузера</h3>
-<p>Android откроет настройки. <span class="do">Включите переключатель «Разрешить из этого источника»</span> и вернитесь назад. Разрешение даётся браузеру один раз; при следующих обновлениях его уже не спросят.</p>
-</article>
-<article class="see">
-<div class="see-tag">Шаг 04 · Play Защита</div>
-<div aria-hidden="true" class="phone">
-<div class="dlg">
-<div class="ic">✓</div>
-<b>Приложение не проверено</b>
-<small>Play Защите неизвестен разработчик этого приложения.</small>
-<div class="btns"><span>ОК</span><span class="hit">Подробнее</span></div>
-</div>
-</div>
-<div class="phone-cap">схема · заменим скриншотом</div>
-<h3>Предупреждение Play Защиты</h3>
-<p><span class="do">Нажмите «Подробнее», затем «Всё равно установить».</span> Если телефон предложит отправить приложение на проверку, можно согласиться или отказаться: на установку это не влияет.</p>
-</article>
+<p class="see-lead">Android переспросит несколько раз — так он ведёт себя с любым приложением не из Google Play. Ниже — настоящие экраны телефона Xiaomi; на других телефонах слова немного отличаются, но порядок тот же. Если браузер при скачивании предупредит, что файл может быть опасен, — нажмите «Скачать».</p>
+<div class="see-grid shots">
+<article class="see"><div class="see-tag">Шаг 03 · один раз</div><img class="shot" src="assets/install/01-razreshenie.webp" alt="Окно: Приложению не разрешена установка APK — кнопки Не сейчас и Настройки" loading="lazy"><h3>Разрешение на установку</h3><p><span class="do">Нажмите «Настройки».</span></p></article>
+<article class="see"><div class="see-tag">Шаг 03 · один раз</div><img class="shot" src="assets/install/02-pereklyuchatel.webp" alt="Настройки: переключатель Разрешить установку из этого источника включён" loading="lazy"><h3>Включите переключатель</h3><p><span class="do">«Разрешить установку из этого источника»</span> — и вернитесь назад. При следующих обновлениях это уже не спросят.</p></article>
+<article class="see"><div class="see-tag">Шаг 04</div><img class="shot" src="assets/install/03-ustanovshchik.webp" alt="Выбор приложения: WPS Office и Установщик пакетов" loading="lazy"><h3>Выберите установщик</h3><p><span class="do">Нажмите «Установщик пакетов»</span>, а не WPS Office или другое приложение для документов — они APK не устанавливают.</p></article>
+<article class="see"><div class="see-tag">Шаг 04</div><img class="shot" src="assets/install/04-obnovit.webp" alt="Окно Luman Links: Обновить приложение? — Отмена и Обновить" loading="lazy"><h3>«Установить» или «Обновить»</h3><p>В первый раз будет «Установить», при новой версии — <span class="do">«Обновить»</span>. Данные при обновлении сохраняются.</p></article>
+<article class="see"><div class="see-tag">Проверка телефона</div><img class="shot" src="assets/install/05-proverka.webp" alt="Проверка безопасности Xiaomi: угрозы не обнаружены, кнопка Открыть" loading="lazy"><h3>Проверка безопасности</h3><p>Xiaomi проверяет приложение сам — дождитесь и нажмите <span class="do">«Открыть»</span>. На других телефонах может появиться Play Защита: <span class="do">«Подробнее» → «Всё равно установить»</span>.</p></article>
 </div>
 <div class="why">
 <div class="why-mark">Почему это нормально</div>
@@ -595,12 +566,14 @@ html, body { color-scheme: only light; }
 <details class="verify" id="verify">
 <summary>Как сверить SHA-256 (по желанию)</summary>
 <div class="verify-body">
-<p>SHA-256 — это «отпечаток» файла: длинная строка, которая меняется, если в файле изменится хоть один байт. Если отпечаток вашего файла совпадает с опубликованным вверху страницы, файл тот же, что выложили мы.</p>
+<p>SHA-256 — это «отпечаток» файла: длинная строка, которая меняется, если в файле изменится хоть один байт. Если отпечаток вашего файла совпадает с опубликованным ниже, файл тот же, что выложили мы.</p>
+<p>Отпечаток текущей сборки (<span data-r="file"></span>):</p>
+<pre><code data-r="sha256"></code></pre>
 <p>На компьютере с Windows, в папке со скачанным файлом:</p>
 <pre><code id="cmdWin">certutil -hashfile luman-links.apk SHA256</code></pre>
 <p>На macOS или Linux:</p>
 <pre><code id="cmdNix">shasum -a 256 luman-links.apk</code></pre>
-<p>На телефоне подойдёт любое приложение-калькулятор хеш-сумм из Google Play. Сравните результат со строкой SHA-256 у кнопки скачивания.</p>
+<p>На телефоне подойдёт любое приложение-калькулятор хеш-сумм из Google Play. Сравните результат со строкой отпечатка выше.</p>
 </div>
 </details>
 </div>
