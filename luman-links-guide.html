@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Luman Links — руководство пользователя | IndrasNet</title>
+<meta content="Руководство пользователя Luman Links." name="description"/>
+<link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20116%20117%22%3E%3Cpath%20fill%3D%22%232f354f%22%20d%3D%22M57.9%2C100.0%20L49.3%2C107.8%20L49.0%2C109.3%20L55.3%2C112.8%20L58.4%2C113.5%20L66.3%2C109.8%20L66.8%2C108.4%20L60.3%2C101.7Z%20M43.7%2C91.7%20L35.7%2C91.9%20L34.1%2C92.7%20L35.2%2C96.4%20L38.9%2C103.6%20L42.9%2C102.7%20L48.3%2C100.6%20L50.4%2C99.2%20L50.3%2C98.4%20L46.3%2C93.8Z%20M71.6%2C91.8%20L65.6%2C97.9%20L65.3%2C99.4%20L72.8%2C102.7%20L76.6%2C103.6%20L77.7%2C102.3%20L81.3%2C94.0%20L81.4%2C92.7%20L80.4%2C92.0Z%20M16.0%2C87.8%20L15.5%2C88.5%20L17.9%2C95.8%20L19.1%2C97.7%20L24.2%2C99.9%20L28.3%2C100.8%20L28.9%2C99.6%20L28.6%2C88.3%20L27.4%2C87.6Z%20M99.6%2C87.8%20L88.5%2C87.5%20L87.1%2C88.3%20L86.8%2C99.9%20L87.4%2C100.8%20L88.5%2C100.9%20L95.0%2C98.5%20L97.1%2C97.0%20L100.0%2C89.3Z%20M51.7%2C89.0%20L51.5%2C90.3%20L57.9%2C96.2%20L62.6%2C92.0%20L64.2%2C89.8%20L63.5%2C88.8%20L58.4%2C86.6Z%20M65.6%2C77.8%20L62.3%2C81.4%20L62.1%2C82.5%20L63.0%2C83.4%20L68.6%2C84.8%20L69.7%2C84.0%20L71.8%2C78.7%20L70.4%2C77.8Z%20M43.6%2C78.6%20L46.7%2C84.7%20L48.9%2C84.6%20L53.4%2C82.5%20L53.3%2C81.5%20L50.3%2C77.7%20L44.8%2C77.9Z%20M31.4%2C76.0%20L30.8%2C76.9%20L31.2%2C84.8%20L32.1%2C85.3%20L39.3%2C85.4%20L40.1%2C85.0%20L40.3%2C83.6%20L38.3%2C78.2%20L33.0%2C76.0Z%20M84.2%2C75.8%20L77.1%2C78.3%20L75.2%2C83.8%20L75.6%2C85.2%20L84.5%2C85.0%20L84.9%2C77.3Z%20M99.3%2C65.5%20L97.8%2C65.8%20L91.3%2C71.7%20L91.4%2C81.1%20L91.8%2C81.8%20L93.1%2C81.9%20L103.3%2C76.9%20L103.1%2C74.8Z%20M16.4%2C65.4%20L15.6%2C66.3%20L12.8%2C73.6%20L12.1%2C76.8%20L13.5%2C78.0%20L23.2%2C82.1%20L24.2%2C80.6%20L24.2%2C71.8%20L20.9%2C68.4%20L17.6%2C65.7Z%20M81.9%2C62.6%20L80.4%2C63.0%20L77.2%2C65.9%20L76.9%2C68.5%20L77.6%2C72.4%20L80.9%2C71.3%20L84.1%2C69.4%20L84.1%2C67.7%20L82.6%2C63.2Z%20M33.6%2C62.6%20L31.7%2C66.8%20L31.6%2C69.5%20L32.8%2C70.5%20L37.9%2C72.2%20L38.6%2C71.1%20L38.4%2C66.1%20L35.1%2C63.0Z%20M89.0%2C51.5%20L87.7%2C53.3%20L85.6%2C58.4%20L88.1%2C64.1%20L89.6%2C64.8%20L95.1%2C59.7%20L95.7%2C57.8%20L89.9%2C51.6Z%20M25.9%2C51.5%20L20.2%2C57.3%20L19.8%2C58.5%20L20.9%2C60.3%20L25.9%2C64.8%20L26.8%2C64.9%20L28.2%2C62.9%20L30.0%2C58.1%20L27.5%2C52.6%20L26.7%2C51.6Z%20M107.8%2C49.4%20L100.0%2C57.4%20L99.8%2C58.4%20L100.5%2C59.9%20L106.9%2C66.8%20L108.5%2C67.4%20L110.4%2C64.3%20L112.2%2C59.7%20L112.5%2C57.4%20L109.4%2C50.1Z%20M7.1%2C49.3%20L6.3%2C49.9%20L3.0%2C58.3%20L6.3%2C66.6%20L7.8%2C67.2%20L15.3%2C59.6%20L15.7%2C57.9%20L8.4%2C49.8Z%20M77.9%2C44.4%20L77.1%2C45.5%20L77.0%2C50.4%20L79.6%2C52.9%20L82.1%2C53.9%20L82.9%2C53.0%20L84.2%2C49.0%20L84.2%2C47.3%20L80.1%2C44.9Z%20M37.7%2C44.4%20L35.8%2C44.6%20L31.3%2C47.5%20L32.7%2C52.9%20L33.8%2C54.0%20L35.1%2C53.6%20L38.5%2C50.7%20L38.5%2C45.8Z%20M91.9%2C34.9%20L91.2%2C35.8%20L91.1%2C44.7%20L97.6%2C50.8%20L98.4%2C51.0%20L100.0%2C49.0%20L103.2%2C39.9%20L101.9%2C38.6%20L93.8%2C35.1Z%20M23.4%2C34.7%20L13.6%2C38.6%20L12.5%2C39.6%20L12.5%2C40.8%20L15.5%2C48.6%20L17.0%2C50.8%20L18.3%2C50.5%20L23.3%2C46.1%20L24.4%2C44.5%20L24.3%2C35.9Z%20M46.6%2C32.1%20L43.8%2C38.2%20L45.7%2C38.9%20L50.5%2C38.6%20L52.9%2C35.6%20L53.1%2C33.8%20L48.4%2C32.0Z%20M62.6%2C33.7%20L62.6%2C35.4%20L65.6%2C38.7%20L70.7%2C38.8%20L71.8%2C38.1%20L69.6%2C32.8%20L68.6%2C31.9%20L67.2%2C31.9Z%20M75.4%2C31.5%20L75.1%2C33.1%20L77.2%2C38.3%20L81.9%2C40.6%20L84.3%2C41.0%20L84.9%2C40.0%20L84.6%2C31.9%20L83.6%2C31.3Z%20M39.9%2C31.5%20L32.2%2C31.3%20L31.1%2C31.8%20L30.8%2C40.0%20L31.3%2C40.8%20L33.8%2C40.6%20L38.0%2C38.7%20L40.4%2C32.8Z%20M57.6%2C20.5%20L51.7%2C25.9%20L51.3%2C27.3%20L56.0%2C30.1%20L58.0%2C30.7%20L63.5%2C28.1%20L64.3%2C26.7%20L58.7%2C20.7Z%20M87.4%2C16.3%20L87.0%2C17.1%20L87.4%2C28.8%20L88.4%2C29.2%20L99.4%2C29.0%20L99.9%2C27.3%20L97.0%2C19.8%20L95.7%2C18.8%20L88.8%2C16.2Z%20M28.1%2C16.3%20L27.4%2C16.1%20L19.6%2C18.8%20L18.7%2C19.6%20L15.6%2C27.5%20L16.1%2C28.9%20L27.4%2C29.1%20L28.3%2C28.5%20L28.6%2C17.0Z%20M39.1%2C13.2%20L37.9%2C14.5%20L34.1%2C24.1%20L35.3%2C24.9%20L44.2%2C25.0%20L50.4%2C18.3%20L50.5%2C17.5%20L41.3%2C13.4Z%20M65.2%2C17.6%20L65.9%2C19.2%20L71.3%2C24.9%20L73.7%2C25.3%20L80.9%2C24.8%20L81.5%2C24.3%20L77.6%2C14.2%20L76.5%2C13.1%20L75.6%2C13.0%20L67.7%2C16.0Z%20M57.8%2C3.2%20L49.3%2C6.9%20L48.7%2C7.9%20L49.2%2C9.0%20L56.9%2C16.4%20L58.4%2C16.9%20L66.7%2C8.8%20L66.9%2C7.7%20L65.9%2C6.7Z%22/%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<script>document.documentElement.className="js";</script>
+<style>
+/* ===== Общий стиль сайта — как на странице беты ===== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{
+  color-scheme:only light;
+  --bg:#f3f5f4;--bg-2:#eef2f4;--panel:rgba(255,255,255,.78);--panel-solid:#fbfcfc;
+  --ink:#182026;--muted:#667078;--line:rgba(24,32,38,.13);--line-strong:rgba(24,32,38,.28);
+  --accent-soft:#e5ebee;--brand:#2f354f;
+  --max:1160px;--radius:26px;--shadow:0 18px 60px rgba(27,40,48,.07);
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --dur:.24s;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+main{overflow-x:clip}
+body{
+  margin:0;font-family:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);line-height:1.6;overflow-wrap:break-word;background-color:var(--bg);
+  background-image:
+    radial-gradient(circle at 12% 4%, rgba(216,229,236,.95), transparent 34rem),
+    radial-gradient(circle at 88% 16%, rgba(239,233,220,.9), transparent 30rem),
+    linear-gradient(180deg,var(--bg) 0%,#f7f7f4 48%,var(--bg-2) 100%);
+  background-attachment:fixed;
+}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.shell{width:min(calc(100% - 36px),var(--max));margin:0 auto}
+.eyebrow{font-size:12px;line-height:1;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+
+/* шапка и подвал */
+.site-header{border-bottom:1px solid rgba(24,32,38,.08);background:rgba(244,246,246,.78)}
+.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding:8px 0}
+.logo{display:flex;flex-direction:column;align-items:center;gap:5px;letter-spacing:.32em;font-size:10.5px;font-weight:600;line-height:1;color:var(--brand);text-decoration:none;white-space:nowrap}
+.logo span{margin-right:-.32em}
+.logo-svg{width:34px;height:34px;flex:none;color:var(--brand)}
+.nav-links{display:flex;gap:6px 22px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+.site-footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);font-size:13px;margin-top:40px}
+
+/* ===== Первый экран ===== */
+.hero{padding:52px 0 26px}
+.hero h1{font-size:clamp(40px,8vw,76px);line-height:.96;letter-spacing:-.035em;margin:12px 0 14px;font-weight:800}
+.hero .sub{font-size:clamp(18px,2.4vw,22px);color:var(--muted);margin:0;max-width:40ch;line-height:1.45}
+.intro-list{list-style:none;margin:0;padding:0}
+.intro-item{border-top:1px solid var(--line)}
+.intro-item:first-child{border-top:0}
+.intro-link{
+  display:grid;grid-template-columns:1fr 18px;gap:14px;align-items:center;
+  padding:16px 14px 16px 16px;margin:0 -16px;border-radius:18px;text-decoration:none;
+  border:1px solid transparent;transition:background var(--dur) ease,border-color var(--dur) ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.intro-text{font-size:17px;line-height:1.6}
+.intro-cue{width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.45;transition:opacity var(--dur) ease,transform var(--dur) ease}
+.intro-link:hover{background:rgba(255,255,255,.55)}
+.intro-link:hover .intro-cue,.intro-link:focus-visible .intro-cue{opacity:1;transform:translateX(2px)}
+.intro-link:focus-visible{outline-offset:0}
+.intro-link[aria-current="true"]{background:#fff;border-color:var(--ink);box-shadow:var(--shadow)}
+.intro-link[aria-current="true"] .intro-cue{opacity:1;stroke:var(--ink)}
+.intro-link.was{background:rgba(255,255,255,.62);border-color:var(--line-strong)}
+.motto{margin:26px 0 0;padding:20px 22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);font-size:18px;line-height:1.5}
+.full-link{
+  display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:50px;padding:0 22px;
+  border-radius:16px;background:var(--ink);color:#fff;font-weight:800;text-decoration:none;
+}
+.full-link:hover{transform:translateY(-2px)}
+.full-link{transition:transform .15s ease}
+
+/* ===== Текст руководства ===== */
+.guide h2{font-size:clamp(26px,4vw,36px);line-height:1.12;margin:0 0 14px;letter-spacing:-.01em}
+.guide h3{font-size:clamp(20px,2.6vw,24px);line-height:1.22;margin:34px 0 10px}
+.guide h4{font-size:17px;margin:26px 0 8px}
+.guide p,.guide li{font-size:16.5px}
+.guide p{margin:0 0 14px}
+.guide ol,.guide ul{margin:0 0 14px;padding-left:24px}
+.guide li{margin-bottom:6px}
+.guide li::marker{color:var(--muted)}
+.guide a{text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px}
+.guide > .unit{margin-top:56px;padding-top:30px;border-top:1px solid var(--line-strong)}
+.guide > .unit:first-child{margin-top:0;border-top:0;padding-top:0}
+.unit > .unit:first-of-type > h3{margin-top:26px}
+code{font-family:var(--mono);font-size:.88em;background:var(--accent-soft);padding:1px 5px;border-radius:5px;overflow-wrap:anywhere}
+
+/* рисунки */
+.fig{margin:22px 0 26px;padding:20px;border:1px solid var(--line);border-radius:22px;background:var(--panel-solid)}
+.fig svg{display:block;width:100%;max-width:280px;height:auto;margin:0 auto}
+.fig-wide svg{max-width:620px}
+.fig figcaption{margin-top:14px;color:var(--muted);font-size:14px;line-height:1.5;text-align:center;max-width:56ch;margin-inline:auto}
+
+/* оглавление (полный текст) */
+.full{padding:46px 0 10px}
+.full-grid{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:start}
+.toc{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;padding:4px 6px 4px 0;font-size:14px;line-height:1.4}
+.toc .eyebrow{display:block;margin-bottom:14px}
+.toc-list,.toc-sub{list-style:none;margin:0;padding:0}
+.toc-list > li{margin:0 0 10px}
+.toc-list > li > a{font-weight:700}
+.toc-sub{margin:6px 0 0 0;padding-left:12px;border-left:1px solid var(--line)}
+.toc-sub li{margin:4px 0}
+.toc a{text-decoration:none;color:var(--muted);display:inline-block}
+.toc-list > li > a{color:var(--ink)}
+.toc a:hover{color:var(--ink)}
+.full .guide{max-width:760px}
+
+/* ===== Раскрытие ===== */
+.bar{display:none}
+.detail{display:none}
+.btn{
+  appearance:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;
+  border:1px solid var(--line-strong);border-radius:14px;background:#fff;font-weight:800;font-size:14.5px;
+  cursor:pointer;white-space:nowrap;text-decoration:none
+}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.quiet{border-color:transparent;background:transparent;color:var(--muted)}
+.btn.quiet:hover{color:var(--ink);border-color:var(--line)}
+.detail-head{margin:0 0 22px}
+.detail-head .eyebrow{display:block}
+.detail-foot{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);display:flex;gap:12px;flex-wrap:wrap}
+.slot > .unit + .unit{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.slot > .unit > h3:first-child{margin-top:0}
+.empty{display:none}
+.why-top{display:none;margin:16px 0 0}
+
+/* ===== Режим со скриптом ===== */
+.js .full{display:none}
+.js [data-view="full"] .full{display:block}
+.js [data-view="full"] .first{display:none}
+.js .full-bar{display:none}
+.js [data-view="full"] .full-bar{display:flex}
+.js .bar{position:sticky;top:0;z-index:20;display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 0;
+  background:rgba(244,246,246,.86);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.js .bar [hidden]{display:none}
+.js .full-bar{margin-bottom:24px}
+
+@media(min-width:901px){
+  .js .layout{display:grid;grid-template-columns:minmax(0,430px) minmax(0,1fr);gap:44px;align-items:start}
+  .js .intro-col{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto;
+    padding:4px 18px 18px 18px;margin:0 -18px;scrollbar-width:thin}
+  .js .intro-text{font-size:15.5px;line-height:1.55}
+  .js .intro-link{padding:13px 12px 13px 16px}
+  .js .motto{font-size:16px;padding:16px 18px}
+  .js .detail{display:block;border:1px solid var(--line);border-radius:32px;background:rgba(255,255,255,.82);box-shadow:var(--shadow);padding:0 40px 40px}
+  .js .detail .bar{margin:0 -40px 18px;padding:14px 40px;border-radius:32px 32px 0 0;border-bottom:1px solid var(--line);background:rgba(251,252,252,.9)}
+  .js [data-view="intro"] .detail .bar,.js [data-view="intro"] .detail-main{display:none}
+  .js [data-view="intro"] .empty{display:flex;min-height:320px;align-items:center;justify-content:center;text-align:center;color:var(--muted);padding-top:40px}
+  .js .only-phone{display:none!important}
+  .js .bar .push{margin-left:auto}
+}
+@media(max-width:900px){
+  .full-grid{grid-template-columns:1fr;gap:20px}
+  .toc{position:static;max-height:none;overflow:visible;padding:18px 20px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+  .toc-sub{display:none}
+  .js .only-wide{display:none!important}
+  .js [data-view="l2"] .first .intro-col,.js [data-view="l3"] .first .intro-col{display:none}
+  .js [data-view="l2"] .hero,.js [data-view="l3"] .hero{display:none}
+  .js [data-view="l2"] .detail,.js [data-view="l3"] .detail{display:block}
+  .js [data-view="l2"] .why-top{display:flex}
+  .js .bar{margin:0 -18px;padding:10px 18px;border-bottom:1px solid var(--line)}
+  .js .detail-head{margin-top:22px}
+}
+@media(max-width:600px){
+  .shell{width:min(calc(100% - 32px),var(--max))}
+  .js .bar{margin:0 -16px;padding:10px 16px}
+  .hero{padding-top:36px}
+  .intro-text{font-size:16.5px}
+  .intro-link{margin:0 -12px;padding:14px 10px 14px 12px}
+  .fig{padding:14px}
+  .btn{padding:0 14px}
+  .full-link{width:100%;justify-content:center}
+}
+
+/* движение «вглубь» и обратно */
+@keyframes in-deeper{from{opacity:0;transform:translateX(26px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes in-back{from{opacity:0;transform:translateX(-26px) scale(.985)}to{opacity:1;transform:none}}
+.anim-deeper{animation:in-deeper var(--dur) cubic-bezier(.2,.7,.2,1) both}
+.anim-back{animation:in-back var(--dur) cubic-bezier(.2,.7,.2,1) both}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body data-view="intro">
+<header class="site-header">
+<div class="shell nav">
+<a aria-label="IndrasNet — на главную" class="logo" href="index.html"><svg aria-hidden="true" class="logo-svg" focusable="false" viewbox="0 0 116 117"><path d="M57.9,100.0 L49.3,107.8 L49.0,109.3 L55.3,112.8 L58.4,113.5 L66.3,109.8 L66.8,108.4 L60.3,101.7Z M43.7,91.7 L35.7,91.9 L34.1,92.7 L35.2,96.4 L38.9,103.6 L42.9,102.7 L48.3,100.6 L50.4,99.2 L50.3,98.4 L46.3,93.8Z M71.6,91.8 L65.6,97.9 L65.3,99.4 L72.8,102.7 L76.6,103.6 L77.7,102.3 L81.3,94.0 L81.4,92.7 L80.4,92.0Z M16.0,87.8 L15.5,88.5 L17.9,95.8 L19.1,97.7 L24.2,99.9 L28.3,100.8 L28.9,99.6 L28.6,88.3 L27.4,87.6Z M99.6,87.8 L88.5,87.5 L87.1,88.3 L86.8,99.9 L87.4,100.8 L88.5,100.9 L95.0,98.5 L97.1,97.0 L100.0,89.3Z M51.7,89.0 L51.5,90.3 L57.9,96.2 L62.6,92.0 L64.2,89.8 L63.5,88.8 L58.4,86.6Z M65.6,77.8 L62.3,81.4 L62.1,82.5 L63.0,83.4 L68.6,84.8 L69.7,84.0 L71.8,78.7 L70.4,77.8Z M43.6,78.6 L46.7,84.7 L48.9,84.6 L53.4,82.5 L53.3,81.5 L50.3,77.7 L44.8,77.9Z M31.4,76.0 L30.8,76.9 L31.2,84.8 L32.1,85.3 L39.3,85.4 L40.1,85.0 L40.3,83.6 L38.3,78.2 L33.0,76.0Z M84.2,75.8 L77.1,78.3 L75.2,83.8 L75.6,85.2 L84.5,85.0 L84.9,77.3Z M99.3,65.5 L97.8,65.8 L91.3,71.7 L91.4,81.1 L91.8,81.8 L93.1,81.9 L103.3,76.9 L103.1,74.8Z M16.4,65.4 L15.6,66.3 L12.8,73.6 L12.1,76.8 L13.5,78.0 L23.2,82.1 L24.2,80.6 L24.2,71.8 L20.9,68.4 L17.6,65.7Z M81.9,62.6 L80.4,63.0 L77.2,65.9 L76.9,68.5 L77.6,72.4 L80.9,71.3 L84.1,69.4 L84.1,67.7 L82.6,63.2Z M33.6,62.6 L31.7,66.8 L31.6,69.5 L32.8,70.5 L37.9,72.2 L38.6,71.1 L38.4,66.1 L35.1,63.0Z M89.0,51.5 L87.7,53.3 L85.6,58.4 L88.1,64.1 L89.6,64.8 L95.1,59.7 L95.7,57.8 L89.9,51.6Z M25.9,51.5 L20.2,57.3 L19.8,58.5 L20.9,60.3 L25.9,64.8 L26.8,64.9 L28.2,62.9 L30.0,58.1 L27.5,52.6 L26.7,51.6Z M107.8,49.4 L100.0,57.4 L99.8,58.4 L100.5,59.9 L106.9,66.8 L108.5,67.4 L110.4,64.3 L112.2,59.7 L112.5,57.4 L109.4,50.1Z M7.1,49.3 L6.3,49.9 L3.0,58.3 L6.3,66.6 L7.8,67.2 L15.3,59.6 L15.7,57.9 L8.4,49.8Z M77.9,44.4 L77.1,45.5 L77.0,50.4 L79.6,52.9 L82.1,53.9 L82.9,53.0 L84.2,49.0 L84.2,47.3 L80.1,44.9Z M37.7,44.4 L35.8,44.6 L31.3,47.5 L32.7,52.9 L33.8,54.0 L35.1,53.6 L38.5,50.7 L38.5,45.8Z M91.9,34.9 L91.2,35.8 L91.1,44.7 L97.6,50.8 L98.4,51.0 L100.0,49.0 L103.2,39.9 L101.9,38.6 L93.8,35.1Z M23.4,34.7 L13.6,38.6 L12.5,39.6 L12.5,40.8 L15.5,48.6 L17.0,50.8 L18.3,50.5 L23.3,46.1 L24.4,44.5 L24.3,35.9Z M46.6,32.1 L43.8,38.2 L45.7,38.9 L50.5,38.6 L52.9,35.6 L53.1,33.8 L48.4,32.0Z M62.6,33.7 L62.6,35.4 L65.6,38.7 L70.7,38.8 L71.8,38.1 L69.6,32.8 L68.6,31.9 L67.2,31.9Z M75.4,31.5 L75.1,33.1 L77.2,38.3 L81.9,40.6 L84.3,41.0 L84.9,40.0 L84.6,31.9 L83.6,31.3Z M39.9,31.5 L32.2,31.3 L31.1,31.8 L30.8,40.0 L31.3,40.8 L33.8,40.6 L38.0,38.7 L40.4,32.8Z M57.6,20.5 L51.7,25.9 L51.3,27.3 L56.0,30.1 L58.0,30.7 L63.5,28.1 L64.3,26.7 L58.7,20.7Z M87.4,16.3 L87.0,17.1 L87.4,28.8 L88.4,29.2 L99.4,29.0 L99.9,27.3 L97.0,19.8 L95.7,18.8 L88.8,16.2Z M28.1,16.3 L27.4,16.1 L19.6,18.8 L18.7,19.6 L15.6,27.5 L16.1,28.9 L27.4,29.1 L28.3,28.5 L28.6,17.0Z M39.1,13.2 L37.9,14.5 L34.1,24.1 L35.3,24.9 L44.2,25.0 L50.4,18.3 L50.5,17.5 L41.3,13.4Z M65.2,17.6 L65.9,19.2 L71.3,24.9 L73.7,25.3 L80.9,24.8 L81.5,24.3 L77.6,14.2 L76.5,13.1 L75.6,13.0 L67.7,16.0Z M57.8,3.2 L49.3,6.9 L48.7,7.9 L49.2,9.0 L56.9,16.4 L58.4,16.9 L66.7,8.8 L66.9,7.7 L65.9,6.7Z" fill="currentColor"></path></svg><span>INDRASNET</span></a>
+<nav aria-label="Основная навигация" class="nav-links">
+<a href="index.html#system">Система</a>
+<a href="index.html#products">Продукты</a>
+<a href="luman-links-beta.html">Luman Links</a>
+</nav>
+</div>
+</header>
+<main>
+<div class="first shell">
+<section class="hero" aria-labelledby="page-title">
+<div class="eyebrow">Руководство пользователя</div>
+<h1 id="page-title">Luman Links</h1>
+<p class="sub"><em>От сохранённых ссылок — к собственной карте интересов</em></p>
+</section>
+<div class="layout">
+<div class="intro-col">
+<ol class="intro-list" aria-label="Знакомство">
+<li class="intro-item" id="audience"><a class="intro-link" href="#s1" data-p="audience"><span class="intro-text">Luman Links — приложение для телефона, в котором удобно хранить интересное, найденное в сети: видео, статьи, упражнения, идеи. Вы работаете над проектом, учитесь или просто листаете ленту — и встречаете что-то стоящее, но разбираться сейчас некогда.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="problem"><a class="intro-link" href="#s2" data-p="problem"><span class="intro-text">Обычные закладки копятся, и со временем забывается, чем каждая из них зацепила. Luman Links помогает сохранить не только ссылку, но и сам интерес — чтобы к нему можно было вернуться.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="capture"><a class="intro-link" href="#s4-1" data-p="capture"><span class="intro-text">Сохранить можно через «Поделиться» из любого приложения или кнопкой «+». Единственное, что нужно сделать, — дать находке своё название: пару слов о том, что привлекло именно вас.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="stream"><a class="intro-link" href="#s5-1" data-p="stream"><span class="intro-text">Сохранённое появляется внизу экрана, в Потоке, в виде шариков. Новое и недавно открытое — в центре, давнее постепенно уходит к краю. Раскладывать ничего не нужно: Поток сам показывает, к чему вы обращались недавно.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="map"><a class="intro-link" href="#s5-2" data-p="map"><span class="intro-text">То, что хочется оставить надолго, вы переносите наверх, в Картотеку. Там шарик становится листком, и вы сами кладёте его рядом с близкими по смыслу. Без всяких папок постепенно складывается карта ваших интересов — по образцу картотеки Никласа Лумана.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="try"><a class="intro-link" href="#s6" data-p="try"><span class="intro-text">А если находку хочется проверить на себе, у листка есть кнопка «Попробовать»: выберите день и час, и телефон напомнит.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+<li class="intro-item" id="privacy"><a class="intro-link" href="#data" data-p="privacy"><span class="intro-text">Всё это хранится только на вашем телефоне: ни учётной записи, ни нашего сервера — и копию тоже делаете вы.</span><svg class="intro-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></li>
+</ol>
+<p class="motto"><strong>Сохраняйте интересное. Возвращайтесь, когда захотите. Создавайте собственное пространство интересов.</strong></p>
+<a class="full-link" href="#full">Всё руководство подряд</a>
+</div>
+<section class="detail" aria-live="off" hidden>
+<div class="bar">
+<button class="btn only-phone" type="button" data-act="back">← Назад</button>
+<button class="btn only-phone" type="button" data-act="home">К знакомству</button>
+<button class="btn primary only-wide" type="button" data-act="why" data-lvl="l2">Почему так устроено →</button>
+<button class="btn only-wide" type="button" data-act="how" data-lvl="l3">← Как пользоваться</button>
+<button class="btn quiet only-wide push" type="button" data-act="home">Свернуть</button>
+</div>
+<div class="detail-main">
+<div class="detail-head">
+<h2 class="eyebrow" id="detail-title" tabindex="-1"></h2>
+<button class="btn why-top" type="button" data-act="why">Почему так устроено →</button>
+</div>
+<div class="slot guide"></div>
+<div class="detail-foot">
+<button class="btn primary" type="button" data-act="why" data-lvl="l2">Почему так устроено →</button>
+<button class="btn" type="button" data-act="how" data-lvl="l3">← Как пользоваться</button>
+</div>
+</div>
+<p class="empty">Нажмите на абзац слева — здесь откроются подробности.</p>
+</section>
+</div>
+</div>
+
+<section class="full" id="full" aria-labelledby="full-title">
+<div class="shell">
+<div class="bar full-bar" hidden>
+<button class="btn only-phone" type="button" data-act="back">← Назад</button>
+<button class="btn" type="button" data-act="home">К знакомству</button>
+</div>
+<div class="full-grid">
+<nav class="toc" aria-labelledby="full-title">
+<h2 class="eyebrow" id="full-title" tabindex="-1">Всё руководство подряд</h2>
+<ol class="toc-list">
+<li><a href="#data">Прежде всего — о ваших данных</a>
+<ol class="toc-sub">
+<li><a href="#data-1">Чем за это платят</a></li>
+<li><a href="#data-2">Как сохранить копию</a></li>
+<li><a href="#data-3">Как вернуть карточки из копии</a></li>
+</ol></li>
+<li><a href="#s1">1. Для кого Luman Links</a>
+</li>
+<li><a href="#s2">2. Что происходит с найденной информацией</a>
+<ol class="toc-sub">
+<li><a href="#s2-1">Почему мы сохраняем</a></li>
+<li><a href="#s2-2">Почему сохранённое теряется</a></li>
+<li><a href="#s2-3">Сохранить — ещё не значит использовать</a></li>
+</ol></li>
+<li><a href="#s3">3. Что предлагает Luman Links</a>
+<ol class="toc-sub">
+<li><a href="#s3-1">Небольшие действия вместо большого разбора</a></li>
+<li><a href="#s3-2">Два пространства</a></li>
+</ol></li>
+<li><a href="#s4">4. Первый пользовательский сценарий</a>
+<ol class="toc-sub">
+<li><a href="#s4-1">Два способа сохранить</a></li>
+<li><a href="#s4-2">Первый акт — дайте собственное название</a></li>
+<li><a href="#s4-3">Шарик в Потоке</a></li>
+<li><a href="#s4-4">Отбор и размещение</a></li>
+<li><a href="#s4-5">Если захочется — попробуйте</a></li>
+</ol></li>
+<li><a href="#s5">5. Как устроено приложение</a>
+<ol class="toc-sub">
+<li><a href="#s5-1">5.1. Поток: центр актуального внимания</a></li>
+<li><a href="#s5-2">5.2. Картотека: центр осознанного размещения</a></li>
+<li><a href="#s5-3">5.3. Пространственная карта интересов</a></li>
+<li><a href="#s5-4">5.4. Что содержит карточка</a></li>
+<li><a href="#s5-5">5.5. Два механизма внимания</a></li>
+</ol></li>
+<li><a href="#s6">6. Действие «Попробовать»</a>
+<ol class="toc-sub">
+<li><a href="#s6-1">Как назначить срок</a></li>
+<li><a href="#s6-2">Значок срока на листке</a></li>
+<li><a href="#s6-3">Как изменить или снять срок</a></li>
+<li><a href="#s6-4">Чтобы напоминание пришло</a></li>
+<li><a href="#s6-5">Зачем это</a></li>
+</ol></li>
+<li><a href="#s7">7. Подробное руководство пользователя</a>
+<ol class="toc-sub">
+<li><a href="#s7-1">7.1. Сохранение через «Поделиться»</a></li>
+<li><a href="#s7-2">7.2. Сохранение через «+»</a></li>
+<li><a href="#s7-3">7.3. Как давать название</a></li>
+<li><a href="#s7-4">7.4. Как найти шарик</a></li>
+<li><a href="#s7-5">7.5. Как вернуться к источнику</a></li>
+<li><a href="#s7-6">7.6. Как перенести карточку в Картотеку</a></li>
+<li><a href="#s7-7">7.7. Как разместить листок</a></li>
+<li><a href="#s7-8">7.8. Как запланировать «Попробовать»</a></li>
+<li><a href="#s7-9">7.9. Поиск, правка, удаление и копия</a></li>
+<li><a href="#s7-10">7.10. Как пользоваться приложением без лишних усилий</a></li>
+<li><a href="#s7-11">7.11. Если карточки не прочитались</a></li>
+</ol></li>
+<li><a href="#s8">8. Почему система устроена именно так</a>
+<ol class="toc-sub">
+<li><a href="#s8-1">8.1. Микро-мыслительные акты</a></li>
+<li><a href="#s8-2">8.2. Рост снизу вверх: по образцу картотеки Лумана</a></li>
+<li><a href="#s8-3">8.3. Самостоятельность личного пространства — принцип IndrasNet</a></li>
+<li><a href="#s8-4">8.4. Принцип простоты</a></li>
+</ol></li>
+<li><a href="#s9">9. Текущее состояние и дальнейшее развитие</a>
+</li>
+</ol>
+</nav>
+<article class="guide">
+<section class="unit" id="data" data-unit="data">
+<h2>Прежде всего — о ваших данных</h2>
+<p>Luman Links устроен по принципу local-first: всё хранится и обрабатывается на вашем устройстве.</p>
+<p>Сохранённые ссылки, названия, комментарии, расположение карточек и назначенные сроки лежат на вашем телефоне. Для работы с картотекой не нужен сервер Luman Links и не нужна учётная запись. Ваши сохранения не размещаются у разработчика.</p>
+<p>Интернет нужен, когда вы открываете сам материал: статью, видео или страницу этого руководства. Открывается только этот материал. Ваша картотека туда не передаётся.</p>
+<section class="unit" id="data-1" data-unit="data-1">
+<h3>Чем за это платят</h3>
+<p>Ваша информация остаётся у вас — и только у вас. Это как свой сейф без запасного ключа: никто, кроме вас, в него не заглянет, но никто и не откроет его, если ключ потерян.</p>
+<p>Если телефон потеряется или сломается, если приложение удалят и поставят заново, если случится сбой, картотека пропадёт целиком. Восстановить её смогут только из копии, которую вы сохранили сами.</p>
+</section>
+<section class="unit" id="data-2" data-unit="data-2">
+<h3>Как сохранить копию</h3>
+<ol>
+<li>Откройте «Сервис».</li>
+<li>Нажмите «Сохранить копию».</li>
+<li>Откроется окно «Поделиться». Отправьте файл туда, где он не потеряется: себе на почту, в облако, на компьютер.</li>
+</ol>
+<p>Копия считается сохранённой только после отправки. Пока файл лежит внутри приложения, телефон вправе его стереть.</p>
+<p>Делайте копию время от времени — особенно когда в картотеке накопилось то, что жалко потерять.</p>
+</section>
+<section class="unit" id="data-3" data-unit="data-3">
+<h3>Как вернуть карточки из копии</h3>
+<p>Так переносят картотеку на новый телефон или возвращают её после переустановки.</p>
+<ol>
+<li>Перенесите файл копии на телефон, например скачайте его из почты или облака. Файл называется <code>luman-links-backup-</code> с датой и временем.</li>
+<li>Откройте «Сервис» и нажмите «Восстановить из копии».</li>
+<li>Выберите файл. Приложение покажет, сколько карточек сейчас и сколько станет, и спросит подтверждение.</li>
+<li>Нажмите «Заместить».</li>
+</ol>
+<p>Все карточки на телефоне заменятся содержимым файла. Вернуть прежние будет нельзя. Если они нужны, сначала сохраните копию.</p>
+</section>
+</section>
+<section class="unit" id="s1" data-unit="s1">
+<h2>1. Для кого Luman Links</h2>
+<p>Luman Links — приложение для тех, кто встречает интересную информацию, хочет её сохранить и вернуться к ней в подходящий момент.</p>
+<p><strong>Работаете над проектом?</strong> Вы ищете решения, изучаете чужой опыт, встречаете полезные статьи, видео и примеры. Что-то пригодится сейчас, что-то позже. Важно не потерять находку среди других задач.</p>
+<p><strong>Учитесь новому?</strong> Язык, профессия, программа или техника движения. Вы находите уроки, объяснения и упражнения. К одним хочется возвращаться, другие — проверить на практике.</p>
+<p><strong>Просто листаете социальные сети?</strong> Никакой задачи нет, но попадается необычная идея, интересный факт или полезный совет. Отвлекаться не хочется, а потерять жалко.</p>
+<p><strong>Есть увлечения?</strong> Спорт, здоровье, путешествия, кулинария, музыка, искусство. Постоянно встречаются упражнения, маршруты, рецепты и рекомендации, которые когда-нибудь пригодятся.</p>
+<p><strong>Разбираетесь в сложном вопросе?</strong> Вы собираете разные позиции, подтверждения и противоречия, пока не зная, к какому выводу придёте. Важно сохранить источники и то, почему они вас заинтересовали.</p>
+<p><strong>Информация приходит сама?</strong> Друг прислал ссылку, коллега посоветовал статью. Вы ничего не искали, но находка показалась стоящей.</p>
+<p>Во всех этих случаях есть общее: <strong>интерес возникает сейчас, а возможность разобраться — позже</strong>.</p>
+<p>Luman Links сохраняет материал за несколько секунд. Но это не совсем механическое сохранение: нужно <strong>дать находке своё название</strong>. Вы коротко формулируете, что вас заинтересовало, и возвращаетесь к своим делам. Это первый небольшой мыслительный акт.</p>
+<p>Потом материал можно снова открыть, перенести в Картотеку и найти ему место на карте интересов. А листку в Картотеке — назначить день и час, чтобы попробовать увиденное на практике. Всё, кроме первого названия, — по желанию.</p>
+</section>
+<section class="unit" id="s2" data-unit="s2">
+<h2>2. Что происходит с найденной информацией</h2>
+<section class="unit" id="s2-1" data-unit="s2-1">
+<h3>Почему мы сохраняем</h3>
+<p>Иногда информация нужна для конкретного дела. Иногда мы только чувствуем, что она интересна. Но в момент находки редко есть время прочитать, проверить или обдумать. Сохранение ссылки откладывает встречу с материалом.</p>
+<p><strong>Мы сохраняем не только адрес, но и возможность вернуться к собственному интересу.</strong></p>
+</section>
+<section class="unit" id="s2-2" data-unit="s2-2">
+<h3>Почему сохранённое теряется</h3>
+<p>Видео остаются в одной соцсети, статьи — в закладках браузера, сообщения — в мессенджерах. Чтобы найти прежнюю находку, нужно вспомнить, где она встретилась и под каким названием сохранена.</p>
+<p>Даже найдя ссылку, часто приходится заново смотреть материал, чтобы понять, чем он когда-то зацепил. Собственный повод интереса утерян.</p>
+<p>В момент сохранения есть три вещи: источник, причина интереса и возможное продолжение. Обычная закладка надёжно хранит лишь первое. Остальное остаётся в памяти и со временем забывается.</p>
+</section>
+<section class="unit" id="s2-3" data-unit="s2-3">
+<h3>Сохранить — ещё не значит использовать</h3>
+<p>Предположим, вы увидели упражнение, сохранили видео и продолжили листать ленту. Чтобы получить пользу, к материалу нужно вернуться, посмотреть внимательнее и попробовать. Само сохранение ничего из этого не делает.</p>
+<p>В сохранённом может быть много ценного, но ценность ещё не стала ни знанием, ни личным опытом. Не было ни своих слов, ни повторного обращения, ни сравнения с другими интересами, ни применения.</p>
+<p>При этом <strong>не каждую находку обязательно превращать в пользу</strong>. Можно сохранять красивое, странное, любопытное — просто из интереса. Цель не в том, чтобы переработать всё накопленное, а в том, чтобы иметь возможность вернуться и самим решить судьбу материала.</p>
+</section>
+</section>
+<section class="unit" id="s3" data-unit="s3">
+<h2>3. Что предлагает Luman Links</h2>
+<section class="unit" id="s3-1" data-unit="s3-1">
+<h3>Небольшие действия вместо большого разбора</h3>
+<p>Luman Links собирает ссылки из разных источников в одном личном пространстве и предлагает несколько простых действий. Они могут происходить в разные дни и не требуют долгой сосредоточенности.</p>
+<p><strong>Назвать.</strong> Чтобы сохранить ссылку, нужно дать ей своё название: коротко сказать, что именно вас заинтересовало. Комментарий — по желанию.</p>
+<p><strong>Вернуться.</strong> Новая или снова открытая карточка встаёт в центр Потока. По мере новых сохранений и открытий она отходит к краю. Расположение показывает, как давно вы обращались к материалу.</p>
+<p><strong>Отобрать.</strong> То, что хочется оставить среди устойчивых интересов, вы переносите наверх, в Картотеку. Перенос необратим: обратно в Поток листок не вернётся.</p>
+<p><strong>Разместить.</strong> В Картотеке вы сами выбираете место для листка. Рядом постепенно оказываются материалы, которые вы считаете связанными. Возникает <strong>карта интересов</strong>.</p>
+<p><strong>Попробовать.</strong> Если находка в Картотеке предполагает практическое действие, листку можно назначить день и час. В это время придёт напоминание.</p>
+<p>Обязательно только своё название при сохранении. Остальное вы выбираете сами.</p>
+</section>
+<section class="unit" id="s3-2" data-unit="s3-2">
+<h3>Два пространства</h3>
+<p>Нижнее поле — <strong>Поток</strong>. Сюда попадают новые находки, и здесь к ним возвращаются. Карточки здесь — шарики, и раскладываются они сами, по истории вашего внимания.</p>
+<p>Верхнее поле — <strong>Картотека</strong>. Здесь вы сами раскладываете отобранное. Карточки здесь — листки.</p>
+<figure class="fig">
+<svg viewBox="0 0 320 400" role="img" aria-labelledby="f1-t f1-d" focusable="false"><title id="f1-t">Два пространства</title><desc id="f1-d">Схема экрана приложения, разделённого на два поля. Нижнее поле тёмное: на нём полупрозрачные шарики, самый яркий — в центре, остальные расходятся кругами к краю. Верхнее поле светлое: на нём свободно разложены бумажные листки.</desc><defs><symbol id="f1-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f1-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f1-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f1-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="2" y="2" width="316" height="396" rx="28" fill="#fff" stroke="rgba(24,32,38,.28)" stroke-width="1.5"/><clipPath id="f1-top"><rect x="14" y="14" width="292" height="182" rx="18"/></clipPath><clipPath id="f1-bot"><rect x="14" y="204" width="292" height="182" rx="18"/></clipPath><rect x="14" y="14" width="292" height="182" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.12)"/><rect x="14" y="204" width="292" height="182" rx="18" fill="#1d2a33"/><g clip-path="url(#f1-top)"><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(62 52) rotate(-8)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(104 44) rotate(5)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(236 50) rotate(7)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(268 86) rotate(-5)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(52 150) rotate(6)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(92 164) rotate(-4)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(246 158) rotate(-7)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(282 170) rotate(4)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(222 178) rotate(9)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(150 104) rotate(-3)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(176 112) rotate(6)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(196 70) rotate(-6)"/></g><g clip-path="url(#f1-bot)"><circle cx="160" cy="295" r="18" fill="rgba(242,245,244,.62)" stroke="rgba(255,255,255,.9)" stroke-width="1.5"/><circle cx="160.0" cy="251.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="339.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="182.3" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="223.9" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="244.9" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="238.6" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="206.8" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="381.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="113.2" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="81.4" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="75.1" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="96.1" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="137.7" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="224.0" cy="184.1" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="266.1" cy="223.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="286.8" cy="277.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="281.7" cy="334.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="252.1" cy="383.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="203.8" cy="415.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="146.6" cy="422.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="92.2" cy="403.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="51.4" cy="362.8" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="32.7" cy="308.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="39.7" cy="251.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="71.1" cy="202.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="120.4" cy="173.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="177.8" cy="168.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/></g></svg>
+<figcaption>Два поля одного экрана: внизу Поток, где шарики раскладываются сами, вверху Картотека, где листки раскладываете вы.</figcaption>
+</figure>
+<p>Так разделены быстрый приём нового и осознанная организация сохранённого. Заранее создавать папки, темы или категории не нужно.</p>
+</section>
+</section>
+<section class="unit" id="s4" data-unit="s4">
+<h2>4. Первый пользовательский сценарий</h2>
+<p>Представьте: вы смотрите короткие видео и видите необычное упражнение на равновесие. Заниматься сейчас некогда, но сохранить хочется.</p>
+<section class="unit" id="s4-1" data-unit="s4-1">
+<h3>Два способа сохранить</h3>
+<p><strong>Через «Поделиться».</strong> В исходном приложении нажмите «Поделиться» и выберите Luman Links. Откроется форма новой карточки с этой ссылкой.</p>
+<p><strong>Через «+».</strong> Скопируйте ссылку, откройте Luman Links и нажмите «+». Ссылка из буфера обмена сама встанет в форму.</p>
+<p>Дальше всё одинаково.</p>
+</section>
+<section class="unit" id="s4-2" data-unit="s4-2">
+<h3>Первый акт — дайте собственное название</h3>
+<p>Вместо авторского «Пять секретов идеального баланса» вы пишете: <strong>«Равновесие с закрытыми глазами»</strong>. Можно добавить комментарий: «Попробовать на тренировке». Нажимаете «Сохранить».</p>
+<p>Чтобы назвать материал, вы на мгновение выделили то, что зацепило именно вас. Это первый мыслительный акт. Разбираться подробно прямо сейчас не нужно.</p>
+</section>
+<section class="unit" id="s4-3" data-unit="s4-3">
+<h3>Шарик в Потоке</h3>
+<p>В центре Потока появляется шарик с вашим названием. Следующие сохранения занимают центр и сдвигают его. Но если вы снова откроете его карточку, шарик вернётся в центр.</p>
+</section>
+<section class="unit" id="s4-4" data-unit="s4-4">
+<h3>Отбор и размещение</h3>
+<p>Через некоторое время вы возвращаетесь к ролику и решаете оставить его. Открываете карточку и нажимаете «Перенести в картотеку». Карточка становится листком и встаёт в центр Картотеки. Приложение не переспрашивает: перенос сразу необратим.</p>
+<p>Пока листок стоит в центре, следующую карточку в Картотеку не перенести. Приложение ответит окном «Не удалось перенести в картотеку»: «В центре уже есть карточка. Найдите ей место — центр освободится.» Освобождать центр можно не сразу, а когда придёт время следующего переноса. Само перемещение — повод снова вспомнить содержание и выбрать место среди других интересов.</p>
+<p>Например, вы кладёте упражнение рядом с листками о координации. Так постепенно возникает область ваших интересов — без заранее созданной папки «Спорт».</p>
+</section>
+<section class="unit" id="s4-5" data-unit="s4-5">
+<h3>Если захочется — попробуйте</h3>
+<p>Откройте листок и нажмите «Попробовать», затем «Выбрать точное время». Выберите дату, затем время. В назначенный час телефон напомнит; нажатие на напоминание откроет карточку, и можно вернуться к источнику и выполнить упражнение.</p>
+<p>Ни один шаг, кроме первого названия, не обязателен. Материал может остаться в Потоке, лежать в Картотеке без всякого действия или со временем потерять актуальность.</p>
+</section>
+</section>
+<section class="unit" id="s5" data-unit="s5">
+<h2>5. Как устроено приложение</h2>
+<section class="unit" id="s5-1" data-unit="s5-1">
+<h3>5.1. Поток: центр актуального внимания</h3>
+<p>В нижней части экрана на тёмном фоне — полупрозрачные шарики. Каждый шарик — сохранённая ссылка с вашим названием.</p>
+<p><strong>Каждая новая карточка встаёт в центр. Каждая снова открытая — тоже возвращается в центр.</strong></p>
+<p>Следующие обращения сдвигают прежние шарики: те расходятся по часовой стрелке и дальше по внешним кругам. Ближе к центру — то, что вы сохранили или открывали недавно. На краю — то, к чему давно не возвращались.</p>
+<p>Так появляется ещё один способ искать: по давности своего интереса. Близость к центру не означает, что материал важнее, а удалённость — что он бесполезен.</p>
+<h4 id="s5-1-1">Пространство не заканчивается на краю экрана</h4>
+<p>Поток может уходить за край видимой области. Его можно двигать целиком, чтобы посмотреть дальние участки. Чтобы рассмотреть плотное скопление шариков, разведите его двумя пальцами. Одиночное касание закрывает увеличение.</p>
+<p>Чтобы прочитать один шарик крупнее, нажмите на него и подержите. Над пальцем появится подпись: название, комментарий и сайт источника. Отпустите палец — подпись исчезнет. Чтобы открыть карточку, коснитесь шарика дважды.</p>
+<p>Главное в Потоке: раскладывать новые ссылки вручную не нужно. Расположение меняется само — от ваших сохранений и открытий.</p>
+</section>
+<section class="unit" id="s5-2" data-unit="s5-2">
+<h3>5.2. Картотека: центр осознанного размещения</h3>
+<p>В верхней части экрана материалы — бумажные листки. Их можно свободно перетаскивать и раскладывать относительно друг друга.</p>
+<p><strong>Каждая перенесённая в Картотеку карточка встаёт в центр.</strong> В отличие от Потока, здесь карточки сами не раздвигаются. Пока листок в центре не сдвинут, следующую карточку в Картотеку не перенести.</p>
+<figure class="fig">
+<svg viewBox="0 0 320 400" role="img" aria-labelledby="f2-t f2-d" focusable="false"><title id="f2-t">Перенос в Картотеку</title><desc id="f2-d">Схема экрана с двумя полями. В центре нижнего тёмного поля, Потока, осталось только пунктирное место шарика. От него пунктирная стрелка ведёт вверх, в центр светлого поля, Картотеки. Там лежит выделенный листок, вокруг — другие листки.</desc><defs><symbol id="f2-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f2-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f2-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f2-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="2" y="2" width="316" height="396" rx="28" fill="#fff" stroke="rgba(24,32,38,.28)" stroke-width="1.5"/><clipPath id="f2-top"><rect x="14" y="14" width="292" height="182" rx="18"/></clipPath><clipPath id="f2-bot"><rect x="14" y="204" width="292" height="182" rx="18"/></clipPath><rect x="14" y="14" width="292" height="182" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.12)"/><rect x="14" y="204" width="292" height="182" rx="18" fill="#1d2a33"/><g clip-path="url(#f2-top)"><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(62 52) rotate(-8)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(104 44) rotate(5)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(236 50) rotate(7)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(268 86) rotate(-5)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(52 150) rotate(6)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(92 164) rotate(-4)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(246 158) rotate(-7)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(282 170) rotate(4)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(222 178) rotate(9)"/><use href="#f2-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(160 105) rotate(0)"/></g><g clip-path="url(#f2-bot)"><circle cx="160" cy="295" r="18" fill="none" stroke="rgba(242,245,244,.55)" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="160.0" cy="251.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="339.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="182.3" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="223.9" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="244.9" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="238.6" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="206.8" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="381.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="113.2" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="81.4" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="75.1" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="96.1" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="137.7" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="224.0" cy="184.1" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="266.1" cy="223.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="286.8" cy="277.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="281.7" cy="334.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="252.1" cy="383.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="203.8" cy="415.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="146.6" cy="422.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="92.2" cy="403.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="51.4" cy="362.8" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="32.7" cy="308.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="39.7" cy="251.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="71.1" cy="202.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="120.4" cy="173.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="177.8" cy="168.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/></g><path d="M160 270 C 160 230, 160 170, 160 128" fill="none" stroke="#8d989f" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#f2-arr)"/></svg>
+<figcaption>Перенос: шарик уходит из Потока и становится листком в центре Картотеки.</figcaption>
+</figure>
+<p>Это мягкий способ отложить решение. Новый листок можно оставить в центре и не выбирать ему место сразу. Но при следующем переносе к нему придётся вернуться и сдвинуть его в выбранную область.</p>
+<figure class="fig fig-wide">
+<svg viewBox="0 0 660 200" role="img" aria-labelledby="f3-t f3-d" focusable="false"><title id="f3-t">Центр занят</title><desc id="f3-d">Три схемы Картотеки подряд. Первая: выделенный листок лежит в центре поля. Вторая: стрелка показывает, как этот листок сдвигают из центра к соседним листкам; в центре остаётся пустое пунктирное место. Третья: прежний листок лежит на новом месте, а освободившийся центр готов принять следующую карточку.</desc><defs><symbol id="f3-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f3-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f3-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f3-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><clipPath id="f3-clip"><rect x="1" y="1" width="198" height="198" rx="18"/></clipPath><g transform="translate(0 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><use href="#f3-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(100 100) rotate(0)"/></g></g><path d="M208 100 h14" fill="none" stroke="#8d989f" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arr)"/><g transform="translate(230 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><rect x="80" y="86" width="40" height="28" rx="3" fill="none" stroke="rgba(24,32,38,.38)" stroke-width="1.4" stroke-dasharray="4 3"/><use href="#f3-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(150 84) rotate(3)"/><path d="M108 96 C 118 88, 124 86, 128 86" fill="none" stroke="#182026" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arri)"/></g></g><path d="M438 100 h14" fill="none" stroke="#8d989f" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arr)"/><g transform="translate(460 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(150 84) rotate(3)"/><rect x="80" y="86" width="40" height="28" rx="3" fill="none" stroke="rgba(24,32,38,.38)" stroke-width="1.4" stroke-dasharray="4 3"/></g></g></svg>
+<figcaption>Центр занят: сдвиньте листок к близким по смыслу — и в освободившийся центр можно перенести следующую карточку.</figcaption>
+</figure>
+<p>Так перемещение становится небольшим мыслительным актом: вы сравниваете материал с тем, что уже лежит на карте.</p>
+<p>Перенос в Картотеку необратим. Листок остаётся в Картотеке; обратно в Поток он не возвращается.</p>
+<h4 id="s5-2-1">Как смотреть скопления</h4>
+<p>Само поле Картотеки не сдвигается: двигаются только листки. Чтобы прочитать один листок крупнее, нажмите на него и подержите — над пальцем появится подпись.</p>
+<p>Если листки легли друг на друга, их можно разложить. Поставьте два пальца на скопление и разведите их. В центре поля появится рамка: листки скопления лягут в ней рядами, от новых к старым. Внутри рамки листки можно открыть и прочитать, но не передвинуть. Коснитесь поля вне рамки — она закроется, а листки останутся на своих местах.</p>
+<p>Рамка открывается только там, где листки перекрывают друг друга.</p>
+</section>
+<section class="unit" id="s5-3" data-unit="s5-3">
+<h3>5.3. Пространственная карта интересов</h3>
+<p>Когда вы кладёте близкие по смыслу материалы рядом, постепенно возникают области интересов. Их границы условны: темы сближаются, расходятся, меняются и смешиваются.</p>
+<p>Придумывать категории до появления материалов не нужно. Карта вырастает из самих сохранений и ваших действий.</p>
+<p>Такой подход идёт от картотеки (по-немецки Zettelkasten, «ящик для заметок») немецкого социолога Никласа Лумана. Она росла снизу вверх: новые записи добавлялись рядом с уже существующими, между ними появлялись связи, а направления мысли возникали по ходу работы.</p>
+<p>Важно различать метод и его вид на экране. Картотека Лумана держалась на номерах, ответвлениях и перекрёстных ссылках; свободной двумерной доской она не была. Luman Links берёт из неё одну мысль — структура вырастает из самих записей — и показывает её как карту на плоскости.</p>
+<p>Есть и более прямое сходство — с библиографической картотекой Лумана. В ней он фиксировал сведения о прочитанных источниках и мог добавлять краткие замечания о заинтересовавших его положениях. Такие карточки помогали возвращаться к материалу и служили возможными отправными точками для самостоятельных мыслей в основной картотеке.</p>
+<p>Luman Links выполняет близкую роль для современных цифровых источников: ссылка получает собственное название, при желании комментарий и место на пространственной карте интересов. Она сохраняется как внешний интеллектуальный стимул, потенциальная точка входа в собственное мышление, а не подменяет собой самостоятельную мысль.</p>
+</section>
+<section class="unit" id="s5-4" data-unit="s5-4">
+<h3>5.4. Что содержит карточка</h3>
+<p><strong>Название — обязательно.</strong> Его даёте вы, и оно хранит личный смысл находки.</p>
+<p><strong>Ссылка на источник — обязательна.</strong> По ней открывается исходный материал. Luman Links хранит адрес, а не копию видео или страницы.</p>
+<p><strong>Комментарий — по желанию.</strong> В нём можно пояснить первоначальный интерес, оставить вопрос или заметку.</p>
+<p>Название и комментарий можно изменить позже. При переносе в Картотеку всё это сохраняется: меняется не содержание карточки, а её место и вид.</p>
+</section>
+<section class="unit" id="s5-5" data-unit="s5-5">
+<h3>5.5. Два механизма внимания</h3>
+<p><strong>В Потоке внимание определяет расположение:</strong> недавние обращения возвращают карточку в центр.</p>
+<p><strong>В Картотеке расположение требует внимания:</strong> листок нужно сдвинуть самому, прежде чем переносить следующий.</p>
+<p>Эти механизмы дополняют друг друга: поток новых впечатлений и карта устойчивых интересов, которую вы строите сами.</p>
+</section>
+</section>
+<section class="unit" id="s6" data-unit="s6">
+<h2>6. Действие «Попробовать»</h2>
+<p>Некоторые находки хочется не только посмотреть, но и проверить на себе: выполнить упражнение, приготовить блюдо, испытать способ работы с программой.</p>
+<p>Кнопка «Попробовать» есть у листка в Картотеке. Она назначает листку день и час напоминания. У шарика в Потоке такой кнопки нет: сначала материал нужно перенести в Картотеку.</p>
+<section class="unit" id="s6-1" data-unit="s6-1">
+<h3>Как назначить срок</h3>
+<ol>
+<li>Откройте листок двойным касанием и нажмите «Попробовать».</li>
+<li>На экране «Когда» нажмите «Выбрать точное время».</li>
+<li>Выберите дату в первом окне, затем время во втором. Если закрыть любое из окон, срок не назначится.</li>
+</ol>
+<p>В назначенный час придёт напоминание «Luman Links — назначенное» с названием листка. Нажмите на него — откроется карточка.</p>
+</section>
+<section class="unit" id="s6-2" data-unit="s6-2">
+<h3>Значок срока на листке</h3>
+<p>У листка с назначенным сроком появляется значок. Контур — срок ещё впереди. Заливка — срок прошёл больше трёх часов назад.</p>
+</section>
+<section class="unit" id="s6-3" data-unit="s6-3">
+<h3>Как изменить или снять срок</h3>
+<p>Когда срок назначен, кнопка на листке называется «Изменить срок». Она ведёт на тот же экран «Когда». Там можно выбрать новое время или нажать «Снять срок» — напоминание отменится.</p>
+</section>
+<section class="unit" id="s6-4" data-unit="s6-4">
+<h3>Чтобы напоминание пришло</h3>
+<p>При первом назначении приложение предупредит, что нужно разрешение на уведомления, и Android спросит его. Ответьте «Разрешить».</p>
+<p>Если отказаться, срок всё равно сохранится и будет виден значком на листке, но напоминание не придёт. Приложение скажет об этом в окне «Срок назначен» и спросит разрешение снова при следующем назначении. Если Android перестал спрашивать, то же окно предложит кнопку «Открыть настройки»: там уведомления включают вручную.</p>
+<p>На телефонах Xiaomi напоминание приходит, только если для Luman Links включён «Автозапуск» в настройках телефона.</p>
+</section>
+<section class="unit" id="s6-5" data-unit="s6-5">
+<h3>Зачем это</h3>
+<p>Кнопка превращает «когда-нибудь попробую» в конкретный день и час. Назначенное время не означает, что дело сделано или что результат будет успешным.</p>
+<p>Слово «Попробовать» выбрано не случайно: важно получить собственный опыт, а не обязательно заранее известный результат. Посмотреть, как делает другой, и сделать самому — разные вещи. Практика может дать опору пониманию и памяти, но ничего не гарантирует.</p>
+<p><strong>Не каждую находку нужно пробовать.</strong> Кнопка — для тех, с которыми вы действительно хотите что-то сделать.</p>
+</section>
+</section>
+<section class="unit" id="s7" data-unit="s7">
+<h2>7. Подробное руководство пользователя</h2>
+<p>Здесь основные действия — коротко, по шагам. Зачем они нужны, объяснено в предыдущих главах. Краткая справка «Как пользоваться» есть и в самом приложении, в «Сервисе».</p>
+<section class="unit" id="s7-1" data-unit="s7-1">
+<h3>7.1. Сохранение через «Поделиться»</h3>
+<ol>
+<li>В исходном приложении выберите материал и нажмите «Поделиться».</li>
+<li>Выберите Luman Links.</li>
+<li>В форме со ссылкой впишите своё название.</li>
+<li>Если хотите, добавьте комментарий.</li>
+<li>Нажмите «Сохранить». Новый шарик встанет в центр Потока.</li>
+</ol>
+</section>
+<section class="unit" id="s7-2" data-unit="s7-2">
+<h3>7.2. Сохранение через «+»</h3>
+<ol>
+<li>Скопируйте ссылку.</li>
+<li>Откройте Luman Links и нажмите «+». Откроется форма новой карточки с этой ссылкой.</li>
+<li>Впишите своё название; комментарий — по желанию.</li>
+<li>Нажмите «Сохранить».</li>
+</ol>
+<p>Кнопка «+» берёт ссылку только из буфера обмена: если ссылки там нет, форма не откроется. Без названия карточка не сохранится.</p>
+</section>
+<section class="unit" id="s7-3" data-unit="s7-3">
+<h3>7.3. Как давать название</h3>
+<p>Повторять заголовок автора не нужно. Скажите коротко, что важно вам. Вместо «Удивительные секреты тренировок» — «Равновесие с закрытыми глазами». Хорошее название помогает вспомнить, почему материал вас заинтересовал.</p>
+</section>
+<section class="unit" id="s7-4" data-unit="s7-4">
+<h3>7.4. Как найти шарик</h3>
+<p>Недавнее ищите ближе к центру Потока, давнее — дальше от центра. Двигайте Поток, чтобы посмотреть дальние участки. Разведите двумя пальцами, чтобы рассмотреть скопление. Нажмите и подержите шарик, чтобы прочитать подпись крупнее.</p>
+<p>Если помните слово из названия или комментария, воспользуйтесь поиском (глава 7.9).</p>
+</section>
+<section class="unit" id="s7-5" data-unit="s7-5">
+<h3>7.5. Как вернуться к источнику</h3>
+<p>Откройте шарик или листок двойным касанием: одиночное касание карточку не открывает. Перечитайте своё название и комментарий, затем нажмите «Открыть». Материал откроется в своём приложении или браузере; для этого нужен интернет.</p>
+<p>Открытие карточки возвращает шарик в центр Потока.</p>
+</section>
+<section class="unit" id="s7-6" data-unit="s7-6">
+<h3>7.6. Как перенести карточку в Картотеку</h3>
+<p>Откройте шарик двойным касанием и нажмите «Перенести в картотеку». Карточка станет листком и встанет в центр Картотеки.</p>
+<p>Перенос необратим, и приложение не переспрашивает: вернуть листок в Поток нельзя.</p>
+<p>Если в центре Картотеки уже лежит листок, появится окно «Не удалось перенести в картотеку»: «В центре уже есть карточка. Найдите ей место — центр освободится.» Сдвиньте тот листок и повторите перенос.</p>
+</section>
+<section class="unit" id="s7-7" data-unit="s7-7">
+<h3>7.7. Как разместить листок</h3>
+<p>Перетащите листок из центра в подходящую область, рядом с близкими по смыслу. Поле Картотеки само не сдвигается: двигаются листки. Чтобы прочитать один листок крупнее, нажмите на него и подержите. Если листки легли друг на друга, разведите на них два пальца — откроется рамка (глава 5.2).</p>
+</section>
+<section class="unit" id="s7-8" data-unit="s7-8">
+<h3>7.8. Как запланировать «Попробовать»</h3>
+<p>Откройте листок в Картотеке, нажмите «Попробовать», затем «Выбрать точное время». Выберите дату, затем время. Когда придёт напоминание, нажмите на него — откроется карточка. Нажмите «Открыть» и, если желание не пропало, попробуйте. Срок можно изменить или снять кнопкой «Изменить срок».</p>
+</section>
+<section class="unit" id="s7-9" data-unit="s7-9">
+<h3>7.9. Поиск, правка, удаление и копия</h3>
+<p><strong>Поиск.</strong> Нажмите значок поиска в строке «Картотека» и начните вводить слово. Поиск находит карточки и в Потоке, и в Картотеке — по названию и комментарию, но не по ссылке. Коснитесь результата, чтобы открыть карточку. Закрыть поиск можно крестиком в поле, кнопкой «Назад» или касанием вне списка.</p>
+<p><strong>Правка.</strong> Откройте карточку, измените название или комментарий и нажмите «Сохранить».</p>
+<p><strong>Удаление.</strong> Откройте карточку и нажмите «Удалить». Приложение переспросит: «Удалить карточку? Отменить будет нельзя.»</p>
+<p><strong>Копия.</strong> В «Сервисе» нажмите «Сохранить копию» и отправьте файл туда, где он не потеряется. Там же — «Восстановить из копии». Подробно — в разделе «Прежде всего — о ваших данных».</p>
+</section>
+<section class="unit" id="s7-10" data-unit="s7-10">
+<h3>7.10. Как пользоваться приложением без лишних усилий</h3>
+<p>Не пытайтесь разобрать все сохранения сразу. Уделите внимание первому названию. Переносите в Картотеку только то, чему правда хотите дать место. Не добивайтесь идеальной классификации: карта интересов складывается постепенно. «Попробовать» — когда действительно хочется. И время от времени сохраняйте копию.</p>
+</section>
+<section class="unit" id="s7-11" data-unit="s7-11">
+<h3>7.11. Если карточки не прочитались</h3>
+<p>Начиная с версии 0.9.0-b8, если приложение не может прочитать сохранённые карточки, например после сбоя, при запуске появляется окно «Карточки не прочитались» с тремя кнопками. В более ранних версиях этой защиты нет — обновитесь.</p>
+<ul>
+<li><strong>«Восстановить из копии»</strong> — откроется «Сервис». Нажмите там «Восстановить из копии» и выберите файл, сохранённый раньше. Карточки вернутся в том виде, в каком были на момент копии.</li>
+<li><strong>«Отправить файл автору»</strong> — откроется окно «Поделиться» с файлом того, что приложение не смогло прочитать. Отправьте его автору тем способом, которым вы получили приложение. Это поможет разобраться и, возможно, вернуть карточки. Само приложение ничего никуда не отправляет. Если файл записать не удалось, этой кнопки нет.</li>
+<li><strong>«Позже»</strong> — окно закроется.</li>
+</ul>
+<p>Пока карточки не прочитаны, приложение ничего не записывает. Так оно не затрёт ваши прежние карточки пустыми. По той же причине сохранить копию в этом состоянии нельзя: приложение скажет «Копию сейчас сохранить нельзя».</p>
+</section>
+</section>
+<section class="unit" id="s8" data-unit="s8">
+<h2>8. Почему система устроена именно так</h2>
+<section class="unit" id="s8-1" data-unit="s8-1">
+<h3>8.1. Микро-мыслительные акты</h3>
+<p>При обычном сохранении ссылки можно почти не думать о её смысле. Luman Links вводит одно обязательное маленькое действие — назвать материал своими словами — и несколько добровольных: вернуться, отобрать, разместить и, если хочется, попробовать.</p>
+<p>Каждое занимает немного времени, но даёт ещё один повод обратиться к материалу и связать его с собственным опытом. Это принцип устройства, а не обещание лучшей памяти: прочное запоминание зависит и от повторения, понимания, применения и многого другого.</p>
+</section>
+<section class="unit" id="s8-2" data-unit="s8-2">
+<h3>8.2. Рост снизу вверх: по образцу картотеки Лумана</h3>
+<p>Картотека Никласа Лумана не начиналась с готового дерева тем. Её устройство складывалось вместе с записями, их продолжениями и связями. Luman Links переносит этот подход на карту интересов: области возникают из ваших действий, а не из папок, придуманных заранее.</p>
+</section>
+<section class="unit" id="s8-3" data-unit="s8-3">
+<h3>8.3. Самостоятельность личного пространства — принцип IndrasNet</h3>
+<p>Luman Links — часть <a href="https://indrasnet.eu">IndrasNet</a>.</p>
+<p>Один из принципов IndrasNet: личное мышление не должно зависеть от центральной платформы. Поэтому личный инструмент самостоятелен.</p>
+<p>Local-first в Luman Links выражает именно это. Картотека принадлежит вам, лежит на вашем устройстве и работает без сетевой инфраструктуры проекта. У этой самостоятельности есть цена: хранить копию — ваша забота (раздел «Прежде всего — о ваших данных»).</p>
+</section>
+<section class="unit" id="s8-4" data-unit="s8-4">
+<h3>8.4. Принцип простоты</h3>
+<p>Luman Links не решает за вас, что важно. Приложение берёт на себя механическое — там, где это удобно, — и оставляет вам маленькие смысловые решения там, где они полезны: назвать, отобрать, расположить, попробовать.</p>
+</section>
+</section>
+<section class="unit" id="s9" data-unit="s9">
+<h2>9. Текущее состояние и дальнейшее развитие</h2>
+<p>Luman Links сейчас в бета-версии. Он работает только на телефонах Android. Установка — файлом APK со страницы беты на сайте indrasnet.eu.</p>
+<p>Обновление ставится новым файлом поверх прежнего, и все карточки сохраняются. Главное — не удаляйте приложение перед обновлением: удаление стирает карточки вместе с ним. Если телефон откажется ставить обновление поверх, тоже не удаляйте — напишите автору.</p>
+<p>Это руководство описывает то, что работает в текущей версии. О новых возможностях здесь будет сказано, когда они появятся.</p>
+</section>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell">indrasnet.eu · Luman Links</div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  // Что раскрывает каждый абзац: уровень 2 — как пользоваться, уровень 3 — почему так устроено.
+  var MAP = {
+    audience:{l2:["s1","s4"], l3:["s8-4"]},
+    problem: {l2:["s2","s3-1"], l3:["s8-1","s8-4"]},
+    capture: {l2:["s4-1","s4-2","s7-1","s7-2","s7-3"], l3:["s8-1","s8-4"]},
+    stream:  {l2:["s5-1","s7-4"], l3:["s5-5","s8-1"]},
+    map:     {l2:["s5-2","s5-3","s7-6","s7-7"], l3:["s8-2","s5-5"]},
+    try:     {l2:["s6","s7-8"], l3:["s8-1","s8-4"]},
+    privacy: {l2:["data","s7-11"], l3:["s8-3"]}
+  };
+  var LABEL = {l2:"Как пользоваться", l3:"Почему так устроено"};
+  var DEPTH = {intro:0, full:1, l2:1, l3:2};
+
+  var body = document.body;
+  var detail = document.querySelector(".detail");
+  var slot = detail.querySelector(".slot");
+  var title = document.getElementById("detail-title");
+  var fullSec = document.querySelector(".full");
+  var fullTitle = document.getElementById("full-title");
+  var layout = document.querySelector(".layout");
+  var introCol = document.querySelector(".intro-col");
+  var links = {};
+  var wide = window.matchMedia("(min-width: 901px)");
+
+  // Якоря для чтения без скрипта не должны мешать: адрес #map теперь означает раскрытие.
+  Array.prototype.forEach.call(document.querySelectorAll(".intro-link"), function(a){
+    var id = a.getAttribute("data-p");
+    a.parentNode.removeAttribute("id");
+    a.setAttribute("href", "#" + id);
+    links[id] = a;
+  });
+  fullSec.removeAttribute("id");
+  detail.hidden = false;
+  Array.prototype.forEach.call(document.querySelectorAll(".bar[hidden]"), function(b){ b.hidden = false; });
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+  var current = null, selected = null, moved = [];
+  var scrollMem = {}, cameFrom = {};
+
+  function parse(hash){
+    var h = decodeURIComponent((hash || "").replace(/^#/, ""));
+    if (!h) return {kind:"intro", key:""};
+    if (h === "full") return {kind:"full", key:"full"};
+    var m = /^([a-z]+)(\/why)?$/.exec(h);
+    if (m && MAP.hasOwnProperty(m[1])) return {kind:m[2] ? "l3" : "l2", id:m[1], key:h};
+    var el = document.getElementById(h);
+    if (el && fullSec.contains(el)) return {kind:"full", key:"full", anchor:el, fix:true};
+    return {kind:"intro", key:"", fix:true};
+  }
+
+  function urlFor(key){ return key ? "#" + key : location.pathname + location.search; }
+
+  function restoreUnits(){
+    while (moved.length){ var p = moved.pop(); p[1].parentNode.replaceChild(p[0], p[1]); }
+  }
+  function placeUnits(ids){
+    ids.forEach(function(id){
+      var el = document.querySelector('[data-unit="' + id + '"]');
+      if (!el) return;
+      var ph = document.createComment(id);
+      el.parentNode.insertBefore(ph, el);
+      slot.appendChild(el);
+      moved.push([el, ph]);
+    });
+  }
+
+  function animate(el, cls){
+    if (!el) return;
+    el.classList.remove("anim-deeper", "anim-back");
+    void el.offsetWidth;
+    el.classList.add(cls);
+  }
+
+  function topOf(el){ return el.getBoundingClientRect().top + window.pageYOffset; }
+
+  function scrollIntro(id){
+    // на узком экране — вернуть абзац в поле зрения; на широком — показать его в колонке
+    var a = links[id];
+    if (!a) return;
+    if (wide.matches){
+      var c = introCol, r = a.getBoundingClientRect(), cr = c.getBoundingClientRect();
+      var top = Math.max(cr.top, 0), bottom = Math.min(cr.bottom, window.innerHeight);
+      if (r.top < top || r.bottom > bottom) c.scrollTop += r.top - top - Math.max(0, (bottom - top - r.height) / 2);
+    } else {
+      window.scrollTo(0, Math.max(0, topOf(a) - window.innerHeight / 3));
+    }
+  }
+
+  function render(opts){
+    opts = opts || {};
+    var r = parse(location.hash);
+    if (r.fix) history.replaceState(null, "", urlFor(r.key));
+    if (current !== null && r.key === current && !opts.force && !r.anchor) return;
+
+    var prevKey = current;
+    var prev = prevKey === null ? null : parse(urlFor(prevKey));
+    if (prevKey !== null) scrollMem[prevKey] = window.pageYOffset;
+
+    restoreUnits();
+    if (r.kind === "l2" || r.kind === "l3"){
+      selected = r.id;
+      placeUnits(MAP[r.id][r.kind]);
+      title.textContent = LABEL[r.kind];
+      Array.prototype.forEach.call(detail.querySelectorAll("[data-lvl]"), function(b){
+        b.hidden = b.getAttribute("data-lvl") !== r.kind;
+      });
+    }
+    detail.querySelector(".why-top").hidden = r.kind !== "l2";
+    body.setAttribute("data-view", r.kind);
+    Object.keys(links).forEach(function(id){
+      var on = (r.kind === "l2" || r.kind === "l3") && id === r.id;
+      if (on) links[id].setAttribute("aria-current", "true"); else links[id].removeAttribute("aria-current");
+      links[id].classList.toggle("was", !on && r.kind === "intro" && id === selected && !wide.matches);
+    });
+    current = r.key;
+
+    // прокрутка: новое — с начала, возврат — на прежнее место
+    var mem = scrollMem[r.key];
+    if (r.anchor){
+      window.scrollTo(0, topOf(r.anchor) - 70);
+    } else if (opts.fresh || mem === undefined){
+      if (r.kind === "intro"){
+        if (selected && mem === undefined && prev) scrollIntro(selected); else window.scrollTo(0, mem || 0);
+      } else if (wide.matches && r.kind !== "full"){
+        var lt = topOf(layout) - 12;
+        if (prev === null) window.scrollTo(0, 0);
+        else if (window.pageYOffset > lt) window.scrollTo(0, lt);
+        if (selected) scrollIntro(selected);
+      } else {
+        window.scrollTo(0, r.kind === "full" ? topOf(fullSec) - 8 : (wide.matches ? 0 : topOf(detail)));
+      }
+    } else {
+      window.scrollTo(0, mem);
+      if (r.kind !== "full" && selected && wide.matches) scrollIntro(selected);
+    }
+
+    // движение: глубже — справа, назад — слева
+    if (prev){
+      var d = DEPTH[r.kind] - DEPTH[prev.kind];
+      var cls = d < 0 ? "anim-back" : "anim-deeper";
+      var target = null;
+      if (r.kind === "full") target = fullSec;
+      else if (wide.matches){
+        if (r.kind !== "intro" && (prev.kind === "full" || d !== 0 || r.id !== prev.id)) target = detail.querySelector(".detail-main");
+        if (prev.kind === "full") target = document.querySelector(".first");
+      } else if (d !== 0 || r.id !== prev.id) target = r.kind === "intro" ? document.querySelector(".first") : detail;
+      if (target && (d !== 0 || r.kind !== "intro")) animate(target, d === 0 ? "anim-deeper" : cls);
+    }
+
+    // фокус — туда, что открылось (кроме первой загрузки)
+    if (prev && !opts.noFocus){
+      var f = null;
+      if (r.kind === "l2" || r.kind === "l3") f = wide.matches && opts.keepFocus ? null : title;
+      else if (r.kind === "full") f = fullTitle;
+      else if (selected) f = links[selected];
+      if (f) try { f.focus({preventScroll:true}); } catch(e){ f.focus(); }
+    }
+  }
+
+  function go(key, opts){
+    if (key === current) return;
+    cameFrom[key] = current;
+    history.pushState(null, "", urlFor(key));
+    render(opts || {});
+  }
+  function parentOf(key){
+    var r = parse(urlFor(key));
+    return r.kind === "l3" ? r.id : "";
+  }
+  function back(){
+    var p = parentOf(current);
+    if (cameFrom[current] === p) history.back(); else go(p);
+  }
+
+  document.addEventListener("click", function(e){
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var t = e.target.closest ? e.target.closest("a,button") : null;
+    if (!t) return;
+    if (t.classList.contains("intro-link")){
+      e.preventDefault();
+      var id = t.getAttribute("data-p");
+      if (current === id) return;
+      go(id, {fresh:true, keepFocus:true});
+      return;
+    }
+    if (t.classList.contains("full-link")){ e.preventDefault(); go("full", {fresh:true}); return; }
+    var act = t.getAttribute("data-act");
+    if (act === "why"){ go(selected + "/why", {fresh:true}); }
+    else if (act === "how"){ if (cameFrom[current] === selected) history.back(); else go(selected); }
+    else if (act === "back"){ back(); }
+    else if (act === "home"){ if (cameFrom[current] === "" ) history.back(); else go(""); }
+    else if (t.tagName === "A" && t.closest(".toc")){
+      // оглавление листает текст, не трогая адрес
+      var h = t.getAttribute("href").slice(1), el = document.getElementById(h);
+      if (el){
+        e.preventDefault();
+        window.scrollTo(0, topOf(el) - (wide.matches ? 16 : 76));
+        var hd = el.querySelector("h2,h3,h4") || el;
+        hd.setAttribute("tabindex", "-1");
+        try { hd.focus({preventScroll:true}); } catch(_){}
+      }
+    }
+  });
+
+  window.addEventListener("popstate", function(){ render(); });
+  window.addEventListener("hashchange", function(){ render(); });
+  var onWide = function(){ render({force:true, noFocus:true}); };
+  if (wide.addEventListener) wide.addEventListener("change", onWide); else if (wide.addListener) wide.addListener(onWide);
+
+  render({noFocus:true});
+})();
+</script>
+</body>
+</html>
