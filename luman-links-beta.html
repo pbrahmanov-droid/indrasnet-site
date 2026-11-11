@@ -680,7 +680,10 @@ const FALLBACK = [];
     const m = /^ll-v(\d+\.\d+\.\d+)-b(\d+)$/.exec(rel.tag_name || "");
     const apk = (rel.assets || []).find(a => /\.apk$/i.test(a.name));
     if (!m || !apk || rel.draft || rel.prerelease) return null;
-    const changes = String(rel.body || "").split(/\r?\n/).map(s => s.replace(/^\s*[-*•]\s*/, "").trim()).filter(Boolean);
+    const lines = String(rel.body || "").split(/\r?\n/);
+    const sep = lines.findIndex(s => s.trim() === "---");
+    const part = sep < 0 ? lines : lines.slice(sep + 1);  // RU: после "---"; EN: до "---"
+    const changes = part.map(s => s.replace(/^\s*[-*•]\s*/, "").trim()).filter(Boolean);
     return {
       versionName: m[1], versionCode: Number(m[2]), date: rel.published_at || rel.created_at,
       file: apk.name, url: apk.browser_download_url, sizeMB: apk.size / 1048576,
