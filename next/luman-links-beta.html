@@ -469,6 +469,8 @@ html, body { color-scheme: only light; }
 [data-reveal][hidden]{display:none}
 .site-footer,.site-footer a,.site-footer span,.footer-brand .logo,.footer-nav a:hover{color:#000 !important}
 </style>
+<link rel="alternate" hreflang="ru" href="https://indrasnet.eu/luman-links-beta.html">
+<link rel="alternate" hreflang="en" href="https://indrasnet.eu/en/luman-links-beta.html">
 <style>
 .nav .nav-links{margin-left:auto}
 .lang-switch{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:14px;white-space:nowrap}
@@ -486,11 +488,11 @@ html, body { color-scheme: only light; }
   --nx-glass-shadow:0 24px 46px -24px rgba(32,38,48,.5),0 3px 10px rgba(32,38,48,.07),inset 0 1px 0 rgba(255,255,255,.95);
   --nx-btn-shadow:0 10px 22px -10px rgba(32,38,48,.6),0 2px 4px rgba(32,38,48,.1);
   --nx-r:28px;
+  --nx-on:rgba(247,250,255,.92);--nx-on-muted:rgba(247,250,255,.86);--nx-on-shadow:0 1px 4px rgba(8,28,72,.28);
 }
 html{background:#6f98d4}
 body.nx{margin:0;font-family:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--nx-ink);background:none !important;-webkit-font-smoothing:antialiased}
 body.nx::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:#6f98d4 url("assets/indrasnet-bg.png") center/cover no-repeat}
-body.nx::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 110% 62% at 50% -4%,rgba(255,255,255,.74),rgba(255,255,255,.22) 58%,rgba(255,255,255,0) 82%)}
 .nx-glass{background:var(--nx-glass);border:1px solid rgba(255,255,255,.5);border-top-color:rgba(255,255,255,.98);border-radius:var(--nx-r);box-shadow:var(--nx-glass-shadow);-webkit-backdrop-filter:blur(16px) saturate(125%);backdrop-filter:blur(16px) saturate(125%)}
 
 /* шапка */
@@ -529,45 +531,67 @@ body.nx::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 }
 
 /* подвал */
-.nx-footer{margin-top:56px !important;background:rgba(255,255,255,.66) !important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.75) !important}
+.nx-footer{margin-top:56px !important;background:none !important;border-top:0 !important;text-shadow:var(--nx-on-shadow)}
+.nx-footer,.nx-footer a,.nx-footer span{color:var(--nx-on) !important}
+.nx-footer .logo,.nx-footer .logo span{color:var(--nx-on) !important}
+.nx-footer .footer-bottom{border-top:0 !important;color:var(--nx-on-muted) !important}
+.nx-footer .footer-bottom span{color:var(--nx-on-muted) !important}
 :focus-visible{outline:2px solid var(--nx-base);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important}}
 
-/* ===== NEXT: перекраска старых классов ===== */
-:root{--ink:#202630;--muted:#69727b;--brand:#303750;--accent:#303750;--line:rgba(48,55,80,.12);--line-strong:rgba(48,55,80,.24);
-  --draft:#9a6a12;--draft-soft:#f7eed9;--success:#345846;--panel:rgba(255,255,255,.72);--panel-solid:rgba(255,255,255,.78)}
-body.nx{color:var(--nx-ink)}
-body.nx h1,body.nx h2{color:var(--nx-base)}
-body.nx .eyebrow{color:var(--nx-muted)}
-.status.live{background:var(--nx-ok-soft) !important;color:var(--nx-ok-ink) !important;border-radius:999px}
-.site-footer.nx-footer,.site-footer.nx-footer a,.site-footer.nx-footer span{color:var(--nx-ink) !important}
-.site-footer.nx-footer .logo,.site-footer.nx-footer .logo span{color:var(--nx-base) !important}
+/* ===== NEXT: правило оформления — форма только у нажимаемого и у карточек;
+   остальное — светлый текст прямо на фоне ===== */
+:root{--brand:#303750;--accent:#303750;--draft:#9a6a12;--draft-soft:#f7eed9;--success:#345846}
+body.nx main{--ink:rgba(247,250,255,.92);--muted:rgba(247,250,255,.86);--line:rgba(247,250,255,.2);--line-strong:rgba(247,250,255,.3);
+  color:var(--ink);text-shadow:var(--nx-on-shadow)}
+body.nx main h1,body.nx main h2,body.nx main h3{color:var(--nx-on)}
+body.nx main .eyebrow,body.nx main .muted{color:var(--nx-on-muted)}
+body.nx main p a:not([class]),body.nx main li a:not([class]){color:var(--nx-on);text-decoration:underline;text-underline-offset:3px}
+.status.live{background:var(--nx-ok-soft) !important;color:var(--nx-ok-ink) !important;border-radius:999px;text-shadow:none}
 
-/* первый экран: стеклянная карточка вместо текста прямо на фоне */
+body.nx main :is(.step,.see,.qr-box,.copy-btn){--ink:#202630;--muted:#69727b;--line:rgba(48,55,80,.12);color:var(--ink);text-shadow:none}
+body.nx main :is(.step,.see) :is(b,h3){color:var(--nx-base)}
+/* первый экран — на фоне */
 .beta-hero{padding:48px 0 26px}
-.beta-hero .beta-grid{align-items:stretch}
-.beta-hero .beta-grid>div:first-child,.qr-card,.card{background:var(--nx-glass) !important;border:1px solid rgba(255,255,255,.5) !important;border-top-color:rgba(255,255,255,.98) !important;border-radius:var(--nx-r) !important;box-shadow:var(--nx-glass-shadow) !important;-webkit-backdrop-filter:blur(16px) saturate(125%);backdrop-filter:blur(16px) saturate(125%)}
-.beta-hero .beta-grid>div:first-child{padding:clamp(24px,4vw,40px)}
-.beta-hero .lead,.card .lead,.see-lead{color:var(--nx-ink) !important}
-.app-icon{box-shadow:0 16px 30px -14px rgba(32,38,48,.55)}
-.download-btn{border-radius:999px !important;background:var(--nx-warm-ink) !important;color:#fff !important;padding:0 28px !important;box-shadow:0 14px 26px -12px rgba(154,106,18,.9),inset 0 1px 0 rgba(255,255,255,.25) !important}
+.app-icon{box-shadow:0 16px 30px -14px rgba(8,28,72,.6)}
+.build-card{background:none !important;border:0 !important;box-shadow:none !important;max-width:640px}
+.build-row{border-top:0 !important;padding:6px 0 !important}
+.qr-card{background:none !important;border:0 !important;box-shadow:none !important}
+.qr-box{border:0 !important;border-radius:18px !important;box-shadow:0 14px 28px -16px rgba(8,28,72,.7) !important}
+/* кнопки — капсулы */
+.download-btn{border-radius:999px !important;background:var(--nx-warm-ink) !important;color:#fff !important;padding:0 28px !important;text-shadow:none;box-shadow:0 14px 26px -12px rgba(120,80,10,.9),inset 0 1px 0 rgba(255,255,255,.25) !important}
 .download-btn.disabled{opacity:.6}
-.disclosure-btn{border-radius:999px !important;border:1px solid rgba(48,55,80,.16) !important;background:rgba(255,255,255,.78) !important;color:var(--nx-base) !important;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 #fff;text-decoration:none}
-.more-link{border-radius:999px !important;border:1px solid rgba(255,255,255,.6) !important;border-top-color:#fff !important;background:rgba(255,255,255,.78) !important;color:var(--nx-base) !important;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 #fff !important}
-.tg-link{border-radius:999px !important;background:var(--nx-base) !important;color:#fff !important;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 rgba(255,255,255,.18)}
-.copy-btn{border-radius:999px !important;border-color:rgba(48,55,80,.16) !important;background:#fff !important;box-shadow:0 4px 10px -6px rgba(32,38,48,.5)}
-.build-card{background:rgba(255,255,255,.6) !important;border-color:rgba(48,55,80,.1) !important;border-radius:20px !important;box-shadow:inset 0 1px 0 #fff}
-.https-note{color:var(--nx-muted) !important}
-.qr-box{border-radius:18px !important;box-shadow:inset 0 1px 0 #fff,0 8px 18px -12px rgba(32,38,48,.5)}
-.rule-card{background:var(--nx-base) !important;border-radius:var(--nx-r) !important;box-shadow:0 30px 56px -26px rgba(32,38,48,.85),inset 0 1px 0 rgba(255,255,255,.16) !important}
-.rule-card .rule-title,.rule-card h3{color:#fff !important}
-.step,.see,.question,.template{background:rgba(255,255,255,.7) !important;border:1px solid rgba(255,255,255,.6) !important;border-top-color:#fff !important;border-radius:20px !important;box-shadow:0 12px 24px -18px rgba(32,38,48,.5),inset 0 1px 0 #fff !important}
-.steps .step.key{border-color:rgba(48,55,80,.35) !important}
+.disclosure-btn{border-radius:999px !important;border:1px solid rgba(255,255,255,.6) !important;border-top-color:#fff !important;background:rgba(255,255,255,.8) !important;color:var(--nx-base) !important;text-shadow:none;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 #fff;text-decoration:none}
+.more-link{border-radius:999px !important;border:1px solid rgba(255,255,255,.6) !important;border-top-color:#fff !important;background:rgba(255,255,255,.8) !important;color:var(--nx-base) !important;text-shadow:none;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 #fff !important}
+.tg-link{border-radius:999px !important;background:var(--nx-base) !important;color:#fff !important;text-shadow:none;box-shadow:var(--nx-btn-shadow),inset 0 1px 0 rgba(255,255,255,.18)}
+.copy-btn{border-radius:999px !important;border-color:rgba(48,55,80,.16) !important;background:#fff !important;color:var(--nx-base) !important;box-shadow:0 4px 10px -6px rgba(8,28,72,.6)}
+.save-chip{border-color:rgba(247,250,255,.7) !important;color:var(--nx-on) !important}
+/* главное правило — текст на фоне */
+.rule-card{background:none !important;box-shadow:none !important;border-radius:0 !important;padding:clamp(8px,2vw,20px) 0 !important}
+.rule-card::before,.rule-card::after{display:none !important}
+.rule-card .eyebrow,.rule-title span{color:var(--nx-on-muted) !important}
+.rule-title{color:var(--nx-on) !important}
+.rule-body>div{border-top:0 !important;padding-top:0 !important}
+.rule-body p{color:var(--nx-on-muted) !important}
+.rule-body strong{color:var(--nx-on) !important}
+/* разделы — на фоне, без плашек */
+.card{background:none !important;border:0 !important;box-shadow:none !important;border-radius:0 !important;padding:8px 0 !important}
+.card .lead,.see-lead{color:var(--nx-on) !important}
+/* карточки шагов установки — сохраняют форму */
+.step,.see{background:var(--nx-glass) !important;border:1px solid rgba(255,255,255,.5) !important;border-top-color:rgba(255,255,255,.98) !important;border-radius:20px !important;box-shadow:var(--nx-glass-shadow) !important}
+.steps .step.key{border-color:rgba(48,55,80,.3) !important}
 .update-flow .step.warn{background:var(--alert-soft) !important;border-color:rgba(138,59,46,.35) !important}
-.why{background:rgba(255,255,255,.6) !important;border-color:rgba(48,55,80,.08) !important;border-radius:22px !important;box-shadow:inset 0 1px 0 #fff}
-.shot{border-radius:16px}
-.ver-id b{color:var(--nx-base)}
-@media (max-width:760px){.beta-hero{padding-top:20px !important}}
+.update-flow .step.warn b{color:var(--alert) !important}
+.shot{border-radius:14px}
+.why{background:none !important;border:0 !important;box-shadow:none !important;padding:0 !important;margin-top:30px}
+details.verify{border-top:0 !important;padding-top:4px}
+details.verify summary::after{color:var(--nx-on-muted)}
+.verify-body pre{background:none !important;border:0 !important;padding:2px 0 !important;color:var(--nx-on) !important}
+.ver{border-top:0 !important}
+.ver ul li::marker{color:var(--nx-on-muted)}
+.question-grid,.tg-card{border-top:0 !important}
+.question{background:none !important;border:0 !important;padding:0 !important}
+@media (max-width:760px){.beta-hero{padding-top:24px !important}}
 </style>
 </head>
 <body class="nx">
@@ -580,7 +604,7 @@ body.nx .eyebrow{color:var(--nx-muted)}
       <a href="/luman-links-guide.html">Материалы</a>
       <a href="https://indrasnet.ee" target="_blank" rel="noopener">Research / Grants ↗</a>
     </nav>
-    <a class="nx-cta" href="luman-links-beta.html" aria-current="page">Luman Links Бета</a>
+    <a class="nx-cta" href="#download">Скачать APK</a>
     <span class="nx-lang"><b aria-current="true">RU</b> <span aria-hidden="true">|</span> <a href="en/luman-links-beta.html" hreflang="en" lang="en">EN</a></span>
     <button class="nx-burger" type="button" aria-expanded="false" aria-controls="nxMenu" aria-label="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
