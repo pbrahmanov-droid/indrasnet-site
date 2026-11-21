@@ -155,10 +155,10 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
 .item h4{margin:0;font-size:16px;color:var(--nx-head)}
 .item p{margin:6px 0 0;font-size:14px;line-height:1.5;color:var(--nx-muted)}
 .item .ext{margin-left:auto;font-size:15px;color:var(--nx-head);font-weight:700}
-.pod{padding:26px 24px;border-radius:24px;background:var(--nx-base);color:#fff;box-shadow:var(--nx-card-shadow)}
-.pod .pod-logo{width:46px;height:46px;background:#000;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
-.pod h3{margin:0;font-size:21px;color:#fff}
-.pod p{margin:14px 0 0;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.84)}
+.pod{display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 24px 30px;border-radius:24px;background:#000 radial-gradient(120% 46% at 50% 118%,rgba(255,176,104,.16),rgba(255,176,104,0) 70%);color:#fff;box-shadow:var(--nx-card-shadow)}
+.pod .pod-logo{display:block;width:96px;height:96px}
+.pod h3{margin:10px 0 8px;font-size:21px;color:#fff}
+.pod p{margin:14px 0 0;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.72)}
 .badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.01em;white-space:nowrap;line-height:1.5}
 .badge.ok{color:var(--nx-ok-ink);background:var(--nx-ok-soft)}
 .badge.dev{color:var(--nx-warm-ink);background:var(--nx-warm-soft)}
@@ -360,7 +360,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
         <div class="dlink" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12h17M8 7.5 3.5 12 8 16.5M16 7.5l4.5 4.5-4.5 4.5"/></svg></div>
         <div class="dcol mid">
           <div class="pod">
-            <div class="dhead"><img class="logo-app pod-logo" src="assets/logos/indrapod.webp" alt="" width="46" height="46"><h3>IndraPod</h3><span class="badge dev">Разработка</span></div>
+            <img class="pod-logo" src="assets/logos/indrapod.webp" alt="" width="96" height="96"><h3>IndraPod</h3><span class="badge dev">Разработка</span>
             <p>Публикация проектов в DAO и управление ими.</p>
           </div>
         </div>
