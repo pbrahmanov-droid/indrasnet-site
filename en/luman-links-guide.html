@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Luman Links — user guide | IndrasNet</title>
+<meta content="Luman Links user guide." name="description"/>
+<link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20116%20117%22%3E%3Cpath%20fill%3D%22%2342423e%22%20d%3D%22M57.9%2C100.0%20L49.3%2C107.8%20L49.0%2C109.3%20L55.3%2C112.8%20L58.4%2C113.5%20L66.3%2C109.8%20L66.8%2C108.4%20L60.3%2C101.7Z%20M43.7%2C91.7%20L35.7%2C91.9%20L34.1%2C92.7%20L35.2%2C96.4%20L38.9%2C103.6%20L42.9%2C102.7%20L48.3%2C100.6%20L50.4%2C99.2%20L50.3%2C98.4%20L46.3%2C93.8Z%20M71.6%2C91.8%20L65.6%2C97.9%20L65.3%2C99.4%20L72.8%2C102.7%20L76.6%2C103.6%20L77.7%2C102.3%20L81.3%2C94.0%20L81.4%2C92.7%20L80.4%2C92.0Z%20M16.0%2C87.8%20L15.5%2C88.5%20L17.9%2C95.8%20L19.1%2C97.7%20L24.2%2C99.9%20L28.3%2C100.8%20L28.9%2C99.6%20L28.6%2C88.3%20L27.4%2C87.6Z%20M99.6%2C87.8%20L88.5%2C87.5%20L87.1%2C88.3%20L86.8%2C99.9%20L87.4%2C100.8%20L88.5%2C100.9%20L95.0%2C98.5%20L97.1%2C97.0%20L100.0%2C89.3Z%20M51.7%2C89.0%20L51.5%2C90.3%20L57.9%2C96.2%20L62.6%2C92.0%20L64.2%2C89.8%20L63.5%2C88.8%20L58.4%2C86.6Z%20M65.6%2C77.8%20L62.3%2C81.4%20L62.1%2C82.5%20L63.0%2C83.4%20L68.6%2C84.8%20L69.7%2C84.0%20L71.8%2C78.7%20L70.4%2C77.8Z%20M43.6%2C78.6%20L46.7%2C84.7%20L48.9%2C84.6%20L53.4%2C82.5%20L53.3%2C81.5%20L50.3%2C77.7%20L44.8%2C77.9Z%20M31.4%2C76.0%20L30.8%2C76.9%20L31.2%2C84.8%20L32.1%2C85.3%20L39.3%2C85.4%20L40.1%2C85.0%20L40.3%2C83.6%20L38.3%2C78.2%20L33.0%2C76.0Z%20M84.2%2C75.8%20L77.1%2C78.3%20L75.2%2C83.8%20L75.6%2C85.2%20L84.5%2C85.0%20L84.9%2C77.3Z%20M99.3%2C65.5%20L97.8%2C65.8%20L91.3%2C71.7%20L91.4%2C81.1%20L91.8%2C81.8%20L93.1%2C81.9%20L103.3%2C76.9%20L103.1%2C74.8Z%20M16.4%2C65.4%20L15.6%2C66.3%20L12.8%2C73.6%20L12.1%2C76.8%20L13.5%2C78.0%20L23.2%2C82.1%20L24.2%2C80.6%20L24.2%2C71.8%20L20.9%2C68.4%20L17.6%2C65.7Z%20M81.9%2C62.6%20L80.4%2C63.0%20L77.2%2C65.9%20L76.9%2C68.5%20L77.6%2C72.4%20L80.9%2C71.3%20L84.1%2C69.4%20L84.1%2C67.7%20L82.6%2C63.2Z%20M33.6%2C62.6%20L31.7%2C66.8%20L31.6%2C69.5%20L32.8%2C70.5%20L37.9%2C72.2%20L38.6%2C71.1%20L38.4%2C66.1%20L35.1%2C63.0Z%20M89.0%2C51.5%20L87.7%2C53.3%20L85.6%2C58.4%20L88.1%2C64.1%20L89.6%2C64.8%20L95.1%2C59.7%20L95.7%2C57.8%20L89.9%2C51.6Z%20M25.9%2C51.5%20L20.2%2C57.3%20L19.8%2C58.5%20L20.9%2C60.3%20L25.9%2C64.8%20L26.8%2C64.9%20L28.2%2C62.9%20L30.0%2C58.1%20L27.5%2C52.6%20L26.7%2C51.6Z%20M107.8%2C49.4%20L100.0%2C57.4%20L99.8%2C58.4%20L100.5%2C59.9%20L106.9%2C66.8%20L108.5%2C67.4%20L110.4%2C64.3%20L112.2%2C59.7%20L112.5%2C57.4%20L109.4%2C50.1Z%20M7.1%2C49.3%20L6.3%2C49.9%20L3.0%2C58.3%20L6.3%2C66.6%20L7.8%2C67.2%20L15.3%2C59.6%20L15.7%2C57.9%20L8.4%2C49.8Z%20M77.9%2C44.4%20L77.1%2C45.5%20L77.0%2C50.4%20L79.6%2C52.9%20L82.1%2C53.9%20L82.9%2C53.0%20L84.2%2C49.0%20L84.2%2C47.3%20L80.1%2C44.9Z%20M37.7%2C44.4%20L35.8%2C44.6%20L31.3%2C47.5%20L32.7%2C52.9%20L33.8%2C54.0%20L35.1%2C53.6%20L38.5%2C50.7%20L38.5%2C45.8Z%20M91.9%2C34.9%20L91.2%2C35.8%20L91.1%2C44.7%20L97.6%2C50.8%20L98.4%2C51.0%20L100.0%2C49.0%20L103.2%2C39.9%20L101.9%2C38.6%20L93.8%2C35.1Z%20M23.4%2C34.7%20L13.6%2C38.6%20L12.5%2C39.6%20L12.5%2C40.8%20L15.5%2C48.6%20L17.0%2C50.8%20L18.3%2C50.5%20L23.3%2C46.1%20L24.4%2C44.5%20L24.3%2C35.9Z%20M46.6%2C32.1%20L43.8%2C38.2%20L45.7%2C38.9%20L50.5%2C38.6%20L52.9%2C35.6%20L53.1%2C33.8%20L48.4%2C32.0Z%20M62.6%2C33.7%20L62.6%2C35.4%20L65.6%2C38.7%20L70.7%2C38.8%20L71.8%2C38.1%20L69.6%2C32.8%20L68.6%2C31.9%20L67.2%2C31.9Z%20M75.4%2C31.5%20L75.1%2C33.1%20L77.2%2C38.3%20L81.9%2C40.6%20L84.3%2C41.0%20L84.9%2C40.0%20L84.6%2C31.9%20L83.6%2C31.3Z%20M39.9%2C31.5%20L32.2%2C31.3%20L31.1%2C31.8%20L30.8%2C40.0%20L31.3%2C40.8%20L33.8%2C40.6%20L38.0%2C38.7%20L40.4%2C32.8Z%20M57.6%2C20.5%20L51.7%2C25.9%20L51.3%2C27.3%20L56.0%2C30.1%20L58.0%2C30.7%20L63.5%2C28.1%20L64.3%2C26.7%20L58.7%2C20.7Z%20M87.4%2C16.3%20L87.0%2C17.1%20L87.4%2C28.8%20L88.4%2C29.2%20L99.4%2C29.0%20L99.9%2C27.3%20L97.0%2C19.8%20L95.7%2C18.8%20L88.8%2C16.2Z%20M28.1%2C16.3%20L27.4%2C16.1%20L19.6%2C18.8%20L18.7%2C19.6%20L15.6%2C27.5%20L16.1%2C28.9%20L27.4%2C29.1%20L28.3%2C28.5%20L28.6%2C17.0Z%20M39.1%2C13.2%20L37.9%2C14.5%20L34.1%2C24.1%20L35.3%2C24.9%20L44.2%2C25.0%20L50.4%2C18.3%20L50.5%2C17.5%20L41.3%2C13.4Z%20M65.2%2C17.6%20L65.9%2C19.2%20L71.3%2C24.9%20L73.7%2C25.3%20L80.9%2C24.8%20L81.5%2C24.3%20L77.6%2C14.2%20L76.5%2C13.1%20L75.6%2C13.0%20L67.7%2C16.0Z%20M57.8%2C3.2%20L49.3%2C6.9%20L48.7%2C7.9%20L49.2%2C9.0%20L56.9%2C16.4%20L58.4%2C16.9%20L66.7%2C8.8%20L66.9%2C7.7%20L65.9%2C6.7Z%22/%3E%3C/svg%3E" rel="icon"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="alternate" hreflang="ru" href="https://indrasnet.eu/luman-links-guide.html">
+<link rel="alternate" hreflang="en" href="https://indrasnet.eu/en/luman-links-guide.html">
+<script>document.documentElement.className="js";</script>
+<style>
+/* ===== General look — as on the home and beta pages: plain background, dark text,
+   form (card with gradient and deep shadow) only on what can be pressed, buttons are capsules ===== */
+:root{
+  color-scheme:only light;
+  --nx-bg:#c8e6e2;
+  --nx-base:#52524d;--nx-base-hover:#42423e;--nx-head:#42423e;
+  --nx-ink:#1e1e1c;--nx-muted:#3f4442;
+  --nx-line:rgba(30,30,28,.14);--nx-outline:rgba(30,30,28,.30);
+  --nx-card:linear-gradient(180deg,#f3ece5,#e0c9bd);
+  --nx-card-shadow:0 40px 80px -20px rgba(40,40,36,.45),0 12px 28px rgba(40,40,36,.16);
+  --nx-card-shadow-up:0 52px 96px -22px rgba(40,40,36,.52),0 16px 34px rgba(40,40,36,.18);
+  --nx-btn-shadow:0 12px 22px -12px rgba(40,40,36,.55),0 2px 5px rgba(40,40,36,.10);
+  --nx-r:26px;
+  --read:680px;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --dur:.2s;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--nx-bg)}
+main{overflow-x:clip}
+body.nx{margin:0;font-family:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--nx-ink);background:var(--nx-bg);
+  line-height:1.65;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{text-wrap:balance}
+:focus-visible{outline:2px solid var(--nx-base);outline-offset:3px}
+.shell{width:min(calc(100% - 36px),1160px);margin:0 auto}
+.eyebrow{font-size:11.5px;line-height:1.2;letter-spacing:.18em;text-transform:uppercase;color:var(--nx-muted);font-weight:700}
+
+/* header — as on the home page; not sticky here: the tab bar stays sticky */
+.nx-header{position:relative;z-index:50;background:var(--nx-bg);border-bottom:1px solid var(--nx-line)}
+.nx-nav{position:relative;width:min(calc(100% - 36px),1160px);margin:0 auto;min-height:78px;display:flex;align-items:center;gap:24px}
+.nx-logo{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--nx-head);text-decoration:none;font-weight:600;font-size:10px;letter-spacing:.36em;line-height:1;text-transform:uppercase;white-space:nowrap;flex:none}
+.nx-logo span{margin-right:-.36em}
+.nx-logo svg{width:36px;height:36px;flex:none;color:var(--nx-head)}
+.nx-links{display:flex;align-items:center;gap:26px;margin-left:auto;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.nx-links a{color:var(--nx-ink);text-decoration:none;opacity:.78;transition:opacity .15s}
+.nx-links a:hover,.nx-links a[aria-current]{opacity:1}
+.nx-cta{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:999px;background:var(--nx-base);color:#fff !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:var(--nx-btn-shadow);transition:transform .15s,background .15s}
+.nx-cta:hover{background:var(--nx-base-hover);transform:translateY(-1px)}
+.nx-lang{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--nx-muted);white-space:nowrap}
+.nx-lang b{color:var(--nx-ink);font-weight:800}
+.nx-lang a{color:var(--nx-muted);text-decoration:none}
+.nx-lang a:hover{color:var(--nx-ink)}
+.nx-burger{display:none;appearance:none;border:1px solid var(--nx-outline);background:transparent;color:var(--nx-ink);width:42px;height:42px;border-radius:999px;padding:0;cursor:pointer;flex:none}
+.nx-burger:hover{background:rgba(30,30,28,.06)}
+.nx-burger svg{width:20px;height:20px}
+@media(max-width:900px){
+  .nx-nav{gap:12px;min-height:68px}
+  .nx-cta{margin-left:auto;min-height:38px;padding:0 15px;font-size:13px}
+  .nx-burger{display:inline-grid;place-items:center}
+  .nx-links{display:none;position:absolute;left:0;right:0;top:100%;margin:8px 0 0;flex-direction:column;align-items:stretch;gap:2px;padding:8px;border-radius:22px;background:var(--nx-card);box-shadow:var(--nx-card-shadow)}
+  .nx-links.open{display:flex}
+  .nx-links a{padding:13px 14px;border-radius:14px;opacity:1}
+  .nx-links a:hover{background:rgba(30,30,28,.06)}
+}
+@media(max-width:420px){
+  .nx-nav{width:calc(100% - 24px);gap:8px}
+  .nx-logo{font-size:9px}
+  .nx-logo svg{width:32px;height:32px}
+  .nx-cta{padding:0 12px;font-size:12.5px}
+  .nx-lang{font-size:11px;gap:4px;letter-spacing:.06em}
+  .nx-burger{width:38px;height:38px}
+}
+
+/* footer — as on the home page, text on the background */
+.site-footer{margin-top:56px;padding:30px 0 36px;font-size:13px;line-height:1.5;border-top:1px solid var(--nx-line);color:var(--nx-ink)}
+.site-footer a{text-decoration:none;color:var(--nx-ink)}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:start}
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.footer-brand .logo{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:9.5px;font-weight:600;letter-spacing:.32em;line-height:1;text-transform:uppercase;white-space:nowrap;color:var(--nx-head)}
+.footer-brand .logo span{margin-right:-.32em}
+.footer-brand .logo-svg{width:28px;height:28px}
+.footer-nav{display:flex;gap:10px 22px;flex-wrap:wrap;justify-content:flex-end;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.footer-nav a:hover{text-decoration:underline}
+.nx-mail{grid-column:1/-1;margin:0;font-size:13px}
+.nx-mail a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.footer-bottom{grid-column:1/-1;padding-top:6px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--nx-muted)}
+@media(max-width:900px){
+  .footer-grid{grid-template-columns:1fr}
+  .footer-nav{justify-content:flex-start}
+}
+
+/* ===== Page title ===== */
+.hero{text-align:center;padding:56px 0 30px}
+.hero h1{margin:0;font-size:clamp(40px,7vw,76px);line-height:.95;font-weight:600;letter-spacing:.07em;margin-right:-.07em;color:var(--nx-head);text-transform:uppercase;text-shadow:0 2px 0 rgba(255,255,255,.85)}
+
+/* ===== Three texts ===== */
+.text{max-width:var(--read);margin-inline:auto}
+.text + .text{margin-top:56px;padding-top:30px;border-top:1px solid var(--nx-line)}
+.text-head{margin:0 0 6px}
+.text-title{font-size:clamp(30px,5vw,42px);line-height:1.1;letter-spacing:-.02em;margin:0;font-weight:700;color:var(--nx-head)}
+.text-sub{font-size:clamp(17px,2.2vw,20px);color:var(--nx-muted);margin:6px 0 30px;line-height:1.5}
+.text-head + .toc{margin-top:22px}
+.text [id]{scroll-margin-top:84px}
+
+/* tabs — capsules */
+.tabs-bar{position:sticky;top:0;z-index:20;margin-bottom:30px;padding:12px 0;border-bottom:1px solid var(--nx-line);background:var(--nx-bg)}
+.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:var(--read);margin:0 auto}
+.tab{
+  appearance:none;min-height:44px;padding:0 10px;border:1px solid var(--nx-outline);border-radius:999px;background:transparent;color:var(--nx-ink);
+  font-weight:700;font-size:14.5px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background .15s,color .15s
+}
+.tab:hover{background:rgba(30,30,28,.06)}
+.tab[aria-selected="true"]{background:var(--nx-base);border-color:var(--nx-base);color:#fff;box-shadow:var(--nx-btn-shadow)}
+.tab[aria-selected="true"]:hover{background:var(--nx-base-hover)}
+.js .text{display:none}
+.js .text.on{display:block}
+.js .text + .text{margin-top:0;padding-top:0;border-top:0}
+
+/* ===== Text: line up to ~70 characters, line height 1.65 ===== */
+.guide{color:var(--nx-ink)}
+.guide h3{font-size:clamp(24px,3.4vw,30px);line-height:1.2;margin:0 0 16px;letter-spacing:-.01em;font-weight:700;color:var(--nx-head)}
+.guide h4{font-size:clamp(19px,2.4vw,21px);line-height:1.3;margin:36px 0 12px;font-weight:700;color:var(--nx-head)}
+.guide h5{font-size:17px;margin:26px 0 8px;color:var(--nx-head)}
+.guide p,.guide li{font-size:17px;line-height:1.65}
+.guide p{margin:0 0 16px}
+.guide ol,.guide ul{margin:0 0 16px;padding-left:24px}
+.guide li{margin-bottom:8px}
+.guide li::marker{color:var(--nx-muted)}
+.guide a{text-decoration:underline;text-decoration-color:var(--nx-outline);text-underline-offset:3px}
+.guide a:hover{text-decoration-color:var(--nx-ink)}
+.guide strong{font-weight:700}
+.guide > .unit{margin-top:60px;padding-top:34px;border-top:1px solid var(--nx-line)}
+.guide > .unit:first-child{margin-top:0;border-top:0;padding-top:0}
+.guide > p + .unit{margin-top:44px}
+.unit > .unit:first-of-type > h4{margin-top:28px}
+/* motto — text on the background, no panel */
+.guide .motto{margin:34px 0 0;padding:26px 0 0;border-top:1px solid var(--nx-line);font-size:20px;line-height:1.5;color:var(--nx-head)}
+/* Overview paragraphs — clickable cards leading into the Guide */
+.guide .go{margin:0 0 12px}
+.go-link{position:relative;display:block;padding:12px 40px 12px 16px;border:1px solid rgba(30,30,28,.25);border-radius:14px;background:transparent;
+  text-decoration:none!important;color:var(--nx-ink);cursor:pointer;transition:border-color var(--dur) ease;-webkit-tap-highlight-color:transparent}
+.go-link:hover{border-color:rgba(30,30,28,.45)}
+.go-link:focus-visible{outline:2px solid var(--nx-base);outline-offset:3px}
+.go-cue{position:absolute;right:18px;top:50%;width:16px;height:16px;margin-top:-8px;fill:none;stroke:var(--nx-head);stroke-width:1.9;
+  stroke-linecap:round;stroke-linejoin:round;opacity:.6;transition:opacity var(--dur) ease,transform var(--dur) ease}
+.go-link:hover .go-cue,.go-link:focus-visible .go-cue{opacity:1;transform:translateX(2px)}
+.guide .go + .motto{margin-top:34px}
+/* "Why it works this way" — outlined capsule; "↑ Contents" — small label */
+.guide .why{margin:-2px 0 20px;font-size:14px}
+.guide .why a{display:inline-flex;align-items:center;min-height:34px;padding:0 15px;border:1px solid var(--nx-outline);border-radius:999px;
+  font-weight:700;color:var(--nx-ink);text-decoration:none;transition:background .15s}
+.guide .why a:hover{background:rgba(30,30,28,.06)}
+.chap-head{display:flex;align-items:baseline;justify-content:space-between;gap:6px 16px;flex-wrap:wrap;margin:0 0 16px}
+.chap-head h3{margin:0}
+.guide .to-toc{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--nx-muted);text-decoration:none;white-space:nowrap}
+.guide .to-toc:hover{color:var(--nx-ink)}
+.text-empty{display:none}
+code{font-family:var(--mono);font-size:.86em;background:rgba(255,255,255,.5);padding:1px 6px;border-radius:6px;overflow-wrap:anywhere}
+
+/* figures — rounded, with a soft shadow, no frame */
+.fig{margin:30px 0 32px;padding:0}
+.fig svg{display:block;width:100%;max-width:280px;height:auto;margin:0 auto;filter:drop-shadow(0 22px 30px rgba(40,40,36,.22)) drop-shadow(0 4px 8px rgba(40,40,36,.10))}
+.fig-wide svg{max-width:620px}
+.fig figcaption{margin:18px auto 0;color:var(--nx-muted);font-size:14.5px;line-height:1.55;text-align:center;max-width:56ch}
+
+/* table of contents — text on the background */
+.toc{margin:0 0 48px;padding:0 0 0 18px;border-left:2px solid var(--nx-outline);font-size:15px;line-height:1.45}
+.toc .eyebrow{display:block;margin:0 0 14px}
+.toc-list,.toc-sub{list-style:none;margin:0;padding:0}
+.toc-list > li{margin:0 0 10px}
+.toc-list > li:last-child{margin-bottom:0}
+.toc-sub{margin:6px 0 0 0;padding-left:14px;border-left:1px solid var(--nx-line)}
+.toc-sub li{margin:4px 0}
+.toc a{text-decoration:none;color:var(--nx-muted);display:inline-block}
+.toc-list > li > a{color:var(--nx-ink);font-weight:700}
+.toc a:hover{color:var(--nx-ink);text-decoration:underline;text-underline-offset:3px}
+
+/* ===== Three columns side by side ===== */
+@media(min-width:1280px){
+  html,body{height:100%}
+  body.nx{display:flex;flex-direction:column;overflow:hidden}
+  .nx-header{flex:none}
+  main{flex:1;min-height:0;display:flex;flex-direction:column}
+  main > .shell,.tabs-bar > .shell,.texts.shell{width:min(calc(100% - 48px),1560px)}
+  .hero{padding:18px 0 14px}
+  .hero h1{font-size:40px}
+  .tabs-bar{flex:none;position:static;margin:0 0 6px;padding:0;border:0;background:none}
+  .tabs{max-width:none;gap:0}
+  .tabs .tab{justify-self:center;width:min(100%,280px);min-height:46px;font-size:16px}
+  .tab[aria-expanded="true"]{background:var(--nx-base);border-color:var(--nx-base);color:#fff;box-shadow:var(--nx-btn-shadow)}
+  .tab[aria-expanded="true"]:hover{background:var(--nx-base-hover)}
+  .js .text-head{display:none}
+  .js .text{padding-top:22px}
+  .js .text-sub{margin-top:0}
+  .js .text [id]{scroll-margin-top:18px}
+  .js .text:not(.open) > :not(.text-empty){display:none}
+  .js .text:not(.open) > .text-empty{display:block;margin:0;color:var(--nx-muted);opacity:.75;font-size:15px}
+  .texts{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:0}
+  .js .text,.text{display:block;max-width:none;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;
+    margin:0;padding:0 34px 40px;border:0;border-radius:0;background:none}
+  .text + .text,.js .text + .text{margin-top:0;padding-top:0;border-top:0;border-left:1px solid var(--nx-line)}
+  .js .text + .text{padding-top:22px}
+  .text-head{position:sticky;top:0;z-index:2;margin:0 -34px 0;padding:18px 34px 12px;background:var(--nx-bg);border-bottom:1px solid var(--nx-line)}
+  .text-title{font-size:28px}
+  .text-sub{font-size:17px;margin:16px 0 24px}
+  .text [id]{scroll-margin-top:84px}
+  .guide h3{font-size:24px}
+  .guide h4{font-size:19px}
+  .guide p,.guide li{font-size:16px}
+  .guide .motto{font-size:18px}
+  .site-footer{flex:none;margin-top:0;padding:8px 0 10px;font-size:12px}
+  .footer-grid{display:flex;align-items:center;flex-wrap:wrap;gap:6px 26px}
+  .footer-brand{flex-direction:row;align-items:center;gap:12px}
+  .footer-brand .logo{flex-direction:row;gap:8px}
+  .footer-brand .logo-svg{width:20px;height:20px}
+  .footer-nav{margin-left:auto;font-size:10.5px}
+  .nx-mail,.footer-bottom{font-size:12px;padding:0}
+  .footer-bottom{gap:6px 18px}
+}
+@media(max-width:600px){
+  main > .shell,.tabs-bar > .shell,.texts.shell,.site-footer > .shell{width:calc(100% - 32px)}
+  .hero{padding:38px 0 24px}
+  .tabs-bar{padding:10px 0}
+  .tabs{gap:6px}
+  .tab{font-size:14px;padding:0 6px;min-height:42px}
+  .guide p,.guide li{font-size:16.5px}
+  .go-link{padding:11px 36px 11px 14px}
+  .go-cue{right:12px}
+}
+/* EN: tab labels are longer than in Russian — keep all three whole on one line on phones */
+@media(max-width:420px){
+  .tabs{gap:4px}
+  .tab{font-size:11.5px;letter-spacing:-.01em;padding:0 2px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body class="nx" id="top">
+<header class="nx-header">
+  <div class="nx-nav">
+    <a class="nx-logo" href="index.html" aria-label="IndrasNet — home"><svg class="logo-svg" viewBox="0 0 116 117" aria-hidden="true" focusable="false"><path fill="currentColor" d="M57.9,100.0 L49.3,107.8 L49.0,109.3 L55.3,112.8 L58.4,113.5 L66.3,109.8 L66.8,108.4 L60.3,101.7Z M43.7,91.7 L35.7,91.9 L34.1,92.7 L35.2,96.4 L38.9,103.6 L42.9,102.7 L48.3,100.6 L50.4,99.2 L50.3,98.4 L46.3,93.8Z M71.6,91.8 L65.6,97.9 L65.3,99.4 L72.8,102.7 L76.6,103.6 L77.7,102.3 L81.3,94.0 L81.4,92.7 L80.4,92.0Z M16.0,87.8 L15.5,88.5 L17.9,95.8 L19.1,97.7 L24.2,99.9 L28.3,100.8 L28.9,99.6 L28.6,88.3 L27.4,87.6Z M99.6,87.8 L88.5,87.5 L87.1,88.3 L86.8,99.9 L87.4,100.8 L88.5,100.9 L95.0,98.5 L97.1,97.0 L100.0,89.3Z M51.7,89.0 L51.5,90.3 L57.9,96.2 L62.6,92.0 L64.2,89.8 L63.5,88.8 L58.4,86.6Z M65.6,77.8 L62.3,81.4 L62.1,82.5 L63.0,83.4 L68.6,84.8 L69.7,84.0 L71.8,78.7 L70.4,77.8Z M43.6,78.6 L46.7,84.7 L48.9,84.6 L53.4,82.5 L53.3,81.5 L50.3,77.7 L44.8,77.9Z M31.4,76.0 L30.8,76.9 L31.2,84.8 L32.1,85.3 L39.3,85.4 L40.1,85.0 L40.3,83.6 L38.3,78.2 L33.0,76.0Z M84.2,75.8 L77.1,78.3 L75.2,83.8 L75.6,85.2 L84.5,85.0 L84.9,77.3Z M99.3,65.5 L97.8,65.8 L91.3,71.7 L91.4,81.1 L91.8,81.8 L93.1,81.9 L103.3,76.9 L103.1,74.8Z M16.4,65.4 L15.6,66.3 L12.8,73.6 L12.1,76.8 L13.5,78.0 L23.2,82.1 L24.2,80.6 L24.2,71.8 L20.9,68.4 L17.6,65.7Z M81.9,62.6 L80.4,63.0 L77.2,65.9 L76.9,68.5 L77.6,72.4 L80.9,71.3 L84.1,69.4 L84.1,67.7 L82.6,63.2Z M33.6,62.6 L31.7,66.8 L31.6,69.5 L32.8,70.5 L37.9,72.2 L38.6,71.1 L38.4,66.1 L35.1,63.0Z M89.0,51.5 L87.7,53.3 L85.6,58.4 L88.1,64.1 L89.6,64.8 L95.1,59.7 L95.7,57.8 L89.9,51.6Z M25.9,51.5 L20.2,57.3 L19.8,58.5 L20.9,60.3 L25.9,64.8 L26.8,64.9 L28.2,62.9 L30.0,58.1 L27.5,52.6 L26.7,51.6Z M107.8,49.4 L100.0,57.4 L99.8,58.4 L100.5,59.9 L106.9,66.8 L108.5,67.4 L110.4,64.3 L112.2,59.7 L112.5,57.4 L109.4,50.1Z M7.1,49.3 L6.3,49.9 L3.0,58.3 L6.3,66.6 L7.8,67.2 L15.3,59.6 L15.7,57.9 L8.4,49.8Z M77.9,44.4 L77.1,45.5 L77.0,50.4 L79.6,52.9 L82.1,53.9 L82.9,53.0 L84.2,49.0 L84.2,47.3 L80.1,44.9Z M37.7,44.4 L35.8,44.6 L31.3,47.5 L32.7,52.9 L33.8,54.0 L35.1,53.6 L38.5,50.7 L38.5,45.8Z M91.9,34.9 L91.2,35.8 L91.1,44.7 L97.6,50.8 L98.4,51.0 L100.0,49.0 L103.2,39.9 L101.9,38.6 L93.8,35.1Z M23.4,34.7 L13.6,38.6 L12.5,39.6 L12.5,40.8 L15.5,48.6 L17.0,50.8 L18.3,50.5 L23.3,46.1 L24.4,44.5 L24.3,35.9Z M46.6,32.1 L43.8,38.2 L45.7,38.9 L50.5,38.6 L52.9,35.6 L53.1,33.8 L48.4,32.0Z M62.6,33.7 L62.6,35.4 L65.6,38.7 L70.7,38.8 L71.8,38.1 L69.6,32.8 L68.6,31.9 L67.2,31.9Z M75.4,31.5 L75.1,33.1 L77.2,38.3 L81.9,40.6 L84.3,41.0 L84.9,40.0 L84.6,31.9 L83.6,31.3Z M39.9,31.5 L32.2,31.3 L31.1,31.8 L30.8,40.0 L31.3,40.8 L33.8,40.6 L38.0,38.7 L40.4,32.8Z M57.6,20.5 L51.7,25.9 L51.3,27.3 L56.0,30.1 L58.0,30.7 L63.5,28.1 L64.3,26.7 L58.7,20.7Z M87.4,16.3 L87.0,17.1 L87.4,28.8 L88.4,29.2 L99.4,29.0 L99.9,27.3 L97.0,19.8 L95.7,18.8 L88.8,16.2Z M28.1,16.3 L27.4,16.1 L19.6,18.8 L18.7,19.6 L15.6,27.5 L16.1,28.9 L27.4,29.1 L28.3,28.5 L28.6,17.0Z M39.1,13.2 L37.9,14.5 L34.1,24.1 L35.3,24.9 L44.2,25.0 L50.4,18.3 L50.5,17.5 L41.3,13.4Z M65.2,17.6 L65.9,19.2 L71.3,24.9 L73.7,25.3 L80.9,24.8 L81.5,24.3 L77.6,14.2 L76.5,13.1 L75.6,13.0 L67.7,16.0Z M57.8,3.2 L49.3,6.9 L48.7,7.9 L49.2,9.0 L56.9,16.4 L58.4,16.9 L66.7,8.8 L66.9,7.7 L65.9,6.7Z"/></svg><span>IndrasNet</span></a>
+    <nav class="nx-links" id="nxMenu" aria-label="Main navigation">
+      <a href="index.html#device">Architecture</a>
+      <a href="index.html#roadmap">Roadmap</a>
+      <a href="/en/luman-links-guide.html" aria-current="page">Materials</a>
+      <a href="https://indrasnet.ee" target="_blank" rel="noopener">Research / Grants ↗</a>
+    </nav>
+    <a class="nx-cta" href="luman-links-beta.html">Luman Links Beta</a>
+    <span class="nx-lang"><a href="/luman-links-guide.html" hreflang="ru" lang="ru">RU</a> <span aria-hidden="true">|</span> <b aria-current="true">EN</b></span>
+    <button class="nx-burger" type="button" aria-expanded="false" aria-controls="nxMenu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main>
+<div class="shell">
+<section class="hero" aria-labelledby="page-title">
+<h1 id="page-title">Luman Links</h1>
+</section>
+</div>
+<div class="tabs-bar" hidden>
+<div class="shell">
+<div class="tabs" role="tablist" aria-label="Texts">
+<button class="tab" type="button" role="tab" id="tab-opisanie" aria-controls="opisanie" aria-selected="true">Overview</button>
+<button class="tab" type="button" role="tab" id="tab-rukovodstvo" aria-controls="rukovodstvo" aria-selected="false" tabindex="-1">Guide</button>
+<button class="tab" type="button" role="tab" id="tab-ponimanie" aria-controls="ponimanie" aria-selected="false" tabindex="-1">Understanding</button>
+</div>
+</div>
+</div>
+<div class="texts shell">
+<section class="text" id="opisanie" aria-labelledby="opisanie-title">
+<header class="text-head">
+<h2 class="text-title" id="opisanie-title">Overview</h2>
+</header>
+<p class="text-sub"><em>From saved links to your own map of interests</em></p>
+<div class="guide">
+<p>Luman Links is a phone app that makes it easy to keep interesting things you find online: videos, articles, exercises, ideas.</p>
+<p>You are working on a project, studying, keen on something or just scrolling through your feed — and you come across something worthwhile. There’s no time to look into it now, but it would be a pity to lose it. The interest arises now, and the chance to look into it comes later.</p>
+<p>Ordinary bookmarks pile up, and over time you forget what drew you to each of them. Luman Links helps you keep not only the link but the interest itself — so that you can come back to it.</p>
+<p class="go"><a class="go-link" id="o-capture" href="#r2"><strong>What it looks like.</strong> You can save with “Share” from any app or with the “+” button. The only thing you need to do is give your find a title of your own: a couple of words about what drew you in particular. This is your first act of thought.<svg class="go-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></p>
+<p class="go"><a class="go-link" id="o-stream" href="#r4">What you save appears at the bottom of the screen, in Capture, as bubbles. New and recently opened ones are in the center; older ones gradually move toward the edge. You don’t need to arrange anything: Capture itself shows what you have turned to recently.<svg class="go-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></p>
+<p class="go"><a class="go-link" id="o-map" href="#r6">What you want to keep and put to use, you move up to the Card File. There the bubble becomes a slip, and you place it yourself next to ones close in meaning. Without any folders, a map of your interests gradually takes shape — modeled on Niklas Luhmann’s card file.<svg class="go-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></p>
+<p class="go"><a class="go-link" id="o-try" href="#r8">If you want to test a find on yourself, a slip has a “Try it” button: choose a day and an hour, and the phone will remind you.<svg class="go-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></p>
+<p class="go"><a class="go-link" id="o-privacy" href="#data">All of this is stored only on your phone: no account, no server of ours. You make the copy yourself, too.<svg class="go-cue" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></p>
+<p class="motto"><strong>Save what interests you. Come back when you want. Create your own space of interests.</strong></p>
+</div>
+</section>
+<section class="text" id="rukovodstvo" aria-labelledby="rukovodstvo-title">
+<p class="text-empty">Open it with the button or click a paragraph in the Overview</p>
+<header class="text-head">
+<h2 class="text-title" id="rukovodstvo-title">Guide</h2>
+</header>
+<p class="text-sub"><em>How to use Luman Links</em></p>
+<div class="guide">
+<p>Luman Links is a phone app: you save links to things you find online and give each one a title of your own. Here is what to tap and how. Why it all works this way is in <a href="#ponimanie">“Understanding”</a>.</p>
+</div>
+<nav class="toc" id="toc" aria-labelledby="toc-title">
+<h3 class="eyebrow" id="toc-title">Contents</h3>
+<ol class="toc-list">
+<li><a href="#data">First of all — about your data</a>
+<ol class="toc-sub">
+<li><a href="#data-1">The price of this</a></li>
+<li><a href="#data-2">How to save a copy</a></li>
+<li><a href="#data-3">How to get your cards back from a copy</a></li>
+</ol>
+</li>
+<li><a href="#r1">1. Two spaces</a></li>
+<li><a href="#r2">2. Save</a></li>
+<li><a href="#r3">3. Give it a title</a></li>
+<li><a href="#r4">4. Find and look closer in Capture</a></li>
+<li><a href="#r5">5. Go back to the source</a></li>
+<li><a href="#r6">6. Move to the Card File</a></li>
+<li><a href="#r7">7. Place the slip and view clusters</a></li>
+<li><a href="#r8">8. “Try it”</a></li>
+<li><a href="#r9">9. Search, editing, deleting, copy</a></li>
+<li><a href="#r10">10. Without extra effort</a></li>
+<li><a href="#r11">11. If the cards couldn’t be read</a></li>
+<li><a href="#r12">12. Current state</a></li>
+</ol>
+</nav>
+<article class="guide">
+<section class="unit" id="data" data-unit="data">
+<div class="chap-head">
+<h3>First of all — about your data</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p class="why"><a href="#p6">Why it works this way → Understanding</a></p>
+<p>Luman Links is built on the local-first principle: everything is stored and processed on your device.</p>
+<p>Saved links, titles, comments, the arrangement of cards and the dates you set are kept on your phone. Working with your cards needs no Luman Links server and no account. What you save is not stored with the developer.</p>
+<p>The internet is needed when you open the material itself: an article, a video or a page of this guide. Only that material is opened. Your collection is not sent there.</p>
+<section class="unit" id="data-1" data-unit="data-1">
+<h4>The price of this</h4>
+<p>Your information stays with you — and only with you. It’s like your own safe with no spare key: no one but you will look inside, but no one will open it either if the key is lost.</p>
+<p>If the phone is lost or breaks, if the app is deleted and installed again, if there is a failure, your collection will be lost entirely. It can be restored only from a copy you saved yourself.</p>
+</section>
+<section class="unit" id="data-2" data-unit="data-2">
+<h4>How to save a copy</h4>
+<ol>
+<li>Open “Service”.</li>
+<li>Tap “Save a copy”.</li>
+<li>The “Share” window opens. Send the file somewhere it won’t get lost: to your email, to the cloud, to a computer.</li>
+</ol>
+<p>The copy counts as saved only once it has been sent. While the file stays inside the app, the phone is entitled to erase it.</p>
+<p>Make a copy from time to time — especially when your collection holds things you would hate to lose.</p>
+</section>
+<section class="unit" id="data-3" data-unit="data-3">
+<h4>How to get your cards back from a copy</h4>
+<p>This is how you move your collection to a new phone or get it back after reinstalling.</p>
+<ol>
+<li>Move the copy file to the phone, for example download it from your email or the cloud. The file is called <code>luman-links-backup-</code> followed by the date and time.</li>
+<li>Open “Service” and tap “Restore from a copy”.</li>
+<li>Choose the file. The app shows how many cards there are now and how many there will be, and asks you to confirm.</li>
+<li>Tap “Replace”.</li>
+</ol>
+<p>All cards on the phone will be replaced by the contents of the file. The previous ones cannot be brought back. If you need them, save a copy first.</p>
+</section>
+</section>
+<section class="unit" id="r1" data-unit="r1">
+<div class="chap-head">
+<h3>1. Two spaces</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>The screen is divided into two fields.</p>
+<p>The lower field is <strong>Capture</strong>. New finds land here, and this is where you come back to them. Cards here are bubbles, and they arrange themselves, according to the history of your attention.</p>
+<p>The upper field is the <strong>Card File</strong>. Here you move what you want to keep and put to use, and you arrange it yourself. Cards here are slips.</p>
+<figure class="fig">
+<svg viewBox="0 0 320 400" role="img" aria-labelledby="f1-t f1-d" focusable="false"><title id="f1-t">Two spaces</title><desc id="f1-d">Diagram of the app screen divided into two fields. The lower field is dark: it holds translucent bubbles, the brightest one in the center, the others spreading out in circles toward the edge. The upper field is light: paper slips are laid out freely on it.</desc><defs><symbol id="f1-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f1-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f1-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f1-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="2" y="2" width="316" height="396" rx="28" fill="#fff" stroke="rgba(24,32,38,.28)" stroke-width="1.5"/><clipPath id="f1-top"><rect x="14" y="14" width="292" height="182" rx="18"/></clipPath><clipPath id="f1-bot"><rect x="14" y="204" width="292" height="182" rx="18"/></clipPath><rect x="14" y="14" width="292" height="182" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.12)"/><rect x="14" y="204" width="292" height="182" rx="18" fill="#1d2a33"/><g clip-path="url(#f1-top)"><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(62 52) rotate(-8)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(104 44) rotate(5)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(236 50) rotate(7)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(268 86) rotate(-5)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(52 150) rotate(6)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(92 164) rotate(-4)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(246 158) rotate(-7)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(282 170) rotate(4)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(222 178) rotate(9)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(150 104) rotate(-3)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(176 112) rotate(6)"/><use href="#f1-sheet" x="-21" y="-15" width="42" height="30" transform="translate(196 70) rotate(-6)"/></g><g clip-path="url(#f1-bot)"><circle cx="160" cy="295" r="18" fill="rgba(242,245,244,.62)" stroke="rgba(255,255,255,.9)" stroke-width="1.5"/><circle cx="160.0" cy="251.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="339.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="182.3" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="223.9" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="244.9" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="238.6" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="206.8" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="381.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="113.2" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="81.4" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="75.1" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="96.1" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="137.7" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="224.0" cy="184.1" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="266.1" cy="223.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="286.8" cy="277.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="281.7" cy="334.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="252.1" cy="383.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="203.8" cy="415.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="146.6" cy="422.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="92.2" cy="403.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="51.4" cy="362.8" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="32.7" cy="308.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="39.7" cy="251.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="71.1" cy="202.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="120.4" cy="173.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="177.8" cy="168.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/></g></svg>
+<figcaption>Two fields of one screen: below is Capture, where the bubbles arrange themselves; above is the Card File, where you arrange the slips.</figcaption>
+</figure>
+<p>There is no need to create folders, topics or categories in advance.</p>
+</section>
+<section class="unit" id="r2" data-unit="r2">
+<div class="chap-head">
+<h3>2. Save</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p class="why"><a href="#p2">Why it works this way → Understanding</a></p>
+<p><strong>With “Share”.</strong></p>
+<ol>
+<li>In the source app, choose the material and tap “Share”.</li>
+<li>Choose Luman Links. A new card form opens with this link.</li>
+<li>Type in your own title; a comment is optional.</li>
+<li>Tap “Save”. The new bubble takes its place in the center of Capture.</li>
+</ol>
+<p><strong>With “+”.</strong></p>
+<ol>
+<li>Copy the link.</li>
+<li>Open Luman Links and tap “+”. The link from the clipboard goes into the form by itself.</li>
+<li>Type in your own title; a comment is optional.</li>
+<li>Tap “Save”.</li>
+</ol>
+<p>The “+” button takes the link only from the clipboard: if there is no link there, the form won’t open. Without a title the card won’t be saved.</p>
+</section>
+<section class="unit" id="r3" data-unit="r3">
+<div class="chap-head">
+<h3>3. Give it a title</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>There is no need to repeat the author’s headline. Say briefly what matters to you. You watched a video called “Five secrets of perfect balance” — and you write: <strong>“Balance with eyes closed”</strong>. In the comment you can add: “Try it at practice”.</p>
+<p>This way, for a moment, you single out what caught you in particular. This is the first act of thought, and the only required one. There is no need to look into it in detail right now.</p>
+<p>What a card holds:</p>
+<ul>
+<li><strong>title</strong> — required, you give it;</li>
+<li><strong>link to the source</strong> — required; Luman Links stores the address, not a copy of the video or page;</li>
+<li><strong>comment</strong> — optional: your initial interest, a question or a note.</li>
+</ul>
+<p>The title and comment can be changed later. When the card is moved to the Card File, all of this is kept: what changes is not the card’s content but its place and appearance.</p>
+</section>
+<section class="unit" id="r4" data-unit="r4">
+<div class="chap-head">
+<h3>4. Find and look closer in Capture</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p class="why"><a href="#p3">Why it works this way → Understanding</a></p>
+<p>Each new card takes its place in the center of Capture. Each card you open again returns to the center as well. Earlier bubbles move outward clockwise and on along the outer circles. Closer to the center is what you have saved or opened recently; at the edge is what you have not returned to for a long time. Being close to the center does not mean the material is more important, and being far from it does not mean it is useless.</p>
+<ul>
+<li><strong>Move.</strong> Capture can extend past the edge of the screen — move it as a whole to see the distant areas.</li>
+<li><strong>Look closer at a cluster.</strong> Spread it with two fingers. A single tap closes the enlargement.</li>
+<li><strong>Read a bubble larger.</strong> Press and hold it: a label appears above your finger — the title, the comment and the source site. Lift your finger and the label disappears.</li>
+<li><strong>Open a card.</strong> Double-tap the bubble.</li>
+</ul>
+<p>If you remember a word from the title or comment, use search (<a href="#r9">chapter 9</a>).</p>
+</section>
+<section class="unit" id="r5" data-unit="r5">
+<div class="chap-head">
+<h3>5. Go back to the source</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>Open a bubble or a slip with a double tap: a single tap does not open the card. Reread your title and comment, then tap “Open”. The material opens in its own app or browser; this needs the internet.</p>
+<p>Opening a card returns the bubble to the center of Capture.</p>
+</section>
+<section class="unit" id="r6" data-unit="r6">
+<div class="chap-head">
+<h3>6. Move to the Card File</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p class="why"><a href="#p4">Why it works this way → Understanding</a></p>
+<p>Open the bubble with a double tap and tap “Move to the Card File”. The card becomes a slip and takes its place in the center of the Card File. This is the second act of thought: you decide that the find is worth keeping and putting to use.</p>
+<p>The move cannot be undone, and the app does not ask again: a slip cannot be returned to Capture.</p>
+<figure class="fig">
+<svg viewBox="0 0 320 400" role="img" aria-labelledby="f2-t f2-d" focusable="false"><title id="f2-t">Moving to the Card File</title><desc id="f2-d">Diagram of the screen with two fields. In the center of the lower, dark field, Capture, only the dotted place of the bubble remains. From it a dotted arrow leads up into the center of the light field, the Card File. A highlighted slip lies there, with other slips around it.</desc><defs><symbol id="f2-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f2-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f2-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f2-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="2" y="2" width="316" height="396" rx="28" fill="#fff" stroke="rgba(24,32,38,.28)" stroke-width="1.5"/><clipPath id="f2-top"><rect x="14" y="14" width="292" height="182" rx="18"/></clipPath><clipPath id="f2-bot"><rect x="14" y="204" width="292" height="182" rx="18"/></clipPath><rect x="14" y="14" width="292" height="182" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.12)"/><rect x="14" y="204" width="292" height="182" rx="18" fill="#1d2a33"/><g clip-path="url(#f2-top)"><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(62 52) rotate(-8)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(104 44) rotate(5)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(236 50) rotate(7)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(268 86) rotate(-5)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(52 150) rotate(6)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(92 164) rotate(-4)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(246 158) rotate(-7)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(282 170) rotate(4)"/><use href="#f2-sheet" x="-21" y="-15" width="42" height="30" transform="translate(222 178) rotate(9)"/><use href="#f2-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(160 105) rotate(0)"/></g><g clip-path="url(#f2-bot)"><circle cx="160" cy="295" r="18" fill="none" stroke="rgba(242,245,244,.55)" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="160.0" cy="251.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="198.1" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="339.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="317.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="121.9" cy="273.0" r="12.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="182.3" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="223.9" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="244.9" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="238.6" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="206.8" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="160.0" cy="381.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="113.2" cy="367.1" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="81.4" cy="330.0" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="75.1" cy="281.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="96.1" cy="237.5" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="137.7" cy="211.9" r="9.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="224.0" cy="184.1" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="266.1" cy="223.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="286.8" cy="277.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="281.7" cy="334.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="252.1" cy="383.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="203.8" cy="415.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="146.6" cy="422.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="92.2" cy="403.6" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="51.4" cy="362.8" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="32.7" cy="308.4" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="39.7" cy="251.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="71.1" cy="202.9" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="120.4" cy="173.3" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/><circle cx="177.8" cy="168.2" r="7.5" fill="rgba(242,245,244,.16)" stroke="rgba(242,245,244,.38)" stroke-width="1"/></g><path d="M160 270 C 160 230, 160 170, 160 128" fill="none" stroke="#8d989f" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#f2-arr)"/></svg>
+<figcaption>Moving: the bubble leaves Capture and becomes a slip in the center of the Card File.</figcaption>
+</figure>
+<p>While a slip is in the center, the next card cannot be moved. The app responds with the window “Couldn’t move it to the Card File”: “There’s already a card in the center. Find a place for it and the center will be free.” You can leave the new slip in the center and not choose a place for it right away — but before the next move you will have to shift it.</p>
+</section>
+<section class="unit" id="r7" data-unit="r7">
+<div class="chap-head">
+<h3>7. Place the slip and view clusters</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>Drag the slip from the center to a suitable area, next to ones close in meaning. Choosing a place is another micro-act of thought: you compare the material with what already lies on the map. This is how an area of your interests gradually emerges — without a folder created in advance.</p>
+<figure class="fig fig-wide">
+<svg viewBox="0 0 660 200" role="img" aria-labelledby="f3-t f3-d" focusable="false"><title id="f3-t">The center is occupied</title><desc id="f3-d">Three diagrams of the Card File in a row. First: a highlighted slip lies in the center of the field. Second: an arrow shows the slip being moved from the center toward neighboring slips; an empty dotted place is left in the center. Third: the earlier slip lies in its new place, and the freed center is ready to take the next card.</desc><defs><symbol id="f3-sheet" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fffdf7" stroke="rgba(24,32,38,.34)" stroke-width="1"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.24)" stroke-width="1.6" stroke-linecap="round"/></symbol><symbol id="f3-sheet-on" viewBox="-21 -15 42 30" overflow="visible"><rect x="-20" y="-14" width="40" height="28" rx="3" fill="#fff" stroke="#182026" stroke-width="2"/><path d="M-13 -6h24M-13 0h18M-13 6h21" stroke="rgba(24,32,38,.42)" stroke-width="1.6" stroke-linecap="round"/></symbol><marker id="f3-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#8d989f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="f3-arri" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#182026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><clipPath id="f3-clip"><rect x="1" y="1" width="198" height="198" rx="18"/></clipPath><g transform="translate(0 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><use href="#f3-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(100 100) rotate(0)"/></g></g><path d="M208 100 h14" fill="none" stroke="#8d989f" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arr)"/><g transform="translate(230 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><rect x="80" y="86" width="40" height="28" rx="3" fill="none" stroke="rgba(24,32,38,.38)" stroke-width="1.4" stroke-dasharray="4 3"/><use href="#f3-sheet-on" x="-21" y="-15" width="42" height="30" transform="translate(150 84) rotate(3)"/><path d="M108 96 C 118 88, 124 86, 128 86" fill="none" stroke="#182026" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arri)"/></g></g><path d="M438 100 h14" fill="none" stroke="#8d989f" stroke-width="2" stroke-linecap="round" marker-end="url(#f3-arr)"/><g transform="translate(460 0)"><rect x="1" y="1" width="198" height="198" rx="18" fill="#f6f5f0" stroke="rgba(24,32,38,.2)"/><g clip-path="url(#f3-clip)"><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(40 46) rotate(-7)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(44 158) rotate(6)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(156 166) rotate(-5)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(132 34) rotate(-4)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(170 52) rotate(8)"/><use href="#f3-sheet" x="-21" y="-15" width="42" height="30" transform="translate(150 84) rotate(3)"/><rect x="80" y="86" width="40" height="28" rx="3" fill="none" stroke="rgba(24,32,38,.38)" stroke-width="1.4" stroke-dasharray="4 3"/></g></g></svg>
+<figcaption>The center is occupied: move the slip toward ones close in meaning — and the next card can be moved into the freed center.</figcaption>
+</figure>
+<ul>
+<li>The Card File field itself does not move: only the slips move.</li>
+<li><strong>Read a slip larger.</strong> Press and hold it — a label appears above your finger.</li>
+<li><strong>Lay out a cluster.</strong> If slips have landed on top of one another, put two fingers on the cluster and spread them. A frame appears in the center of the field: the cluster’s slips are laid out in it in rows, from newest to oldest. Inside the frame, slips can be opened and read, but not moved. Tap the field outside the frame — it closes, and the slips stay where they are. The frame opens only where slips overlap.</li>
+</ul>
+</section>
+<section class="unit" id="r8" data-unit="r8">
+<div class="chap-head">
+<h3>8. “Try it”</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p class="why"><a href="#p5">Why it works this way → Understanding</a></p>
+<p>The “Try it” button is only on a slip in the Card File. It sets a day and an hour for a reminder on the slip. A bubble in Capture has no such button: the material has to be moved to the Card File first.</p>
+<p><strong>Set a date.</strong></p>
+<ol>
+<li>Open the slip with a double tap and tap “Try it”.</li>
+<li>On the “When” screen, tap “Pick an exact time”.</li>
+<li>Choose the date in the first window, then the time in the second. If you close either window, the date will not be set.</li>
+</ol>
+<p>At the hour you set, the reminder “Luman Links — scheduled” arrives with the slip’s title. Tap it — the card opens; tap “Open” and, if you still want to, try it.</p>
+<p><strong>Date icon.</strong> A slip with a date set gets an icon. Outline — the date is still ahead. Filled — the date passed more than three hours ago.</p>
+<p><strong>Change or clear the date.</strong> Once a date is set, the button is called “Change the date”. It leads to the same “When” screen: there you can choose a new time or tap “Clear the date” — the reminder is canceled.</p>
+<p><strong>For the reminder to arrive.</strong> The first time you set a date, the app warns that permission for notifications is needed, and Android asks for it. Answer “Allow”. If you refuse, the date is still saved and shown by an icon on the slip, but the reminder will not arrive. The app says so in the “The date is set” window and asks for permission again the next time you set a date. If Android has stopped asking, the same window offers an “Open settings” button: there notifications are turned on by hand.</p>
+<p>On Xiaomi phones the reminder arrives only if “Autostart” is turned on for Luman Links in the phone’s settings.</p>
+<p>Not every find needs to be tried. The button is for the ones you really want to do something with.</p>
+</section>
+<section class="unit" id="r9" data-unit="r9">
+<div class="chap-head">
+<h3>9. Search, editing, deleting, copy</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p><strong>Search.</strong> Tap the search icon in the “Card File” line and start typing a word. Search finds cards both in Capture and in the Card File — by title and comment, but not by link. Tap a result to open the card. You can close search with the cross in the field, the “Back” button or a tap outside the list.</p>
+<p><strong>Editing.</strong> Open the card, change the title or comment and tap “Save”.</p>
+<p><strong>Deleting.</strong> Open the card and tap “Delete”. The app asks again: “Delete this card? This can’t be undone.”</p>
+<p><strong>Copy.</strong> In “Service”, tap “Save a copy” and send the file somewhere it won’t get lost. “Restore from a copy” is there too. Details are <a href="#data">in the section “First of all — about your data”</a>.</p>
+<p>A short “How to use it” help is also in the app itself, in “Service”.</p>
+</section>
+<section class="unit" id="r10" data-unit="r10">
+<div class="chap-head">
+<h3>10. Without extra effort</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>Don’t try to sort through everything you have saved at once. Give your attention to the first title. Move to the Card File only what you truly want to give a place. Don’t strive for a perfect classification: the map of interests takes shape gradually. “Try it” — when you really feel like it. And save a copy from time to time.</p>
+</section>
+<section class="unit" id="r11" data-unit="r11">
+<div class="chap-head">
+<h3>11. If the cards couldn’t be read</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>Starting with version 0.9.0-b8, if the app cannot read the saved cards, for example after a failure, the window “Couldn’t read the cards” appears at launch with three buttons. Earlier versions do not have this protection — update.</p>
+<ul>
+<li><strong>“Restore from a copy”</strong> — “Service” opens. Tap “Restore from a copy” there and choose a file you saved earlier. The cards come back as they were at the time of the copy.</li>
+<li><strong>“Send the file to the author”</strong> — the “Share” window opens with a file of what the app could not read. Send it to the author the same way you got the app. This helps to figure out what happened and possibly to get the cards back. The app itself sends nothing anywhere. If the file could not be written, this button is not there.</li>
+<li><strong>“Later”</strong> — the window closes.</li>
+</ul>
+<p>While the cards have not been read, the app writes nothing. That way it will not overwrite your earlier cards with empty ones. For the same reason, a copy cannot be saved in this state: the app will say “The copy can’t be saved right now”.</p>
+</section>
+<section class="unit" id="r12" data-unit="r12">
+<div class="chap-head">
+<h3>12. Current state</h3>
+<a class="to-toc" href="#toc">↑ Contents</a>
+</div>
+<p>Luman Links is currently in beta. It runs on Android phones and on iPhone. On Android it is installed with an APK file from the beta page on indrasnet.eu. How to install it on iPhone is in <a href="luman-links-iphone.html">a separate guide</a>.</p>
+<p>An update is installed as a new file over the previous one, and all cards are kept. The main thing is not to delete the app before updating: deleting erases the cards along with it. If the phone refuses to install the update over the previous one, don’t delete the app then either — write to the author.</p>
+<p>This guide describes what works in the current version. New features will be covered here when they appear.</p>
+</section>
+</article>
+</section>
+<section class="text" id="ponimanie" aria-labelledby="ponimanie-title">
+<p class="text-empty">Open it with the button or click a paragraph in the Overview</p>
+<header class="text-head">
+<h2 class="text-title" id="ponimanie-title">Understanding</h2>
+</header>
+<p class="text-sub"><em>Why Luman Links works the way it does</em></p>
+<div class="guide">
+<p>Luman Links is a phone app. In it you save things you find online — videos, articles, exercises — and give each find a title of your own. At the bottom of the screen is Capture, at the top is the Card File. Which buttons to tap is described in the <a href="#rukovodstvo">Guide</a>. Here is why everything works the way it does.</p>
+<section class="unit" id="p1">
+<h3>What gets lost when we save</h3>
+<p>At the moment of finding something, you have three things: the source, the reason for your interest and a possible continuation. An ordinary bookmark reliably keeps only the first. The rest stays in memory and is forgotten over time. So when we come back to a bookmark, we often don’t recognize it: we have to look at the material again to understand what once caught us.</p>
+<p>And one more thing: saving is not using. Saving by itself turns nothing into knowledge or experience. At the same time, not every find has to become useful. You can save what is beautiful, strange, curious — simply out of interest. The goal is not to process everything you have accumulated, but to be able to come back and decide for yourself what becomes of the material.</p>
+</section>
+<section class="unit" id="p2">
+<h3>Micro-acts of thought</h3>
+<p>Instead of one big sorting-out that there is never time for, Luman Links offers a chain of micro-acts of thought: <strong>name, return, select, place, try</strong>. They can happen on different days and do not require long concentration.</p>
+<p>Only the first one is required — naming. A link without your title lies there dead: a month later it is just an address. A link with your title has already started to work — for a moment you singled out what caught you in particular. This is the first act of thought.</p>
+<p>The rest are optional. Each of them is one more occasion to meet the material and connect it with your own experience. This way the work is no longer with links, but with your own thinking. This is a design principle, not a promise of better memory: lasting memory also depends on repetition, understanding, application and much else.</p>
+</section>
+<section class="unit" id="p3">
+<h3>Two fields — two attitudes to a find</h3>
+<p><strong>Capture below is the first catch.</strong> It is a coarse filter and an almost endless field of your interests. There is no need to arrange it: each new or reopened card takes its place in the center, and older ones move to the edge. Here attention itself determines the place. You remember that you have it somewhere — and you find it roughly there. You can travel through Capture.</p>
+<p><strong>The Card File above is the field of application.</strong> Moving a find up is the second act of thought, a declaration: this is no longer just “interesting”, I have a reason to put it to use. You don’t have to try everything that lies there. But what has ended up at the top stays in mind as a reason. You choose the slip’s place yourself, next to ones close in meaning — and so, without any folders, a map of your interests takes shape.</p>
+<p>A new slip takes its place in the center of the Card File, and while it is there, the next one cannot be moved. You don’t have to place it right away, but before the next move you will have to come back to it, compare it with what already lies on the map and find it a place. The moving itself becomes one more micro-act of thought.</p>
+<p>Hence two mechanisms of attention. Below, attention determines the arrangement. Above, the arrangement demands attention.</p>
+</section>
+<section class="unit" id="p4">
+<h3>Modeled on Luhmann’s card file</h3>
+<p>The German sociologist Niklas Luhmann kept a card file for several decades — about 90,000 handwritten cards. It did not start from a ready-made tree of topics: its structure took shape together with the notes, their continuations and links. Luhmann himself described the card file as a communication partner able to surprise its author.</p>
+<p>It is important to tell the method apart from how it looks on screen. Luhmann’s card file relied on numbers, branches and cross-references; it was not a free two-dimensional board. Luman Links takes one idea from it — structure grows out of the notes themselves — and shows it as a map on a plane.</p>
+<p>There is also a more direct likeness — to Luhmann’s <strong>bibliographic card file</strong>. In it he recorded details of the sources he had read and could add brief remarks on the points that interested him. These cards helped him return to the material and served as starting points for his own thoughts in the main card file.</p>
+<p>Luman Links is a bibliographic card file for new media. Instead of a book — a link; instead of a note in the margin — your title, a comment if you wish, and a place on the map. The link is kept as an external stimulus, an entry point into your own thinking. It does not replace independent thought.</p>
+</section>
+<section class="unit" id="p5">
+<h3>“Try it”: experience, not a result</h3>
+<p>The “Try it” button turns “I’ll try it someday” into a specific day and hour. It is the last link in the chain of acts of thought — where thought goes out into experience. The word was not chosen by chance: what matters is gaining your own experience, not a result known in advance. Watching how someone else does it and doing it yourself are different things. Practice can support understanding and memory, but it guarantees nothing. And not every find needs to be tried.</p>
+</section>
+<section class="unit" id="p6">
+<h3>The independence of personal space</h3>
+<p>Luman Links is part of IndrasNet. One of its principles: personal thinking should not depend on a central platform. That is why your collection belongs to you, lives on your phone and works without a server or an account.</p>
+<p>This independence has a price. It’s like your own safe with no spare key: no one but you will look inside, but no one will open it either if the key is lost. Keeping a copy is up to you.</p>
+</section>
+<section class="unit" id="p7">
+<h3>Simplicity</h3>
+<p>Luman Links does not decide for you what is important. The app takes on the mechanical work. It leaves you the micro-acts of thought where they are useful: name, select, arrange, try.</p>
+</section>
+<section class="unit" id="p8">
+<h3>Reading about Luhmann</h3>
+<ol class="refs">
+<li>Niklas Luhmann. <a href="https://link.springer.com/10.1007/978-3-322-87749-9_19" target="_blank" rel="noopener"><em>Kommunikation mit Zettelkästen</em></a> (1981) — his own account of the card file. In German; English translations can be found online under the title <em>Communicating with Slip Boxes</em>.</li>
+<li>Johannes F.K. Schmidt. <a href="https://sociologica.unibo.it/article/view/8350" target="_blank" rel="noopener"><em>Niklas Luhmann's Card Index: The Fabrication of Serendipity</em></a> (Sociologica, 2018) — a short article by a researcher of the Luhmann archive, open access.</li>
+<li>Johannes F.K. Schmidt. <a href="https://pub.uni-bielefeld.de/download/2942475/2942530/jschmidt_2016_niklas%20luhmanns%20card%20index.pdf" target="_blank" rel="noopener"><em>Niklas Luhmann's Card Index: Thinking Tool, Communication Partner, Publication Machine</em></a> (2016) — a detailed version of the same work, open access.</li>
+<li>Sönke Ahrens. <em>How to Take Smart Notes</em> — a popular account of the method.</li>
+<li><a href="https://niklas-luhmann-archiv.de" target="_blank" rel="noopener">Niklas Luhmann Archive</a> (Bielefeld University) — the card file in digitized form; you can browse the cards.</li>
+</ol>
+</section>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer nx-footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><svg class="logo-svg" viewBox="0 0 116 117" aria-hidden="true" focusable="false"><path fill="currentColor" d="M57.9,100.0 L49.3,107.8 L49.0,109.3 L55.3,112.8 L58.4,113.5 L66.3,109.8 L66.8,108.4 L60.3,101.7Z M43.7,91.7 L35.7,91.9 L34.1,92.7 L35.2,96.4 L38.9,103.6 L42.9,102.7 L48.3,100.6 L50.4,99.2 L50.3,98.4 L46.3,93.8Z M71.6,91.8 L65.6,97.9 L65.3,99.4 L72.8,102.7 L76.6,103.6 L77.7,102.3 L81.3,94.0 L81.4,92.7 L80.4,92.0Z M16.0,87.8 L15.5,88.5 L17.9,95.8 L19.1,97.7 L24.2,99.9 L28.3,100.8 L28.9,99.6 L28.6,88.3 L27.4,87.6Z M99.6,87.8 L88.5,87.5 L87.1,88.3 L86.8,99.9 L87.4,100.8 L88.5,100.9 L95.0,98.5 L97.1,97.0 L100.0,89.3Z M51.7,89.0 L51.5,90.3 L57.9,96.2 L62.6,92.0 L64.2,89.8 L63.5,88.8 L58.4,86.6Z M65.6,77.8 L62.3,81.4 L62.1,82.5 L63.0,83.4 L68.6,84.8 L69.7,84.0 L71.8,78.7 L70.4,77.8Z M43.6,78.6 L46.7,84.7 L48.9,84.6 L53.4,82.5 L53.3,81.5 L50.3,77.7 L44.8,77.9Z M31.4,76.0 L30.8,76.9 L31.2,84.8 L32.1,85.3 L39.3,85.4 L40.1,85.0 L40.3,83.6 L38.3,78.2 L33.0,76.0Z M84.2,75.8 L77.1,78.3 L75.2,83.8 L75.6,85.2 L84.5,85.0 L84.9,77.3Z M99.3,65.5 L97.8,65.8 L91.3,71.7 L91.4,81.1 L91.8,81.8 L93.1,81.9 L103.3,76.9 L103.1,74.8Z M16.4,65.4 L15.6,66.3 L12.8,73.6 L12.1,76.8 L13.5,78.0 L23.2,82.1 L24.2,80.6 L24.2,71.8 L20.9,68.4 L17.6,65.7Z M81.9,62.6 L80.4,63.0 L77.2,65.9 L76.9,68.5 L77.6,72.4 L80.9,71.3 L84.1,69.4 L84.1,67.7 L82.6,63.2Z M33.6,62.6 L31.7,66.8 L31.6,69.5 L32.8,70.5 L37.9,72.2 L38.6,71.1 L38.4,66.1 L35.1,63.0Z M89.0,51.5 L87.7,53.3 L85.6,58.4 L88.1,64.1 L89.6,64.8 L95.1,59.7 L95.7,57.8 L89.9,51.6Z M25.9,51.5 L20.2,57.3 L19.8,58.5 L20.9,60.3 L25.9,64.8 L26.8,64.9 L28.2,62.9 L30.0,58.1 L27.5,52.6 L26.7,51.6Z M107.8,49.4 L100.0,57.4 L99.8,58.4 L100.5,59.9 L106.9,66.8 L108.5,67.4 L110.4,64.3 L112.2,59.7 L112.5,57.4 L109.4,50.1Z M7.1,49.3 L6.3,49.9 L3.0,58.3 L6.3,66.6 L7.8,67.2 L15.3,59.6 L15.7,57.9 L8.4,49.8Z M77.9,44.4 L77.1,45.5 L77.0,50.4 L79.6,52.9 L82.1,53.9 L82.9,53.0 L84.2,49.0 L84.2,47.3 L80.1,44.9Z M37.7,44.4 L35.8,44.6 L31.3,47.5 L32.7,52.9 L33.8,54.0 L35.1,53.6 L38.5,50.7 L38.5,45.8Z M91.9,34.9 L91.2,35.8 L91.1,44.7 L97.6,50.8 L98.4,51.0 L100.0,49.0 L103.2,39.9 L101.9,38.6 L93.8,35.1Z M23.4,34.7 L13.6,38.6 L12.5,39.6 L12.5,40.8 L15.5,48.6 L17.0,50.8 L18.3,50.5 L23.3,46.1 L24.4,44.5 L24.3,35.9Z M46.6,32.1 L43.8,38.2 L45.7,38.9 L50.5,38.6 L52.9,35.6 L53.1,33.8 L48.4,32.0Z M62.6,33.7 L62.6,35.4 L65.6,38.7 L70.7,38.8 L71.8,38.1 L69.6,32.8 L68.6,31.9 L67.2,31.9Z M75.4,31.5 L75.1,33.1 L77.2,38.3 L81.9,40.6 L84.3,41.0 L84.9,40.0 L84.6,31.9 L83.6,31.3Z M39.9,31.5 L32.2,31.3 L31.1,31.8 L30.8,40.0 L31.3,40.8 L33.8,40.6 L38.0,38.7 L40.4,32.8Z M57.6,20.5 L51.7,25.9 L51.3,27.3 L56.0,30.1 L58.0,30.7 L63.5,28.1 L64.3,26.7 L58.7,20.7Z M87.4,16.3 L87.0,17.1 L87.4,28.8 L88.4,29.2 L99.4,29.0 L99.9,27.3 L97.0,19.8 L95.7,18.8 L88.8,16.2Z M28.1,16.3 L27.4,16.1 L19.6,18.8 L18.7,19.6 L15.6,27.5 L16.1,28.9 L27.4,29.1 L28.3,28.5 L28.6,17.0Z M39.1,13.2 L37.9,14.5 L34.1,24.1 L35.3,24.9 L44.2,25.0 L50.4,18.3 L50.5,17.5 L41.3,13.4Z M65.2,17.6 L65.9,19.2 L71.3,24.9 L73.7,25.3 L80.9,24.8 L81.5,24.3 L77.6,14.2 L76.5,13.1 L75.6,13.0 L67.7,16.0Z M57.8,3.2 L49.3,6.9 L48.7,7.9 L49.2,9.0 L56.9,16.4 L58.4,16.9 L66.7,8.8 L66.9,7.7 L65.9,6.7Z"/></svg><span>IndrasNet</span></a>
+      <span>A decentralized project environment</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="index.html#system">System</a>
+      <a href="index.html#products">Products</a>
+      <a href="luman-links-beta.html">Luman Links Beta</a>
+      <a href="https://indrasnet.ee" target="_blank" rel="noopener">indrasnet.ee ↗</a>
+    </nav>
+    <p class="nx-mail">Contact: <a href="mailto:info@indrasnet.ee">info@indrasnet.ee</a></p>
+    <div class="footer-bottom"><span>indrasnet.eu</span><span>Luman Links</span></div>
+  </div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  // Three texts: from 1280px — columns side by side; narrower — one text with buttons on top.
+  // On a wide screen the Guide and Understanding are empty until they are opened.
+  var IDS = ["opisanie", "rukovodstvo", "ponimanie"];
+  var bar = document.querySelector(".tabs-bar");
+  var tablist = bar.querySelector(".tabs");
+  var hero = document.querySelector(".hero").parentNode;
+  var tabs = {}, panels = {};
+  IDS.forEach(function(id){
+    tabs[id] = document.getElementById("tab-" + id);
+    panels[id] = document.getElementById(id);
+  });
+  var wide = window.matchMedia("(min-width: 1280px)");
+  var current = null, scrollMem = {}, opened = {}, routed = null;
+  bar.hidden = false;
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+  function textOf(el){
+    var t = el.closest ? el.closest(".text") : null;
+    return t && panels[t.id] === t ? t.id : null;
+  }
+  // Narrower than 1280px the buttons are tabs; wider, they are column headers that open a column.
+  function roles(){
+    var w = wide.matches;
+    if (w) tablist.removeAttribute("role"); else tablist.setAttribute("role", "tablist");
+    IDS.forEach(function(id){
+      var t = tabs[id], on = id === current;
+      if (w){
+        t.removeAttribute("role"); t.removeAttribute("aria-selected"); t.removeAttribute("tabindex");
+        t.setAttribute("aria-expanded", opened[id] ? "true" : "false");
+        panels[id].removeAttribute("role");
+      } else {
+        t.setAttribute("role", "tab"); t.removeAttribute("aria-expanded");
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        panels[id].setAttribute("role", "tabpanel");
+      }
+    });
+  }
+  function select(id){
+    if (!opened[id]){ opened[id] = true; panels[id].classList.add("open"); }
+    if (current === id){ roles(); return false; }
+    if (current !== null && !wide.matches) scrollMem[current] = window.pageYOffset;
+    current = id;
+    IDS.forEach(function(k){ panels[k].classList.toggle("on", k === id); });
+    roles();
+    return true;
+  }
+  // A new text starts below the buttons: at the previous place if already read, otherwise at the start.
+  function placeText(id){
+    if (wide.matches) return;
+    // the button bar is sticky, so its place in the flow is right below the page title
+    var top = hero.getBoundingClientRect().bottom + window.pageYOffset;
+    if (scrollMem.hasOwnProperty(id)) window.scrollTo(0, scrollMem[id]);
+    else if (window.pageYOffset > top) window.scrollTo(0, top);
+  }
+  function route(focus, fromHistory){
+    routed = location.hash;
+    var h = decodeURIComponent(location.hash.replace(/^#/, ""));
+    var el = h ? document.getElementById(h) : null;
+    var id = el ? textOf(el) : null;
+    if (!id){ if (select("opisanie")) placeText("opisanie"); return; }
+    var changed = select(id);
+    if (el === panels[id]){ if (changed) placeText(id); return; }
+    // "back" to an Overview paragraph: restore the text's previous place, the paragraph is already in view
+    var back = fromHistory && el.classList.contains("go-link");
+    if (back && changed) placeText(id);
+    el.scrollIntoView({block: back ? "nearest" : "start"});
+    if (back) el.focus({preventScroll:true});
+    else if (focus){
+      var hd = /^H[1-6]$/.test(el.tagName) ? el : (el.querySelector("h2,h3,h4,h5") || el);
+      if (!hd.hasAttribute("tabindex")) hd.setAttribute("tabindex", "-1");
+      hd.focus({preventScroll:true});
+    }
+  }
+  function open(id, focusTab){
+    var shown = opened[id] && (wide.matches || current === id);
+    if (location.hash !== "#" + id) history.pushState(null, "", "#" + id);
+    var changed = select(id);
+    if (wide.matches){ if (shown) panels[id].scrollTop = 0; }
+    else if (changed) placeText(id);
+    if (focusTab) tabs[id].focus();
+  }
+
+  bar.addEventListener("click", function(e){
+    var t = e.target.closest ? e.target.closest(".tab") : null;
+    if (t) open(t.getAttribute("aria-controls"));
+  });
+  bar.addEventListener("keydown", function(e){
+    if (wide.matches) return;
+    var i = IDS.indexOf(current), n = null;
+    if (e.key === "ArrowRight") n = (i + 1) % IDS.length;
+    else if (e.key === "ArrowLeft") n = (i + IDS.length - 1) % IDS.length;
+    else if (e.key === "Home") n = 0;
+    else if (e.key === "End") n = IDS.length - 1;
+    if (n === null) return;
+    e.preventDefault();
+    open(IDS[n], true);
+  });
+  // Links inside the texts: open the right text and scroll to the place.
+  document.addEventListener("click", function(e){
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+    if (!el || !textOf(el)) return;
+    e.preventDefault();
+    // an Overview paragraph is remembered in history so that "back" returns to it
+    if (a.classList.contains("go-link") && location.hash !== "#" + a.id) history.pushState(null, "", "#" + a.id);
+    history.pushState(null, "", a.getAttribute("href"));
+    route(true, false);
+  });
+  window.addEventListener("popstate", function(){ route(false, true); });
+  // following an anchor sends both popstate and hashchange — don't scroll a second time
+  window.addEventListener("hashchange", function(){ if (location.hash !== routed) route(true, false); });
+  var onWide = function(){ roles(); };
+  if (wide.addEventListener) wide.addEventListener("change", onWide); else if (wide.addListener) wide.addListener(onWide);
+
+  route(false, false);
+})();
+</script>
+<script>
+(function(){
+  var b = document.querySelector(".nx-burger"), m = document.getElementById("nxMenu");
+  if (!b || !m) return;
+  function set(o){ m.classList.toggle("open", o); b.setAttribute("aria-expanded", o ? "true" : "false"); }
+  b.addEventListener("click", function(e){ e.stopPropagation(); set(!m.classList.contains("open")); });
+  m.addEventListener("click", function(e){ if (e.target.closest("a")) set(false); });
+  document.addEventListener("click", function(e){ if (!m.contains(e.target) && e.target !== b) set(false); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") set(false); });
+})();
+</script>
+</body>
+</html>
