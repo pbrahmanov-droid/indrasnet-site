@@ -136,9 +136,15 @@ h1,h2,h3,h4{text-wrap:balance}
 /* 4. устройство: колонки прямо на фоне, форма — только у карточек продуктов */
 .sec{padding:76px 0 0;scroll-margin-top:84px}
 .sec-title{margin:0 0 30px;text-align:center;font-size:clamp(26px,3.2vw,38px);line-height:1.2;letter-spacing:-.02em;font-weight:700;color:var(--nx-head)}
-.device{display:grid;grid-template-columns:1fr 52px .9fr 52px 1fr;align-items:stretch}
+.device{display:grid;grid-template-columns:1fr 52px .9fr 52px 1fr;grid-template-rows:auto auto auto 1fr;row-gap:12px;align-items:stretch}
 .dcol{display:flex;flex-direction:column;gap:12px;min-width:0}
-.dcol.mid{justify-content:center}
+/* IndraPod и стрелки — в строке карточек левой колонки: левая колонка делится на строки сеткой (subgrid),
+   правая занимает все строки и на них не влияет (лишнюю высоту забирает строка 1fr) */
+.dcol-l{grid-column:1;grid-row:1/4;display:grid;grid-template-rows:subgrid;gap:12px}
+.dcol-r{grid-column:5;grid-row:1/5}
+.dcol.mid{grid-column:3;grid-row:3}
+.device>.dlink{grid-row:3}
+.dcol.mid>.pod{flex:1;justify-content:center}
 .dhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .dhead .ic{flex:none;display:grid;place-items:center;color:var(--nx-head)}
 .dhead .ic svg{width:26px;height:26px}
@@ -155,7 +161,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
 .item h4{margin:0;font-size:16px;color:var(--nx-head)}
 .item p{margin:6px 0 0;font-size:14px;line-height:1.5;color:var(--nx-muted)}
 .item .ext{margin-left:auto;font-size:15px;color:var(--nx-head);font-weight:700}
-.pod{display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 24px 30px;border-radius:24px;background:#000 radial-gradient(120% 46% at 50% 118%,rgba(255,176,104,.16),rgba(255,176,104,0) 70%);color:#fff;box-shadow:var(--nx-card-shadow)}
+.pod{display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 24px;border-radius:24px;background:#000 radial-gradient(120% 46% at 50% 118%,rgba(255,176,104,.16),rgba(255,176,104,0) 70%);color:#fff;box-shadow:var(--nx-card-shadow)}
 .pod .pod-logo{display:block;width:96px;height:96px}
 .pod h3{margin:10px 0 8px;font-size:21px;color:#fff}
 .pod p{margin:14px 0 0;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.72)}
@@ -206,7 +212,9 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
   .hero{padding:56px 0 34px}
   .stage-row{grid-template-columns:1fr;gap:8px}
   .stage-arrow svg,.dlink svg{transform:rotate(90deg)}
-  .device{grid-template-columns:1fr;gap:10px}
+  .device{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
+  .device>*{grid-column:auto !important;grid-row:auto !important}
+  .dcol-l{display:flex}
   .dlink{padding:4px 0}
   .principles{grid-template-columns:1fr 1fr;gap:22px 18px}
   .pr{flex-direction:column;align-items:flex-start;gap:8px}
@@ -342,7 +350,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
     <div class="shell">
       <h2 class="sec-title">IndrasNet: устройство и развитие</h2>
       <div class="device" id="products">
-        <div class="dcol">
+        <div class="dcol dcol-l">
           <div class="dhead"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20.2c1.2-3.7 3.9-5.5 7.2-5.5s6 1.8 7.2 5.5"/></svg></span><h3>Личный органайзер</h3></div>
           <p class="dlead">Создание, развитие и подготовка собственных проектов.</p>
           <div class="items">
@@ -365,7 +373,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
           </div>
         </div>
         <div class="dlink" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12h17M8 7.5 3.5 12 8 16.5M16 7.5l4.5 4.5-4.5 4.5"/></svg></div>
-        <div class="dcol">
+        <div class="dcol dcol-r">
           <div class="dhead"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5.2" r="2.3"/><circle cx="5" cy="18" r="2.3"/><circle cx="19" cy="18" r="2.3"/><path d="M10.9 7.2 6.1 16M13.1 7.2l4.8 8.8M7.3 18h9.4"/></svg></span><h3>DAO</h3></div>
           <p class="dlead">Децентрализованная автономная организация для совместной проектной работы.</p>
           <div class="items">
