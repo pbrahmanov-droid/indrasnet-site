@@ -482,16 +482,16 @@ html, body { color-scheme: only light; }
 /* ===== NEXT: общий вид (круг 2 — по образцу dao.indrasnet.ee: однотонный фон, тёмный текст,
    карточки с глубокой мягкой тенью, капсулы) ===== */
 :root{
-  --nx-bg:#9abdb9;
+  --nx-bg:#c8e6e2;
   --nx-base:#52524d;--nx-base-hover:#42423e;--nx-head:#42423e;
   --nx-ink:#1e1e1c;--nx-muted:#3f4442;
   --nx-line:rgba(30,30,28,.14);--nx-outline:rgba(30,30,28,.30);
   --nx-warm-ink:#9a6a12;--nx-warm-soft:#f7eed9;
   --nx-ok-ink:#345846;--nx-ok-soft:#e2eee7;
   --nx-alert:#8a3b2e;
-  --nx-card:linear-gradient(180deg,#e6ddd4,#dccbc2);
-  --nx-card-shadow:0 30px 60px -22px rgba(40,40,36,.40),0 8px 20px rgba(40,40,36,.12);
-  --nx-card-shadow-up:0 40px 70px -24px rgba(40,40,36,.46),0 12px 26px rgba(40,40,36,.14);
+  --nx-card:linear-gradient(180deg,#f3ece5,#e0c9bd);
+  --nx-card-shadow:0 40px 80px -20px rgba(40,40,36,.45),0 12px 28px rgba(40,40,36,.16);
+  --nx-card-shadow-up:0 52px 96px -22px rgba(40,40,36,.52),0 16px 34px rgba(40,40,36,.18);
   --nx-btn-shadow:0 12px 22px -12px rgba(40,40,36,.55),0 2px 5px rgba(40,40,36,.10);
   --nx-r:26px;
 }
@@ -594,9 +594,9 @@ body.nx main :is(.step,.see) :is(b,h3){color:var(--nx-head)}
 /* карточки шагов установки — сохраняют форму */
 .step,.see{background:var(--nx-card) !important;border:0 !important;border-radius:24px !important;box-shadow:var(--nx-card-shadow) !important}
 .steps .step.key{box-shadow:inset 0 0 0 1.5px rgba(30,30,28,.35),var(--nx-card-shadow) !important}
-/* предупреждение — текст на фоне, заметный */
-.update-flow .step.warn{background:none !important;box-shadow:none !important;border:0 !important}
-.update-flow .step.warn :is(.n,b,p){color:var(--nx-alert) !important;font-weight:700}
+/* предупреждение — карточка как у соседних шагов, красный только у текста */
+.update-flow .step.warn :is(.n,b,p){color:var(--nx-alert) !important}
+.update-flow .step.warn b{font-weight:800}
 .shot{border-radius:14px}
 .why{background:none !important;border:0 !important;box-shadow:none !important;padding:0 !important;margin-top:30px}
 details.verify{border-top:0 !important;padding-top:4px}

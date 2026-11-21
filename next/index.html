@@ -14,16 +14,16 @@
 /* ===== NEXT: общий вид (круг 2 — по образцу dao.indrasnet.ee: однотонный фон, тёмный текст,
    карточки с глубокой мягкой тенью, капсулы) ===== */
 :root{
-  --nx-bg:#9abdb9;
+  --nx-bg:#c8e6e2;
   --nx-base:#52524d;--nx-base-hover:#42423e;--nx-head:#42423e;
   --nx-ink:#1e1e1c;--nx-muted:#3f4442;
   --nx-line:rgba(30,30,28,.14);--nx-outline:rgba(30,30,28,.30);
   --nx-warm-ink:#9a6a12;--nx-warm-soft:#f7eed9;
   --nx-ok-ink:#345846;--nx-ok-soft:#e2eee7;
   --nx-alert:#8a3b2e;
-  --nx-card:linear-gradient(180deg,#e6ddd4,#dccbc2);
-  --nx-card-shadow:0 30px 60px -22px rgba(40,40,36,.40),0 8px 20px rgba(40,40,36,.12);
-  --nx-card-shadow-up:0 40px 70px -24px rgba(40,40,36,.46),0 12px 26px rgba(40,40,36,.14);
+  --nx-card:linear-gradient(180deg,#f3ece5,#e0c9bd);
+  --nx-card-shadow:0 40px 80px -20px rgba(40,40,36,.45),0 12px 28px rgba(40,40,36,.16);
+  --nx-card-shadow-up:0 52px 96px -22px rgba(40,40,36,.52),0 16px 34px rgba(40,40,36,.18);
   --nx-btn-shadow:0 12px 22px -12px rgba(40,40,36,.55),0 2px 5px rgba(40,40,36,.10);
   --nx-r:26px;
 }
@@ -93,7 +93,7 @@ h1,h2,h3,h4{text-wrap:balance}
 
 /* 2. заголовок */
 .hero{text-align:center;padding:84px 0 46px}
-.hero h1{margin:0;font-size:clamp(56px,9.4vw,116px);line-height:.9;font-weight:600;letter-spacing:.07em;margin-right:-.07em;color:var(--nx-head);text-transform:uppercase}
+.hero h1{margin:0;font-size:clamp(56px,9.4vw,116px);line-height:.9;font-weight:600;letter-spacing:.07em;margin-right:-.07em;color:var(--nx-head);text-transform:uppercase;text-shadow:0 2px 0 rgba(255,255,255,.85)}
 .hero .h-def{margin:30px auto 0;max-width:900px;font-size:clamp(25px,3.2vw,38px);line-height:1.18;font-weight:600;letter-spacing:-.015em;color:var(--nx-head)}
 .hero .h-sub{margin:18px auto 0;max-width:780px;font-size:clamp(17px,1.9vw,21px);line-height:1.5;font-weight:600;color:var(--nx-ink)}
 .hero .h-note{margin:16px auto 0;max-width:600px;font-size:14px;line-height:1.6;font-weight:500;color:var(--nx-muted)}
@@ -178,6 +178,8 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
 .rm-ic.next{color:var(--nx-ink);background:transparent;border:1px solid var(--nx-outline)}
 .rm-col h3{margin:5px 0 6px;font-size:16px;color:var(--nx-head)}
 .rm-col p{margin:0;font-size:14px;line-height:1.55;font-weight:500;color:var(--nx-ink)}
+.rm-join{margin:30px 0 0;text-align:center;font-size:15px;font-weight:600;color:var(--nx-ink)}
+.rm-join a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 
 /* 6. строка о доменах */
 .domains{text-align:center;margin:56px auto 0;font-size:13.5px;font-weight:500;line-height:1.5;color:var(--nx-muted)}
@@ -349,7 +351,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
             </div>
             <div class="item">
               <div class="item-top"><h4>Luman Organizer</h4><span class="badge dev">Разработка</span></div>
-              <p>Доведение беспорядочных мыслей до проектного состояния.</p>
+              <p>Фиксация, связывание и структурирование мыслей — до проектной формы.</p>
             </div>
           </div>
         </div>
@@ -393,6 +395,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
         <div class="rm-col"><span class="rm-ic dev" aria-hidden="true">↻</span><div><h3>В работе</h3><p>IndraPod, Luman Organizer</p></div></div>
         <div class="rm-col"><span class="rm-ic next" aria-hidden="true">○</span><div><h3>Предстоит</h3><p>Расширение экосистемы и прикладные проекты</p></div></div>
       </div>
+      <p class="rm-join">Хотите участвовать — пишите: <a href="mailto:info@indrasnet.ee">info@indrasnet.ee</a></p>
     </div>
   </section>
 
