@@ -136,12 +136,13 @@ h1,h2,h3,h4{text-wrap:balance}
 /* 4. устройство: колонки прямо на фоне, форма — только у карточек продуктов */
 .sec{padding:76px 0 0;scroll-margin-top:84px}
 .sec-title{margin:0 0 30px;text-align:center;font-size:clamp(26px,3.2vw,38px);line-height:1.2;letter-spacing:-.02em;font-weight:700;color:var(--nx-head)}
-.device{display:grid;grid-template-columns:1fr 52px .9fr 52px 1fr;grid-template-rows:auto auto auto 1fr;row-gap:12px;align-items:stretch}
+.device{display:grid;grid-template-columns:1fr 52px .9fr 52px 1fr;grid-template-rows:auto auto auto;row-gap:12px;align-items:stretch}
 .dcol{display:flex;flex-direction:column;gap:12px;min-width:0}
-/* IndraPod и стрелки — в строке карточек левой колонки: левая колонка делится на строки сеткой (subgrid),
-   правая занимает все строки и на них не влияет (лишнюю высоту забирает строка 1fr) */
+/* обе боковые колонки делят общие строки (subgrid): 1 — заголовок, 2 — описание, 3 — карточки;
+   IndraPod и стрелки — в строке 3. Высоты «накрест»: тянутся Luman Organizer и Ядро DAO */
 .dcol-l{grid-column:1;grid-row:1/4;display:grid;grid-template-rows:subgrid;gap:12px}
-.dcol-r{grid-column:5;grid-row:1/5}
+.dcol-r{grid-column:5;grid-row:1/4;display:grid;grid-template-rows:subgrid;gap:12px}
+.dcol-l .item:last-child,.dcol-r .item:first-child{flex-grow:1}
 .dcol.mid{grid-column:3;grid-row:3}
 .device>.dlink{grid-row:3}
 .dcol.mid>.pod{flex:1;justify-content:center}
@@ -214,7 +215,7 @@ a.item:hover{transform:translateY(-3px);box-shadow:var(--nx-card-shadow-up)}
   .stage-arrow svg,.dlink svg{transform:rotate(90deg)}
   .device{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
   .device>*{grid-column:auto !important;grid-row:auto !important}
-  .dcol-l{display:flex}
+  .dcol-l,.dcol-r{display:flex}
   .dlink{padding:4px 0}
   .principles{grid-template-columns:1fr 1fr;gap:22px 18px}
   .pr{flex-direction:column;align-items:flex-start;gap:8px}
